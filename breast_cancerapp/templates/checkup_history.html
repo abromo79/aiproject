@@ -1,0 +1,564 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+    <div class="content">
+        <div class="container-xxl">
+
+            <!-- Header Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h1 class="page-title mb-1">
+                                <i data-feather="clock" class="text-warning me-2" style="height: 32px; width: 32px;"></i>
+                                Checkup History
+                            </h1>
+                            <p class="text-muted mb-0">Complete chronological history of all patient assessments and analyses</p>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="badge bg-warning text-white fs-14 px-3 py-2">
+                                <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+                                {{ today|date:"M d, Y" }}
+                            </div>
+                            <button onclick="window.print()" class="btn btn-warning">
+                                <i data-feather="printer" class="me-1" style="height: 16px; width: 16px;"></i>
+                                Print Report
+                            </button>
+                            <a href="{% url 'reports_dashboard' %}" class="btn btn-outline-secondary">
+                                <i data-feather="arrow-left" class="me-1" style="height: 16px; width: 16px;"></i>
+                                Back to Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Summary -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="file-text" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Medical Checkup Summary
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p class="mb-0">Complete chronological history of all breast cancer risk assessments and AI-powered image analyses performed in the system. This comprehensive record tracks patient screening progress and provides insights for medical professionals.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="avatar-xl bg-warning bg-opacity-10 rounded-circle mx-auto mb-2">
+                                        <i data-feather="database" class="text-warning avatar-title" style="height: 40px; width: 40px;"></i>
+                                    </div>
+                                    <h4 class="mb-1">{{ checkups|length }}</h4>
+                                    <p class="text-muted mb-0">Total Records</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Checkup History Table -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white border-bottom">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="card-title mb-0">
+                            <i data-feather="list" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                            Chronological Checkup Records
+                        </h5>
+                        <span class="badge bg-primary">{{ checkups|length }} records</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th><i data-feather="calendar" class="me-1" style="height: 14px; width: 14px;"></i>Date & Time</th>
+                                    <th><i data-feather="tag" class="me-1" style="height: 14px; width: 14px;"></i>Type</th>
+                                    <th><i data-feather="shield" class="me-1" style="height: 14px; width: 14px;"></i>Result</th>
+                                    <th><i data-feather="target" class="me-1" style="height: 14px; width: 14px;"></i>Confidence</th>
+                                    <th><i data-feather="file-text" class="me-1" style="height: 14px; width: 14px;"></i>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for checkup in checkups %}
+                                <tr>
+                                    <td>{{ checkup.date|date:"M d, Y H:i" }}</td>
+                                    <td>
+                                        <span class="badge {% if checkup.type == 'Risk Assessment' %}bg-info{% else %}bg-warning{% endif %} px-3 py-2">
+                                            <i data-feather="{% if checkup.type == 'Risk Assessment' %}activity{% else %}image{% endif %}" class="me-1" style="height: 12px; width: 12px;"></i>
+                                            {{ checkup.type }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="badge {% if 'Low' in checkup.prediction or 'Benign' in checkup.prediction %}bg-success{% else %}bg-danger{% endif %} px-3 py-2">
+                                            <i data-feather="{% if 'Low' in checkup.prediction or 'Benign' in checkup.prediction %}check-circle{% else %}alert-triangle{% endif %}" class="me-1" style="height: 12px; width: 12px;"></i>
+                                            {{ checkup.prediction }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="progress me-2 confidence-progress" data-confidence="{{ checkup.confidence }}">
+                                                <div class="progress-bar {% if checkup.confidence >= 80 %}bg-success{% elif checkup.confidence >= 60 %}bg-warning{% else %}bg-danger{% endif %}"></div>
+                                            </div>
+                                            <small class="fw-semibold">{{ checkup.confidence }}%</small>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <small class="text-muted">{{ checkup.details|truncatechars:50 }}</small>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="5" class="text-center py-5">
+                                        <div class="text-muted">
+                                            <i data-feather="inbox" class="mb-3" style="height: 48px; width: 48px;"></i>
+                                            <p class="mb-0">No checkups found</p>
+                                            <small class="mb-0">Start performing assessments to see history here</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Statistics -->
+            {% if checkups %}
+            <div class="row g-3 mt-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm bg-gradient-primary">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm bg-primary bg-opacity-10 rounded">
+                                        <i data-feather="database" class="text-primary avatar-title" style="height: 24px; width: 24px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-white">{{ checkups|length }}</h5>
+                                    <p class="mb-0 text-white-50">Total Checkups</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-white" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-white-50">All records</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm bg-gradient-info">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm bg-info bg-opacity-10 rounded">
+                                        <i data-feather="activity" class="text-info avatar-title" style="height: 24px; width: 24px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-white">
+                                        {{ risk_assessment_count }}
+                                    </h5>
+                                    <p class="mb-0 text-white-50">Risk Assessments</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-white" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-white-50">Clinical assessments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm bg-gradient-warning">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm bg-warning bg-opacity-10 rounded">
+                                        <i data-feather="image" class="text-warning avatar-title" style="height: 24px; width: 24px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-white">
+                                        {{ image_analysis_count }}
+                                    </h5>
+                                    <p class="mb-0 text-white-50">Image Analyses</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-white" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-white-50">AI analyses</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm bg-gradient-success">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm bg-success bg-opacity-10 rounded">
+                                        <i data-feather="check-circle" class="text-success avatar-title" style="height: 24px; width: 24px;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-white">
+                                        {{ benign_count }}
+                                    </h5>
+                                    <p class="mb-0 text-white-50">Low Risk/Benign</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-white" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-white-50">Positive outcomes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+/* Checkup History Theme Styles */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+}
+
+.avatar-sm {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-xl {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+    font-size: 0.875rem;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+/* Confidence progress bars */
+.confidence-progress {
+    width: 60px;
+    height: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .avatar-sm {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-xl {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .avatar-title {
+        font-size: 16px;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.col-md-3:nth-child(1) .card { animation-delay: 0.1s; }
+.col-md-3:nth-child(2) .card { animation-delay: 0.2s; }
+.col-md-3:nth-child(3) .card { animation-delay: 0.3s; }
+.col-md-3:nth-child(4) .card { animation-delay: 0.4s; }
+
+/* Table hover effects */
+.table-hover tbody tr:hover {
+    background-color: rgba(250, 112, 154, 0.05);
+}
+
+/* Progress bar animations */
+.progress-bar {
+    transition: width 1.5s ease-out;
+}
+
+/* Badge animations */
+.badge {
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar for tables */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Empty state styling */
+.text-muted i {
+    opacity: 0.5;
+}
+
+/* Print styles */
+@media print {
+    .btn, .py-3, .d-flex.gap-2 {
+        display: none !important;
+    }
+    .card {
+        border: 1px solid #000 !important;
+        break-inside: avoid;
+        box-shadow: none !important;
+    }
+    .table {
+        font-size: 12px;
+    }
+    .page-title {
+        font-size: 1.5rem;
+        color: #000 !important;
+        background: none !important;
+        -webkit-text-fill-color: #000 !important;
+    }
+    .bg-gradient-primary,
+    .bg-gradient-info,
+    .bg-gradient-warning,
+    .bg-gradient-success {
+        background: #f8f9fa !important;
+    }
+    .text-white {
+        color: #000 !important;
+    }
+    .text-white-50 {
+        color: #666 !important;
+    }
+    .avatar-title {
+        color: #000 !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Feather icons
+    feather.replace();
+    
+    // Animate progress bars
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const parentProgress = bar.closest('.confidence-progress');
+        if (parentProgress) {
+            const confidence = parentProgress.dataset.confidence;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.5s ease-out';
+                bar.style.width = confidence + '%';
+            }, 100);
+        } else {
+            const width = bar.style.width;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.5s ease-out';
+                bar.style.width = width;
+            }, 100);
+        }
+    });
+    
+    // Add hover effects to cards
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-4px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+    
+    // Add click animation to buttons
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+    
+    // Update date badge
+    const todayBadge = document.querySelector('.badge.bg-warning');
+    if (todayBadge) {
+        const today = new Date();
+        const options = { month: 'short', day: 'numeric', year: 'numeric' };
+        todayBadge.innerHTML = `
+            <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+            ${today.toLocaleDateString('en-US', options)}
+        `;
+        feather.replace();
+    }
+    
+    // Add table row click functionality
+    const tableRows = document.querySelectorAll('tbody tr');
+    tableRows.forEach(row => {
+        row.addEventListener('click', function() {
+            // Add highlight effect
+            this.style.backgroundColor = 'rgba(250, 112, 154, 0.1)';
+            setTimeout(() => {
+                this.style.backgroundColor = '';
+            }, 300);
+        });
+    });
+    
+    // Auto-refresh simulation (optional - refresh every 30 seconds)
+    setInterval(() => {
+        const recordsBadge = document.querySelector('.badge.bg-primary');
+        if (recordsBadge) {
+            // Simulate a subtle update animation
+            recordsBadge.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                recordsBadge.style.transform = 'scale(1)';
+            }, 200);
+        }
+    }, 30000);
+});
+
+// Add ripple effect CSS
+const style = document.createElement('style');
+style.textContent = `
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: scale(0);
+        animation: ripple-animation 0.6s ease-out;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    .btn {
+        position: relative;
+        overflow: hidden;
+    }
+`;
+document.head.appendChild(style);
+</script>
+
+{% endblock %}

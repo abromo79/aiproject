@@ -1,0 +1,654 @@
+{% extends 'auth_base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  /* Enhanced Login Page Styles */
+  .login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="10" cy="50" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="90" cy="30" r="0.5" fill="rgba(255,255,255,0.02)"/><circle cx="30" cy="90" r="0.5" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+  }
+  
+  .login-left {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-right {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .breast-ai-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .breast-ai-large {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .breast-ai-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .breast-ai-logo:hover {
+    transform: scale(1.05) rotate(5deg);
+  }
+  
+  .brand-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    color: #ec4899;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .welcome-text {
+    color: #1f2937;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .instruction-text {
+    color: #6b7280;
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .form-label {
+    color: #4b5563;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .form-control {
+    border: 2px solid rgba(102, 126, 234, 0.2);
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-control:focus {
+    border-color: #667eea;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25), 0 8px 25px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .login-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    transition: all 0.3s ease;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  }
+  
+  .login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+  }
+  
+  .login-btn:hover {
+    background: linear-gradient(135deg, #5a4fcf 0%, #6d28d9 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+  }
+  
+  .login-btn:hover::before {
+    left: 100%;
+  }
+  
+  .login-btn:active {
+    transform: translateY(-1px);
+  }
+  
+  .alert-danger {
+    background: linear-gradient(135deg, rgba(254, 226, 226, 0.95), rgba(254, 202, 202, 0.95));
+    border: 2px solid rgba(252, 165, 165, 0.5);
+    color: #dc2626;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(254, 226, 226, 0.3);
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+  }
+  
+  .medical-badge {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+  }
+  
+  .system-info {
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+  }
+  
+  .system-info h6 {
+    color: #667eea;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .system-info p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .system-info .badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* Media Queries for Responsive Design */
+  
+  /* Large Laptops and Desktops (1200px and up) */
+  @media (min-width: 1200px) {
+    .login-left {
+      padding: 80px 60px;
+    }
+    .breast-ai-logo {
+      width: 100px;
+      height: 100px;
+    }
+    .brand-text {
+      font-size: 28px;
+    }
+    .welcome-text {
+      font-size: 32px;
+    }
+  }
+
+  /* Laptops and Small Desktops (992px to 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .login-left {
+      padding: 50px 40px;
+    }
+    .breast-ai-logo {
+      width: 80px;
+      height: 80px;
+    }
+    .brand-text {
+      font-size: 22px;
+    }
+    .welcome-text {
+      font-size: 26px;
+    }
+  }
+
+  /* Tablets (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .login-container {
+      min-height: 100vh;
+    }
+    .login-left {
+      padding: 40px 30px;
+      min-height: 50vh;
+    }
+    .login-right {
+      min-height: 50vh;
+    }
+    .breast-ai-logo {
+      width: 70px;
+      height: 70px;
+    }
+    .brand-text {
+      font-size: 20px;
+    }
+    .welcome-text {
+      font-size: 24px;
+    }
+    .instruction-text {
+      font-size: 14px;
+    }
+    .form-control {
+      padding: 10px 12px;
+      font-size: 15px;
+    }
+    .login-btn {
+      padding: 10px 25px;
+      font-size: 15px;
+    }
+  }
+
+  /* Large Smartphones (576px to 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .login-container {
+      min-height: 100vh;
+    }
+    .login-left {
+      padding: 30px 25px;
+      min-height: 60vh;
+    }
+    .login-right {
+      min-height: 40vh;
+    }
+    .breast-ai-logo {
+      width: 60px;
+      height: 60px;
+    }
+    .brand-text {
+      font-size: 18px;
+    }
+    .welcome-text {
+      font-size: 22px;
+    }
+    .instruction-text {
+      font-size: 13px;
+    }
+    .form-control {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    .login-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .breast-ai-large {
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+
+  /* Small Smartphones (up to 575px) */
+  @media (max-width: 575px) {
+    .login-container {
+      min-height: 100vh;
+      padding: 10px;
+    }
+    .row.g-0 {
+      margin: 0;
+    }
+    .login-left, .login-right {
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .login-left {
+      padding: 25px 20px;
+      min-height: 65vh;
+    }
+    .login-right {
+      min-height: 35vh;
+    }
+    .breast-ai-logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .brand-text {
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+    .subtitle {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .welcome-text {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .instruction-text {
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+    .form-control {
+      padding: 8px 10px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+    .login-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+    .form-label {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .breast-ai-large {
+      max-width: 60%;
+      max-height: 60%;
+    }
+    .alert-danger {
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+  }
+
+  /* Extra Small Devices (up to 375px) */
+  @media (max-width: 375px) {
+    .login-container {
+      padding: 5px;
+    }
+    .login-left {
+      padding: 20px 15px;
+    }
+    .breast-ai-logo {
+      width: 45px;
+      height: 45px;
+    }
+    .brand-text {
+      font-size: 14px;
+    }
+    .welcome-text {
+      font-size: 18px;
+    }
+    .instruction-text {
+      font-size: 11px;
+    }
+    .form-control {
+      padding: 7px 8px;
+      font-size: 13px;
+    }
+    .login-btn {
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+  }
+</style>
+
+<div class="login-container">
+  <div class="row g-0 h-100">
+    <!-- Left Column - Login Form -->
+    <div class="col-12 col-lg-6 login-left">
+      <div class="text-center mb-4">
+        <img src="{% static 'assets/images/logo33.png' %}" alt="BreastAI Logo" class="breast-ai-logo">
+        <div class="brand-text">AI Breast Cancer Screening Diagnosis System</div>
+        <div class="subtitle">SUMAIT REGIONAL HOSPITAL</div>
+        <div class="medical-badge">
+          <i class="fas fa-heartbeat me-2"></i>Medical AI System
+        </div>
+      </div>
+
+      <h2 class="welcome-text text-center">Welcome Back</h2>
+      <p class="instruction-text text-center">Sign in to access the breast cancer analysis system</p>
+
+      {% if form.errors %}
+      <div class="alert alert-danger" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        Invalid username or password. Please try again.
+      </div>
+      {% endif %}
+
+      <form method="post" action="">
+        {% csrf_token %}
+
+        <div class="mb-4">
+          <label for="id_username" class="form-label">
+            <i class="fas fa-envelope me-2"></i>Email Address
+          </label>
+          <input type="text" name="username" autofocus maxlength="150" class="form-control" required id="id_username" placeholder="Enter your email address" />
+        </div>
+
+        <div class="mb-4">
+          <label for="id_password" class="form-label">
+            <i class="fas fa-lock me-2"></i>Password
+          </label>
+          <input type="password" name="password" class="form-control" required id="id_password" placeholder="Enter your password" />
+        </div>
+
+        {% if next %}
+          <input type="hidden" name="next" value="{{ next }}">
+        {% endif %}
+
+        <div class="d-grid mt-4">
+          <button type="submit" class="btn login-btn">
+            <i class="fas fa-sign-in-alt me-2"></i>
+            Sign In
+          </button>
+        </div>
+      </form>
+
+      <div class="text-center mt-4">
+        <small class="text-muted">
+          <i class="fas fa-info-circle me-1"></i>
+          Use your admin-created account credentials to access the system
+        </small>
+      </div>
+
+      <div class="system-info">
+        <h6>
+          <i class="fas fa-shield-alt me-2"></i>
+          System Information
+        </h6>
+        <p><strong>Version:</strong> <span class="badge">2.0.0</span></p>
+        <p><strong>AI Models:</strong> <span class="badge">CNN</span></p>
+        <p><strong>Accuracy:</strong> <span class="badge">83.2%</span></p>
+        <p><strong>Status:</strong> <span class="badge bg-success">Operational</span></p>
+      </div>
+    </div>
+
+    <!-- Right Column - BreastAI Image -->
+    <div class="col-12 col-lg-6 login-right">
+      <div class="breast-ai-main">
+        <img src="{% static 'assets/images/logo33.png' %}" alt="BreastAI Logo" class="breast-ai-large">
+        <div class="text-center text-white mt-4">
+          <h3 class="mb-3">AI-Powered Breast Cancer Detection</h3>
+          <p class="mb-4">Advanced machine learning for accurate medical diagnosis</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <div class="text-center">
+              <div class="avatar-lg bg-white bg-opacity-20 rounded-circle mx-auto mb-2">
+                <i class="fas fa-brain text-white" style="height: 32px; width: 32px;"></i>
+              </div>
+              <h6 class="text-white">Deep Learning</h6>
+              <small class="text-white-50">CNN Architecture</small>
+            </div>
+            <div class="text-center">
+              <div class="avatar-lg bg-white bg-opacity-20 rounded-circle mx-auto mb-2">
+                <i class="fas fa-shield-alt text-white" style="height: 32px; width: 32px;"></i>
+              </div>
+              <h6 class="text-white">83.2% Accuracy</h6>
+              <small class="text-white-50">Validated Results</small>
+            </div>
+            <div class="text-center">
+              <div class="avatar-lg bg-white bg-opacity-20 rounded-circle mx-auto mb-2">
+                <i class="fas fa-clock text-white" style="height: 32px; width: 32px;"></i>
+              </div>
+              <h6 class="text-white">Fast Analysis</h6>
+              <small class="text-white-50">Real-time Results</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add floating animation to the logo
+    const logo = document.querySelector('.breast-ai-large');
+    if (logo) {
+        logo.style.animation = 'float 6s ease-in-out infinite';
+    }
+    
+    // Add input focus effects
+    const inputs = document.querySelectorAll('.form-control');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            this.parentElement.classList.remove('focused');
+        });
+    });
+    
+    // Add button ripple effect
+    const loginBtn = document.querySelector('.login-btn');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    }
+    
+    // Add typing effect to welcome text
+    const welcomeText = document.querySelector('.welcome-text');
+    if (welcomeText) {
+        const text = welcomeText.textContent;
+        welcomeText.textContent = '';
+        let index = 0;
+        
+        function typeWriter() {
+            if (index < text.length) {
+                welcomeText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        
+        setTimeout(typeWriter, 500);
+    }
+});
+
+// Add ripple effect CSS
+const style = document.createElement('style');
+style.textContent = `
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: scale(0);
+        animation: ripple-animation 0.6s ease-out;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    .login-btn {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .form-control:focus {
+        outline: none;
+    }
+    
+    .avatar-lg {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+    }
+`;
+document.head.appendChild(style);
+</script>
+{% endblock %}

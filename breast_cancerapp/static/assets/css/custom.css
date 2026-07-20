@@ -1,0 +1,96 @@
+/* Custom theme overrides: light (default) and dark mode */
+
+/* Base dark mode */
+body.dark {
+  background-color: #0b0f19;
+  color: #e6e6e6;
+}
+
+/* Topbar */
+body.dark .topbar-custom {
+  background-color: #111827;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Sidebar */
+body.dark .app-sidebar-menu {
+  background-color: #0f172a;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+body.dark #sidebar-menu a,
+body.dark #sidebar-menu .menu-title,
+body.dark #sidebar-menu i,
+body.dark .tp-link {
+  color: #cbd5e1 !important;
+}
+body.dark #sidebar-menu a:hover {
+  color: #ffffff !important;
+}
+
+/* Page content */
+body.dark .page-content,
+body.dark .container-fluid {
+  background-color: #0b0f19;
+}
+
+/* Cards, dropdowns, modals */
+body.dark .card,
+body.dark .dropdown-menu,
+body.dark .modal-content {
+  background-color: #111827;
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Tables */
+body.dark .table {
+  color: #d1d5db;
+}
+body.dark .table thead th {
+  color: #e5e7eb;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+body.dark .table tbody td {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Forms */
+body.dark .form-control,
+body.dark .form-select {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+body.dark .form-control::placeholder { color: #94a3b8; }
+
+/* Buttons (keep brand colors, adjust neutrals) */
+body.dark .btn-light { background-color: #1f2937; border-color: #374151; color: #e5e7eb; }
+body.dark .btn-outline-secondary { border-color: #6b7280; color: #e5e7eb; }
+
+/* Badges */
+body.dark .badge.bg-light { background-color: #1f2937 !important; color: #e5e7eb !important; }
+
+/* Footer */
+body.dark .footer { background-color: #0b0f19; border-top: 1px solid rgba(255, 255, 255, 0.06); }
+
+/* Inputs focus ring */
+body.dark .form-control:focus, body.dark .form-select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25);
+}
+
+/* Feather icon color alignment in dark */
+body.dark [data-feather] { stroke: #cbd5e1; }
+
+/* Toasts / alerts background */
+body.dark .alert { background-color: #111827; color: #e5e7eb; border-color: rgba(255, 255, 255, 0.08); }
+
+/* Search input in topbar */
+body.dark .topbar-search .form-control { background-color: rgba(255,255,255,0.06) !important; color: #e5e7eb; border-color: transparent; }
+
+/* Dropdown items hover */
+body.dark .dropdown-item:hover { background-color: rgba(255,255,255,0.06); }
+
+/* Links */
+body.dark a { color: #93c5fd; }
+body.dark a:hover { color: #bfdbfe; }

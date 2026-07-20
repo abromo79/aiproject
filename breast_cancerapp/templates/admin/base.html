@@ -1,0 +1,500 @@
+{% load i18n static %}<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+<html lang="{{ LANGUAGE_CODE|default:'en-us' }}">
+<head>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/base.css" %}">
+{% block extrastyle %}{% endblock %}
+{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}">{% endif %}
+{% block extrahead %}{% endblock %}
+{% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE">{% endblock %}
+</head>
+{% load i18n %}
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
+  data-admin-utc-offset="{% now "Z" %}">
+
+<!-- Container -->
+<div id="container">
+
+{% if not is_popup %}
+<!-- Header -->
+<div id="header">
+    <div id="branding">
+    {% block branding %}<h1 id="site-name"><a href="{% url 'admin:index' %}">Breast Cancer AI Administration</a></h1>{% endblock %}
+    </div>
+    {% block nav-global %}{% endblock %}
+</div>
+
+<!-- END Header -->
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+{% if title %} &rsaquo; {{ title }}{% endif %}
+</div>
+{% endblock %}
+{% endif %}
+
+{% block messages %}
+{% if messages %}
+<ul class="messagelist">{% for message in messages %}
+  <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message|capfirst }}</li>
+{% endfor %}</ul>
+{% endif %}
+{% endblock messages %}
+
+<!-- Content -->
+<div id="content" class="{% block coltype %}colM{% endblock %}">
+{% block pretitle %}{% endblock %}
+{% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+{% block content %}
+{% block object-tools %}{% endblock %}
+{{ content }}
+{% endblock %}
+{% block sidebar %}{% endblock %}
+<br class="clear">
+</div>
+<!-- END Content -->
+
+{% block footer %}<div id="footer">{% blocktrans %}Breast Cancer AI System{% endblocktrans %}</div>{% endblock %}
+</div>
+<!-- END Container -->
+
+</body>
+</html>
+
+<style>
+    /* Breast Cancer Admin Theme - Complete Customization */
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%) !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        color: #1f2937 !important;
+    }
+    
+    #container {
+        background: white !important;
+        border-radius: 20px !important;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+        margin: 20px auto !important;
+        max-width: 1200px !important;
+        overflow: hidden !important;
+    }
+    
+    #header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        border-bottom: none !important;
+        padding: 20px 30px !important;
+        position: relative !important;
+    }
+    
+    #header::after {
+        content: 'Medical AI System';
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+        color: white;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    
+    #branding h1 {
+        color: white !important;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+    
+    #branding h1::before {
+        content: '' !important;
+        display: inline-block !important;
+        width: 40px !important;
+        height: 40px !important;
+        background-image: url('{% static "assets/images/logo33.png" %}') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        border-radius: 8px !important;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    #branding h1 a {
+        color: white !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    #branding h1 a:hover {
+        transform: translateY(-2px) !important;
+    }
+    
+    .breadcrumbs {
+        background: rgba(102, 126, 234, 0.05) !important;
+        border-bottom: 1px solid rgba(102, 126, 234, 0.1) !important;
+        padding: 15px 30px !important;
+        margin: 0 !important;
+    }
+    
+    .breadcrumbs a {
+        color: #667eea !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .breadcrumbs a:hover {
+        color: #5a4fcf !important;
+        text-decoration: underline !important;
+    }
+    
+    .messagelist {
+        margin: 20px 30px 0 !important;
+        padding: 0 !important;
+    }
+    
+    .messagelist li {
+        background: linear-gradient(135deg, rgba(220, 252, 231, 0.95), rgba(187, 247, 208, 0.95)) !important;
+        border: 1px solid rgba(134, 239, 172, 0.5) !important;
+        color: #16a34a !important;
+        border-radius: 12px !important;
+        padding: 15px 20px !important;
+        margin-bottom: 10px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1) !important;
+    }
+    
+    .messagelist li.error {
+        background: linear-gradient(135deg, rgba(254, 226, 226, 0.95), rgba(254, 202, 202, 0.95)) !important;
+        border: 1px solid rgba(252, 165, 165, 0.5) !important;
+        color: #dc2626 !important;
+        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.1) !important;
+    }
+    
+    .messagelist li.warning {
+        background: linear-gradient(135deg, rgba(254, 243, 199, 0.95), rgba(253, 230, 138, 0.95)) !important;
+        border: 1px solid rgba(252, 211, 77, 0.5) !important;
+        color: #d97706 !important;
+        box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1) !important;
+    }
+    
+    #content {
+        padding: 30px !important;
+    }
+    
+    #content h1 {
+        color: #1f2937 !important;
+        font-size: 28px !important;
+        font-weight: 700 !important;
+        margin-bottom: 25px !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .module {
+        background: white !important;
+        border: 1px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05) !important;
+        margin-bottom: 25px !important;
+        overflow: hidden !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .module:hover {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15) !important;
+    }
+    
+    .module h2, .module caption {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        margin: 0 !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        letter-spacing: 0.5px !important;
+        text-transform: uppercase !important;
+    }
+    
+    .module table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin: 0 !important;
+    }
+    
+    .module th {
+        background: rgba(102, 126, 234, 0.05) !important;
+        color: #4b5563 !important;
+        font-weight: 600 !important;
+        padding: 12px 20px !important;
+        text-align: left !important;
+        border-bottom: 2px solid rgba(102, 126, 234, 0.1) !important;
+    }
+    
+    .module td {
+        padding: 12px 20px !important;
+        border-bottom: 1px solid rgba(102, 126, 234, 0.1) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .module tr:hover td {
+        background: rgba(102, 126, 234, 0.05) !important;
+    }
+    
+    .module tr:last-child td {
+        border-bottom: none !important;
+    }
+    
+    .module a {
+        color: #667eea !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .module a:hover {
+        color: #5a4fcf !important;
+        text-decoration: underline !important;
+    }
+    
+    .addlink, .changelink, .deletelink {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        text-decoration: none !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+        display: inline-block !important;
+    }
+    
+    .addlink:hover, .changelink:hover {
+        background: linear-gradient(135deg, #5a4fcf 0%, #6d28d9 100%) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+        color: white !important;
+        text-decoration: none !important;
+    }
+    
+    .addlink {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    }
+    
+    .addlink:hover {
+        background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+    }
+    
+    .deletelink {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    }
+    
+    .deletelink:hover {
+        background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+        box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3) !important;
+    }
+    
+    .object-tools {
+        background: rgba(102, 126, 234, 0.05) !important;
+        border: 1px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 15px !important;
+        margin-bottom: 25px !important;
+    }
+    
+    .object-tools a {
+        background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%) !important;
+        color: white !important;
+        padding: 8px 16px !important;
+        border-radius: 8px !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        margin-right: 10px !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .object-tools a:hover {
+        background: linear-gradient(135deg, #db2777 0%, #e11d48 100%) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3) !important;
+        color: white !important;
+        text-decoration: none !important;
+    }
+    
+    .paginator {
+        background: rgba(102, 126, 234, 0.05) !important;
+        border: 1px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 15px !important;
+        margin-top: 25px !important;
+    }
+    
+    .paginator .current {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        border: none !important;
+        color: white !important;
+        font-weight: 600 !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+    }
+    
+    .paginator a {
+        border-color: rgba(102, 126, 234, 0.3) !important;
+        color: #667eea !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        transition: all 0.3s ease !important;
+        text-decoration: none !important;
+    }
+    
+    .paginator a:hover {
+        background: rgba(102, 126, 234, 0.1) !important;
+        border-color: #667eea !important;
+        text-decoration: none !important;
+    }
+    
+    #footer {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        text-align: center !important;
+        padding: 20px !important;
+        font-weight: 600 !important;
+        border-top: none !important;
+    }
+    
+    /* Form styling */
+    .form-row {
+        background: white !important;
+        border: 1px solid rgba(102, 126, 234, 0.1) !important;
+        border-radius: 8px !important;
+        padding: 20px !important;
+        margin-bottom: 15px !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .form-row:hover {
+        border-color: rgba(102, 126, 234, 0.3) !important;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1) !important;
+    }
+    
+    .form-row label {
+        color: #4b5563 !important;
+        font-weight: 600 !important;
+        margin-bottom: 8px !important;
+        display: block !important;
+    }
+    
+    .form-row input, .form-row select, .form-row textarea {
+        background: white !important;
+        border: 2px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 8px !important;
+        padding: 10px 15px !important;
+        width: 100% !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+        border-color: #667eea !important;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+        outline: none !important;
+    }
+    
+    .form-row .help {
+        color: #6b7280 !important;
+        font-style: italic !important;
+        font-size: 12px !important;
+        margin-top: 5px !important;
+    }
+    
+    .errorlist {
+        background: linear-gradient(135deg, rgba(254, 226, 226, 0.95), rgba(254, 202, 202, 0.95)) !important;
+        border: 1px solid rgba(252, 165, 165, 0.5) !important;
+        color: #dc2626 !important;
+        border-radius: 8px !important;
+        padding: 12px !important;
+        margin: 8px 0 !important;
+        list-style: none !important;
+    }
+    
+    .submit-row {
+        background: rgba(102, 126, 234, 0.05) !important;
+        border: 1px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 12px !important;
+        padding: 20px !important;
+        margin: 25px 0 !important;
+        text-align: right !important;
+    }
+    
+    .submit-row input {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: white !important;
+        font-weight: 600 !important;
+        padding: 12px 24px !important;
+        margin-left: 10px !important;
+        cursor: pointer !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .submit-row input:hover {
+        background: linear-gradient(135deg, #5a4fcf 0%, #6d28d9 100%) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3) !important;
+    }
+    
+    .submit-row input.default {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    }
+    
+    .submit-row input.default:hover {
+        background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3) !important;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        #container {
+            margin: 10px !important;
+            border-radius: 15px !important;
+        }
+        
+        #header {
+            padding: 15px 20px !important;
+        }
+        
+        #branding h1 {
+            font-size: 20px !important;
+        }
+        
+        #header::after {
+            display: none !important;
+        }
+        
+        #content {
+            padding: 20px !important;
+        }
+        
+        .module {
+            border-radius: 8px !important;
+        }
+        
+        .form-row {
+            padding: 15px !important;
+        }
+    }
+</style>

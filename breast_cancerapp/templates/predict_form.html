@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+  <div class="content">
+    <div class="container-xxl">
+
+      <!-- Header Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="text-center">
+            <div class="d-inline-flex align-items-center justify-content-center mb-3">
+              <div class="avatar-xl bg-success bg-opacity-10 rounded-circle me-3">
+                <i data-feather="activity" class="text-success avatar-title" style="height: 32px; width: 32px;"></i>
+              </div>
+              <div>
+                <h1 class="page-title mb-1">Breast Cancer Risk Assessment</h1>
+                <p class="text-muted mb-0">Comprehensive AI-powered risk analysis for early detection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-xl-8">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body p-4">
+
+              {% if error %}
+              <div class="alert alert-danger border-0" role="alert">
+                <div class="d-flex align-items-center">
+                  <i data-feather="alert-circle" class="me-2" style="height: 20px; width: 20px;"></i>
+                  <div>
+                    <strong>Error:</strong> {{ error }}
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+              <form method="post" action="{% url 'predict' %}">
+                {% csrf_token %}
+
+                <!-- Patient Information Section -->
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <h5 class="card-title mb-3">
+                      <i data-feather="user" class="me-2" style="height: 20px; width: 20px;"></i>
+                      Patient Information
+                    </h5>
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="history_breast_cancer_or_radiation" class="form-label">History of breast cancer or chest radiation</label>
+                    <select id="history_breast_cancer_or_radiation" name="history_breast_cancer_or_radiation" class="form-select" required>
+                      {% with v=form_values.history_breast_cancer_or_radiation %}
+                      <option value="" {% if v == '' %}selected{% endif %}>---Select---</option>
+                      <option value="Yes" {% if v == 'Yes' %}selected{% endif %}>Yes</option>
+                      <option value="No" {% if v == 'No' %}selected{% endif %}>No</option>
+                      <option value="Unknown" {% if v == 'Unknown' %}selected{% endif %}>Unknown</option>
+                      {% endwith %}
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="brca_mutation_or_genetic_syndrome" class="form-label">BRCA mutation or genetic syndrome</label>
+                    <select id="brca_mutation_or_genetic_syndrome" name="brca_mutation_or_genetic_syndrome" class="form-select" required>
+                      {% with v=form_values.brca_mutation_or_genetic_syndrome %}
+                      <option value="" {% if v == '' %}selected{% endif %}>---Select---</option>
+                      <option value="Yes" {% if v == 'Yes' %}selected{% endif %}>Yes</option>
+                      <option value="No" {% if v == 'No' %}selected{% endif %}>No</option>
+                      <option value="Unknown" {% if v == 'Unknown' %}selected{% endif %}>Unknown</option>
+                      {% endwith %}
+                    </select>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" id="age" name="age" min="0" max="120" step="1" value="{{ form_values.age|default:'' }}" class="form-control" required />
+                  </div>
+
+                  <div class="col-md-8">
+                    <label for="sub_ethnicity_or_birthplace" class="form-label">Sub-ethnicity or birthplace</label>
+                    <input type="text" id="sub_ethnicity_or_birthplace" name="sub_ethnicity_or_birthplace" value="{{ form_values.sub_ethnicity_or_birthplace|default:'' }}" placeholder="e.g., Northern Pemba" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="biopsy_benign" class="form-label">Biopsy benign</label>
+                    <select id="biopsy_benign" name="biopsy_benign" class="form-select" required>
+                      {% with v=form_values.biopsy_benign %}
+                      <option value="" {% if v == '' %}selected{% endif %}>---Select---</option>
+                      <option value="Yes" {% if v == 'Yes' %}selected{% endif %}>Yes</option>
+                      <option value="No" {% if v == 'No' %}selected{% endif %}>No</option>
+                      <option value="Unknown" {% if v == 'Unknown' %}selected{% endif %}>Unknown</option>
+                      {% endwith %}
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="biopsy_benign_count" class="form-label">Biopsy benign count</label>
+                    <input type="number" id="biopsy_benign_count" name="biopsy_benign_count" min="0" step="1" value="{{ form_values.biopsy_benign_count|default:0 }}" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="biopsy_atypical_hyperplasia" class="form-label">Atypical hyperplasia</label>
+                    <select id="biopsy_atypical_hyperplasia" name="biopsy_atypical_hyperplasia" class="form-select" required>
+                      {% with v=form_values.biopsy_atypical_hyperplasia %}
+                      <option value="" {% if v == '' %}selected{% endif %}>---Select---</option>
+                      <option value="Yes" {% if v == 'Yes' %}selected{% endif %}>Yes</option>
+                      <option value="No" {% if v == 'No' %}selected{% endif %}>No</option>
+                      <option value="Unknown" {% if v == 'Unknown' %}selected{% endif %}>Unknown</option>
+                      {% endwith %}
+                    </select>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="age_first_menstrual" class="form-label">Age at first menstrual period</label>
+                    <input type="number" id="age_first_menstrual" name="age_first_menstrual" min="0" max="60" step="1" value="{{ form_values.age_first_menstrual|default:'' }}" class="form-control" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="age_first_childbirth" class="form-label">Age at first childbirth</label>
+                    <input type="number" id="age_first_childbirth" name="age_first_childbirth" min="0" max="60" step="1" value="{{ form_values.age_first_childbirth|default:0 }}" class="form-control" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="relatives_breast_cancer" class="form-label">
+                      <i data-feather="users" class="me-1" style="height: 16px; width: 16px;"></i>
+                      Relatives with breast cancer
+                    </label>
+                    <select id="relatives_breast_cancer" name="relatives_breast_cancer" class="form-select" required>
+                      {% with v=form_values.relatives_breast_cancer %}
+                      <option value="" {% if v == '' %}selected{% endif %}>---Select---</option>
+                      <option value="Yes" {% if v == 'Yes' %}selected{% endif %}>Yes</option>
+                      <option value="No" {% if v == 'No' %}selected{% endif %}>No</option>
+                      <option value="Unknown" {% if v == 'Unknown' %}selected{% endif %}>Unknown</option>
+                      {% endwith %}
+                    </select>
+                  </div>
+                </div>
+                <!-- Risk Assessment Info -->
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <div class="alert alert-light border mb-0">
+                      <div class="d-flex align-items-center">
+                        <i data-feather="info" class="me-2" style="height: 20px; width: 20px;"></i>
+                        <div>
+                          <strong>About This Assessment:</strong>
+                          <p class="mb-0 mt-1">This AI-powered tool analyzes multiple risk factors including genetic history, lifestyle factors, and reproductive history to provide a comprehensive breast cancer risk assessment.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3 justify-content-center mt-4">
+                  <button class="btn btn-success btn-lg px-4" type="submit">
+                    <i data-feather="zap" class="me-2" style="height: 20px; width: 20px;"></i>
+                    Generate Risk Assessment
+                  </button>
+                  <a href="{% url 'doctor_dashboard' %}" class="btn btn-outline-secondary btn-lg px-4">
+                    <i data-feather="arrow-left" class="me-2" style="height: 20px; width: 20px;"></i>
+                    Back to Dashboard
+                  </a>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.avatar-xl {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #495057;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.disabled {
+  background-color: #f8f9fa !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .avatar-xl {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Animation for form sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-body > div:nth-child(3) {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.card-body > div:nth-child(4) {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.card-body > div:nth-child(5) {
+  animation: fadeInUp 0.7s ease-out;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const biopsyBenignSelect = document.getElementById('biopsy_benign');
+    const biopsyBenignCountInput = document.getElementById('biopsy_benign_count');
+    
+    function toggleBiopsyCount() {
+        const selectedValue = biopsyBenignSelect.value;
+        
+        if (selectedValue === 'No' || selectedValue === 'Unknown') {
+            biopsyBenignCountInput.disabled = true;
+            biopsyBenignCountInput.value = '0';
+            biopsyBenignCountInput.classList.add('disabled');
+        } else {
+            biopsyBenignCountInput.disabled = false;
+            biopsyBenignCountInput.classList.remove('disabled');
+        }
+    }
+    
+    // Initialize on page load
+    toggleBiopsyCount();
+    
+    // Add event listener for changes
+    biopsyBenignSelect.addEventListener('change', toggleBiopsyCount);
+    
+    // Add form validation
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        const ageInput = document.getElementById('age');
+        const age = parseInt(ageInput.value);
+        
+        if (age < 0 || age > 120) {
+            e.preventDefault();
+            alert('Please enter a valid age between 0 and 120');
+            return;
+        }
+        
+        // Show loading state
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+          Processing...
+        `;
+    });
+});
+</script>
+
+{% endblock %}

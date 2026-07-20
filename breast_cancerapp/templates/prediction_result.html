@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+  <div class="content">
+    <div class="container-xxl">
+
+      <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
+        <div class="flex-grow-1">
+          <h4 class="fs-18 fw-semibold m-0">Risk Assessment Result</h4>
+          <small class="text-muted">Prediction based on submitted patient information</small>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-xl-8">
+          <div class="card">
+            <div class="card-body">
+
+              <h5 class="card-title mb-3">Input Data</h5>
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <tbody>
+                    {% for key, value in input_items %}
+                    <tr>
+                      <th class="fw-normal text-muted" style="width:50%">{{ key }}</th>
+                      <td class="text-dark">{{ value }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+
+              <h5 class="card-title mt-4 mb-2">Prediction Result</h5>
+              <div class="p-3 rounded-3 border bg-light">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="fw-semibold">Predicted Class</div>
+                  <span class="badge bg-primary">{{ predicted_class }}</span>
+                </div>
+                <div class="text-muted small mb-1">Probability (Positive)</div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="me-2 w-100">
+                    <div class="progress" style="height: 12px;">
+                      <div class="progress-bar bg-info" id="progress-bar" role="progressbar" data-progress="{{ percent|floatformat:2 }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="fw-semibold text-dark">{{ percent|floatformat:2 }}%</div>
+                </div>
+              </div>
+
+              <h5 class="card-title mt-4 mb-3">AI-Powered Recommendations</h5>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="card border-primary h-100">
+                    <div class="card-header bg-primary text-white">
+                      <h6 class="mb-0"><i data-feather="zap" class="me-1" style="height:16px;width:16px;"></i> Immediate Actions</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for action in processed_recommendations.immediate_actions %}
+                          <li class="mb-1">{{ action }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card border-info h-100">
+                    <div class="card-header bg-info text-white">
+                      <h6 class="mb-0"><i data-feather="calendar" class="me-1" style="height:16px;width:16px;"></i> Screening Schedule</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for screening in processed_recommendations.screening_schedule %}
+                          <li class="mb-1">{{ screening }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card border-success h-100">
+                    <div class="card-header bg-success text-white">
+                      <h6 class="mb-0"><i data-feather="activity" class="me-1" style="height:16px;width:16px;"></i> Lifestyle Changes</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for lifestyle in processed_recommendations.lifestyle_changes %}
+                          <li class="mb-1">{{ lifestyle }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="card border-warning h-100">
+                    <div class="card-header bg-warning text-dark">
+                      <h6 class="mb-0"><i data-feather="heart" class="me-1" style="height:16px;width:16px;"></i> Follow-up Care</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for followup in processed_recommendations.follow_up_care %}
+                          <li class="mb-1">{{ followup }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-info mt-3" role="alert">
+                <div class="d-flex align-items-center">
+                  <i data-feather="info" class="me-2" style="height:20px;width:20px;"></i>
+                  <div>
+                    <strong>AI-Generated Recommendations:</strong> These recommendations are generated using advanced NLP technology and should be discussed with your healthcare provider for personalized medical advice.
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <a href="{% url 'predict_form' %}" class="btn btn-secondary">
+                  <i data-feather="arrow-left" class="me-1" style="height:16px;width:16px;"></i>
+                  Back to Form
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    const value = parseFloat(bar.getAttribute('data-progress')) || 0;
+    const width = Math.max(0, Math.min(100, value));
+    bar.setAttribute('aria-valuenow', String(width));
+    setTimeout(() => { bar.style.width = width + '%'; }, 100);
+    feather.replace();
+  });
+  </script>
+{% endblock %}

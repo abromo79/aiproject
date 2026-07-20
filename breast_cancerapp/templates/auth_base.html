@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SUMAIT REGIONAL HOSPITAL - Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="{% static 'assets/images/logo33.png' %}">
+    <link href="{% static 'assets/css/app.min.css' %}" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="{% static 'assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="bg-light">
+
+    <div class="d-flex flex-column min-vh-100">
+      <div class="flex-grow-1 d-flex align-items-center">
+        <div class="container-xxl">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+
+      <footer class="footer mt-auto">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col fs-13 text-muted text-center">
+              &copy; <script>document.write(new Date().getFullYear())</script> - Made with <span class="mdi ai text-danger"></span> by <a href="#" class="text-reset fw-semibold">Sumait student</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="{% static 'assets/libs/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/libs/feather-icons/feather.min.js' %}"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

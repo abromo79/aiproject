@@ -1,0 +1,375 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+  <div class="content">
+    <div class="container-xxl">
+
+      <!-- Header Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="text-center">
+            <div class="d-inline-flex align-items-center justify-content-center mb-3">
+              <div class="avatar-xl bg-pink bg-opacity-10 rounded-circle me-3">
+                <i data-feather="image" class="text-pink avatar-title" style="height: 32px; width: 32px;"></i>
+              </div>
+              <div>
+                <h1 class="page-title mb-1">Breast Cancer Image Analysis</h1>
+                <p class="text-muted mb-0">AI-powered histopathology image analysis for early detection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-xl-8">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body p-4">
+
+              {% if error %}
+              <div class="alert alert-danger border-0" role="alert">
+                <div class="d-flex align-items-center">
+                  <i data-feather="alert-circle" class="me-2" style="height: 20px; width: 20px;"></i>
+                  <div>
+                    <strong>Error:</strong> {{ error }}
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+              <form method="post" action="{% url 'image_predict' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <!-- Upload Area -->
+                <div class="mb-4">
+                  <label class="form-label fw-semibold mb-3">
+                    <i data-feather="upload-cloud" class="me-2" style="height: 18px; width: 18px;"></i>
+                    Upload Histopathology Image
+                  </label>
+                  
+                  <div id="uploadArea" class="upload-zone border-2 border-dashed rounded-3 p-5 text-center bg-light position-relative">
+                    <div class="upload-content">
+                      <div class="mb-3">
+                        <div class="avatar-lg bg-pink bg-opacity-10 rounded-circle mx-auto">
+                          <i data-feather="image" class="text-pink avatar-title" style="height: 40px; width: 40px;"></i>
+                        </div>
+                      </div>
+                      <h4 class="mb-2">Drop Image Here</h4>
+                      <p class="text-muted mb-3">or click to browse your files</p>
+                      <button type="button" class="btn btn-pink btn-lg" onclick="document.getElementById('imageInput').click()">
+                        <i data-feather="folder" class="me-2" style="height: 18px; width: 18px;"></i>
+                        Choose Image File
+                      </button>
+                      <div class="mt-3">
+                        <small class="text-muted">
+                          <i data-feather="file-text" class="me-1" style="height: 14px; width: 14px;"></i>
+                          Supported: JPEG, PNG, BMP, TIFF • Max size: 10MB
+                        </small>
+                      </div>
+                    </div>
+                    <input type="file" id="imageInput" name="image" class="d-none" accept="image/*" required>
+                  </div>
+                </div>
+
+                <!-- File Info -->
+                <div id="fileInfo" class="alert alert-info border-0 d-none mb-4" role="alert">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="file" class="me-2" style="height: 20px; width: 20px;"></i>
+                    <div class="flex-grow-1">
+                      <strong>Selected file:</strong> <span id="fileName"></span>
+                      <div class="small mt-1">
+                        <strong>Size:</strong> <span id="fileSize"></span> • 
+                        <strong>Type:</strong> <span id="fileType"></span>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="clearFile()">
+                      <i data-feather="x" class="me-1" style="height: 14px; width: 14px;"></i>
+                      Clear
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Analysis Options -->
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">
+                      <i data-feather="settings" class="me-2" style="height: 18px; width: 18px;"></i>
+                      Analysis Options
+                    </label>
+                    <div class="form-check form-switch mb-2">
+                      <input class="form-check-input" type="checkbox" id="detailedAnalysis" name="detailed_analysis" checked>
+                      <label class="form-check-label" for="detailedAnalysis">
+                        Detailed Analysis with Staging
+                      </label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="generateReport" name="generate_report">
+                      <label class="form-check-label" for="generateReport">
+                        Generate PDF Report
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">
+                      <i data-feather="info" class="me-2" style="height: 18px; width: 18px;"></i>
+                      Quick Info
+                    </label>
+                    <div class="alert alert-light border mb-0">
+                      <small class="mb-2 d-block">
+                        <strong>What we analyze:</strong>
+                        <ul class="mb-0 mt-1">
+                          <li>Cell structure and patterns</li>
+                          <li>Tissue morphology</li>
+                          <li>Cancer stage assessment</li>
+                        </ul>
+                      </small>
+                      <small class="d-block">
+                        <strong>Processing time:</strong> ~2-5 seconds
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3 justify-content-center">
+                  <button class="btn btn-pink btn-lg px-4" type="submit" id="submitBtn" disabled>
+                    <i data-feather="zap" class="me-2" style="height: 20px; width: 20px;"></i>
+                    <span id="submitText">Analyze Image</span>
+                  </button>
+                  <a href="{% url 'doctor_dashboard' %}" class="btn btn-outline-secondary btn-lg px-4">
+                    <i data-feather="arrow-left" class="me-2" style="height: 20px; width: 20px;"></i>
+                    Back to Dashboard
+                  </a>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.upload-zone {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 300px;
+}
+
+.upload-zone:hover {
+  border-color: #e91e63 !important;
+  background-color: #fce4ec !important;
+}
+
+.upload-zone.dragover {
+  border-color: #e91e63 !important;
+  background-color: #fce4ec !important;
+  transform: scale(1.02);
+}
+
+.avatar-xl {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-lg {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-check-input:checked {
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #e91e63;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #e91e63 0%, #f06292 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .avatar-xl {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .upload-zone {
+    min-height: 250px;
+  }
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const uploadArea = document.getElementById('uploadArea');
+  const fileInput = document.getElementById('imageInput');
+  const fileInfo = document.getElementById('fileInfo');
+  const fileName = document.getElementById('fileName');
+  const fileSize = document.getElementById('fileSize');
+  const fileType = document.getElementById('fileType');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitText = document.getElementById('submitText');
+
+  // Drag and drop behavior
+  uploadArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadArea.classList.add('dragover');
+  });
+
+  uploadArea.addEventListener('dragleave', () => {
+    uploadArea.classList.remove('dragover');
+  });
+
+  uploadArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadArea.classList.remove('dragover');
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+      fileInput.files = files;
+      handleFileSelect(files[0]);
+    }
+  });
+
+  // File input change
+  fileInput.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) {
+      handleFileSelect(e.target.files[0]);
+    }
+  });
+
+  function handleFileSelect(file) {
+    // Validate file type
+    const validTypes = ['image/jpeg', 'image/png', 'image/bmp', 'image/tiff'];
+    if (!validTypes.includes(file.type)) {
+      showError('Please select a valid image file (JPEG, PNG, BMP, TIFF)');
+      return;
+    }
+
+    // Validate file size (10MB max)
+    if (file.size > 10 * 1024 * 1024) {
+      showError('File size must be less than 10MB');
+      return;
+    }
+
+    fileName.textContent = file.name;
+    fileSize.textContent = formatFileSize(file.size);
+    fileType.textContent = file.type;
+    fileInfo.classList.remove('d-none');
+    submitBtn.disabled = false;
+    
+    // Update upload area
+    uploadArea.classList.add('border-success', 'bg-light');
+    uploadArea.querySelector('.upload-content').innerHTML = `
+      <div class="text-success">
+        <i data-feather="check-circle" class="mb-2" style="height:48px;width:48px;"></i>
+        <h5 class="mb-2">File Selected</h5>
+        <p class="mb-0">${file.name}</p>
+      </div>
+    `;
+    feather.replace();
+  }
+
+  function clearFile() {
+    fileInput.value = '';
+    fileInfo.classList.add('d-none');
+    submitBtn.disabled = true;
+    uploadArea.classList.remove('border-success', 'bg-light');
+    uploadArea.querySelector('.upload-content').innerHTML = `
+      <div class="mb-3">
+        <div class="avatar-lg bg-pink bg-opacity-10 rounded-circle mx-auto">
+          <i data-feather="image" class="text-pink avatar-title" style="height: 40px; width: 40px;"></i>
+        </div>
+      </div>
+      <h4 class="mb-2">Drop Image Here</h4>
+      <p class="text-muted mb-3">or click to browse your files</p>
+      <button type="button" class="btn btn-pink btn-lg" onclick="document.getElementById('imageInput').click()">
+        <i data-feather="folder" class="me-2" style="height: 18px; width: 18px;"></i>
+        Choose Image File
+      </button>
+      <div class="mt-3">
+        <small class="text-muted">
+          <i data-feather="file-text" class="me-1" style="height: 14px; width: 14px;"></i>
+          Supported: JPEG, PNG, BMP, TIFF • Max size: 10MB
+        </small>
+      </div>
+    `;
+    feather.replace();
+  }
+
+  function formatFileSize(bytes) {
+    if (bytes === 0) return '0 Bytes';
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+  }
+
+  function showError(message) {
+    fileInfo.classList.remove('d-none', 'alert-info');
+    fileInfo.classList.add('alert-danger');
+    fileInfo.querySelector('strong').textContent = 'Error: ';
+    fileName.textContent = message;
+    fileSize.textContent = '';
+    fileType.textContent = '';
+  }
+
+  // Form submission
+  document.querySelector('form').addEventListener('submit', function() {
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+    submitText.textContent = 'Analyzing...';
+    submitBtn.innerHTML = `
+      <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+      ${submitText.textContent}
+    `;
+  });
+
+  // Initialize feather icons
+  feather.replace();
+});
+</script>
+{% endblock %}

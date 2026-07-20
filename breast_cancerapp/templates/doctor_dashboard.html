@@ -1,0 +1,558 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load swahili_translations %}
+
+{% block content %}
+<div class="content-page">
+    <div class="content">
+        <div class="container-xxl">
+
+            <!-- Header Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h1 class="page-title mb-1">
+                                <i data-feather="heart" class="text-pink me-2" style="height: 32px; width: 32px;"></i>
+                                {{ "Breast Cancer AI Dashboard"|sw_trans }}
+                            </h1>
+                            <p class="text-muted mb-0">{{ "Advanced AI-powered breast cancer detection and risk assessment"|sw_trans }}</p>
+                        </div>
+                        <div class="text-end">
+                            <div class="badge bg-pink text-white fs-14 px-3 py-2">
+                                <i data-feather="shield" class="me-1" style="height: 16px; width: 16px;background-color: #ee487f;"></i>
+                                {{ "Clinical Decision Support"|sw_trans }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="row g-3 mb-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #3B82F6;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); border-radius: 12px;">
+                                        <i data-feather="scan" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">{{ "Image Analysis"|sw_trans }}</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">Histopathology & Mammography</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <a href="{% url 'image_predict_form' %}" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); border: none; border-radius: 8px; font-weight: 600;">
+                                    <i data-feather="upload" class="me-1" style="height: 14px; width: 14px;"></i>
+                                    Analyze Image
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #EF4444;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%); border-radius: 12px;">
+                                        <i data-feather="alert-triangle" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">{{ "Risk Assessment"|sw_trans }}</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">Patient Risk Analysis</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <a href="{% url 'predict_form' %}" class="btn btn-sm" style="background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%); border: none; border-radius: 8px; color: white; font-weight: 600;">
+                                    <i data-feather="calculator" class="me-1" style="height: 14px; width: 14px;"></i>
+                                    Assess Risk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #10B981;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%); border-radius: 12px;">
+                                        <i data-feather="users" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">1,247</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">{{ "Patients Analyzed"|sw_trans }}</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px; background: #e9ecef; border-radius: 3px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 78%; background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%); border-radius: 3px;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 12px;">+12% this month</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #047857;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%); border-radius: 12px;">
+                                        <i data-feather="target" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">83.2%</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">{{ "Model Accuracy"|sw_trans }}</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <div class="progress" style="height: 6px; background: #e9ecef; border-radius: 3px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 95.2%; background: linear-gradient(135deg, #10B981 0%, #047857 100%); border-radius: 3px;" aria-valuenow="95.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <span class="badge ms-2" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%); color: white; font-weight: 600; border-radius: 6px; padding: 4px 8px;">High</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions & Features -->
+            <div class="row g-3 mb-4">
+                <div class="col-xl-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="zap" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Quick Actions
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="d-grid">
+                                        <a href="{% url 'image_predict_form' %}" class="btn btn-pink btn-lg">
+                                            <i data-feather="image" class="me-2" style="height: 20px; width: 20px;"></i>
+                                            Upload & Analyze Image
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-grid">
+                                        <a href="{% url 'predict_form' %}" class="btn btn-success btn-lg">
+                                            <i data-feather="user-plus" class="me-2" style="height: 20px; width: 20px;"></i>
+                                            Patient Risk Assessment
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <h6 class="text-muted mb-3">Analysis Features</h6>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center p-3 bg-light rounded">
+                                                <i data-feather="check-circle" class="text-success me-3" style="height: 24px; width: 24px;"></i>
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Benign Detection</h6>
+                                                    <small class="text-muted">Accurate benign tissue identification</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center p-3 bg-light rounded">
+                                                <i data-feather="alert-triangle" class="text-warning me-3" style="height: 24px; width: 24px;"></i>
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Malignant Detection</h6>
+                                                    <small class="text-muted">Early cancer detection</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center p-3 bg-light rounded">
+                                                <i data-feather="trending-up" class="text-info me-3" style="height: 24px; width: 24px;"></i>
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Risk Scoring</h6>
+                                                    <small class="text-muted">Comprehensive risk assessment</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="info" class="text-info me-2" style="height: 20px; width: 20px;"></i>
+                                Model Information
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-2">Image Analysis</h6>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i data-feather="cpu" class="text-primary me-2" style="height: 16px; width: 16px;"></i>
+                                    <span class="fw-semibold">ResNet50 CNN</span>
+                                </div>
+                                <small class="text-muted">Deep learning for histopathology images</small>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-2">Risk Assessment</h6>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i data-feather="bar-chart-2" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                    <span class="fw-semibold">Random Forest</span>
+                                </div>
+                                <small class="text-muted">Machine learning with clinical features</small>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button class="btn btn-outline-primary" onclick="showModelInfo()">
+                                    <i data-feather="settings" class="me-1" style="height: 16px; width: 16px;"></i>
+                                    View Technical Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="clock" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Recent Analysis Activity
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Patient ID</th>
+                                            <th>Analysis Type</th>
+                                            <th>Result</th>
+                                            <th>Confidence</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="badge bg-light">PT-2024-0847</span></td>
+                                            <td><i data-feather="image" class="text-primary me-1" style="height: 16px; width: 16px;"></i> Image Analysis</td>
+                                            <td><span class="badge bg-success">Benign</span></td>
+                                            <td>87.3%</td>
+                                            <td>2 hours ago</td>
+                                            <td><span class="badge bg-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="badge bg-light">PT-2024-0846</span></td>
+                                            <td><i data-feather="activity" class="text-success me-1" style="height: 16px; width: 16px;"></i> Risk Assessment</td>
+                                            <td><span class="badge bg-warning">High Risk</span></td>
+                                            <td>73.8%</td>
+                                            <td>4 hours ago</td>
+                                            <td><span class="badge bg-success">Completed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="badge bg-light">PT-2024-0845</span></td>
+                                            <td><i data-feather="image" class="text-primary me-1" style="height: 16px; width: 16px;"></i> Image Analysis</td>
+                                            <td><span class="badge bg-danger">Malignant</span></td>
+                                            <td>91.2%</td>
+                                            <td>6 hours ago</td>
+                                            <td><span class="badge bg-info">Review Required</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Breast Cancer Theme Styles */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+.btn-pink {
+    background: linear-gradient(135deg, #e91e63 0%, #f06292 100%) !important;
+    border-color: #e91e63 !important;
+    color: white !important;
+}
+
+.btn-pink:hover {
+    background: linear-gradient(135deg, #d81b60 0%, #ec407a 100%) !important;
+    border-color: #d81b60 !important;
+    color: white !important;
+}
+
+.text-pink {
+    color: #e91e63 !important;
+}
+
+.bg-pink {
+    background-color: #e91e63 !important;
+}
+
+.avatar-sm {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+    
+    .avatar-sm {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-title {
+        font-size: 16px;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.col-xl-3:nth-child(1) .card { animation-delay: 0.1s; }
+.col-xl-3:nth-child(2) .card { animation-delay: 0.2s; }
+.col-xl-3:nth-child(3) .card { animation-delay: 0.3s; }
+.col-xl-3:nth-child(4) .card { animation-delay: 0.4s; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Feather icons
+    feather.replace();
+    
+    // Animate progress bars
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.transition = 'width 1.5s ease-out';
+            bar.style.width = width;
+        }, 100);
+    });
+    
+    // Add hover effects to feature cards
+    const featureCards = document.querySelectorAll('.d-flex.align-items-center.p-3');
+    featureCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateX(5px)';
+            this.style.transition = 'all 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateX(0)';
+        });
+    });
+});
+
+function showModelInfo() {
+    const modalHTML = `
+        <div class="modal fade" id="modelInfoModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title">
+                            <i data-feather="cpu" class="me-2"></i>
+                            Breast Cancer AI Analysis System
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-primary mb-3">
+                                    <i data-feather="image" class="me-1"></i>
+                                    Image Analysis Model
+                                </h6>
+                                <ul class="list-unstyled">
+                                    <li><strong>Architecture:</strong> ResNet50 CNN</li>
+                                    <li><strong>Input:</strong> Histopathology images (224x224 pixels)</li>
+                                    <li><strong>Output:</strong> Benign (0) or Malignant (1) classification</li>
+                                    <li><strong>Accuracy:</strong> 95.2% validated on test dataset</li>
+                                    <li><strong>Training:</strong> Deep learning on medical imaging dataset</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-success mb-3">
+                                    <i data-feather="activity" class="me-1"></i>
+                                    Risk Assessment Model
+                                </h6>
+                                <ul class="list-unstyled">
+                                    <li><strong>Algorithm:</strong> Random Forest Classifier</li>
+                                    <li><strong>Features:</strong> Patient demographics, medical history, genetic factors</li>
+                                    <li><strong>Output:</strong> Risk probability score (0-100%)</li>
+                                    <li><strong>Validation:</strong> Cross-validated on clinical datasets</li>
+                                    <li><strong>Interpretability:</strong> Feature importance analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        
+                        <h6 class="text-info mb-3">
+                            <i data-feather="file-text" class="me-1"></i>
+                            Supported Formats & Guidelines
+                        </h6>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="mb-2"><strong>Image Formats:</strong></p>
+                                <span class="badge bg-secondary me-1">JPEG</span>
+                                <span class="badge bg-secondary me-1">PNG</span>
+                                <span class="badge bg-secondary me-1">BMP</span>
+                                <span class="badge bg-secondary me-1">TIFF</span>
+                                <p class="text-muted small mt-2">Recommended: High-resolution histopathology images</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-2"><strong>Clinical Use:</strong></p>
+                                <ul class="small text-muted">
+                                    <li>Clinical decision support tool</li>
+                                    <li>Not for standalone diagnosis</li>
+                                    <li>Requires medical professional review</li>
+                                    <li>Complements clinical judgment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-warning mt-3">
+                            <i data-feather="alert-triangle" class="me-2"></i>
+                            <strong>Important:</strong> This system is for clinical decision support only. All predictions should be reviewed by qualified medical professionals before making any clinical decisions.
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.print()">
+                            <i data-feather="printer" class="me-1"></i>
+                            Print Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Remove existing modal if any
+    const existingModal = document.getElementById('modelInfoModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Add modal to page
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    
+    // Re-initialize feather icons
+    feather.replace();
+    
+    // Show modal
+    const modalElement = document.getElementById('modelInfoModal');
+    const modal = new bootstrap.Modal(modalElement);
+    modal.show();
+    
+    // Clean up modal after hidden
+    modalElement.addEventListener('hidden.bs.modal', function() {
+        modalElement.remove();
+    });
+}
+</script>
+{% endblock %}

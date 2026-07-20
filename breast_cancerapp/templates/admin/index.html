@@ -1,0 +1,207 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="content-main">
+    {% if app_list %}
+        {% for app in app_list %}
+            <div class="app-{{ app.app_label }} module">
+                <table>
+                    <caption>
+                        <a href="{{ app.app_url }}" class="section" title="{% blocktrans with name=app.name %}Models in the {{ name }} application{% endblocktrans %}">{{ app.name }}</a>
+                    </caption>
+                    {% for model in app.models %}
+                        <tr class="model-{{ model.object_name|lower }}">
+                            {% if model.admin_url %}
+                                <th scope="row">
+                                    {% if model.name == "Risk assessment" %}
+                                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
+                                        <span class="badge" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; margin-left: 8px; padding: 2px 8px; border-radius: 12px; font-size: 11px;">ML Model</span>
+                                    {% elif model.name == "Image analysis" %}
+                                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
+                                        <span class="badge" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; margin-left: 8px; padding: 2px 8px; border-radius: 12px; font-size: 11px;">AI Model</span>
+                                    {% elif model.name == "User" %}
+                                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
+                                        <span class="badge" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; margin-left: 8px; padding: 2px 8px; border-radius: 12px; font-size: 11px;">System</span>
+                                    {% else %}
+                                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
+                                    {% endif %}
+                                </th>
+                            {% else %}
+                                <th scope="row">{{ model.name }}</th>
+                            {% endif %}
+                            
+                            {% if model.admin_url %}
+                                <td>
+                                    <a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a>
+                                </td>
+                            {% else %}
+                                <td>&nbsp;</td>
+                            {% endif %}
+                            
+                            {% if model.add_url %}
+                                <td>
+                                    <a href="{{ model.add_url }}" class="addlink">{% trans 'Add' %}</a>
+                                </td>
+                            {% else %}
+                                <td>&nbsp;</td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>{% trans "You don't have permission to view or edit anything." %}</p>
+    {% endif %}
+</div>
+
+{% if self.is_popup and not is_popup %}
+<div id="content-related">
+    <h3>{% trans 'Add' %}</h3>
+    {% if model_add_url %}
+        <ul class="model-list">
+            <li class="model-add">
+                <a href="{{ model_add_url }}">
+                    {% trans 'Add' %} {{ model_name }}
+                </a>
+            </li>
+        </ul>
+    {% else %}
+        <p>{% trans "You don't have permission to add anything." %}</p>
+    {% endif %}
+</div>
+{% endif %}
+
+<style>
+    /* Enhanced admin dashboard styling */
+    .dashboard .module {
+        border: 1px solid rgba(102, 126, 234, 0.2) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
+        margin-bottom: 25px !important;
+        overflow: hidden !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .dashboard .module:hover {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15) !important;
+    }
+    
+    .dashboard .module caption {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        letter-spacing: 0.5px !important;
+        text-transform: uppercase !important;
+    }
+    
+    .dashboard .module table {
+        margin: 0 !important;
+        border-collapse: collapse !important;
+    }
+    
+    .dashboard .module th {
+        background: rgba(102, 126, 234, 0.05) !important;
+        color: #4b5563 !important;
+        font-weight: 600 !important;
+        padding: 12px 20px !important;
+        border-bottom: 2px solid rgba(102, 126, 234, 0.1) !important;
+    }
+    
+    .dashboard .module td {
+        padding: 12px 20px !important;
+        border-bottom: 1px solid rgba(102, 126, 234, 0.1) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .dashboard .module tr:hover td {
+        background: rgba(102, 126, 234, 0.05) !important;
+    }
+    
+    .dashboard .module tr:last-child td {
+        border-bottom: none !important;
+    }
+    
+    .dashboard .module a {
+        color: #667eea !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .dashboard .module a:hover {
+        color: #5a4fcf !important;
+        text-decoration: underline !important;
+    }
+    
+    .changelink, .addlink {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        text-decoration: none !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .changelink:hover, .addlink:hover {
+        background: linear-gradient(135deg, #5a4fcf 0%, #6d28d9 100%) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+        color: white !important;
+        text-decoration: none !important;
+    }
+    
+    .addlink {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    }
+    
+    .addlink:hover {
+        background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+    }
+    
+    /* Medical theme specific styling */
+    .app-breast_cancerapp.module caption::before {
+        content: 'Medical AI ';
+        font-weight: 400 !important;
+        opacity: 0.8 !important;
+    }
+    
+    /* Welcome message styling */
+    .dashboard::before {
+        content: '';
+        display: block;
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(102, 126, 234, 0.2);
+    }
+    
+    .dashboard::after {
+        content: 'Welcome to Breast Cancer AI Administration Panel';
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-weight: 600;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        z-index: 10;
+    }
+    
+    .dashboard {
+        position: relative !important;
+        padding-top: 80px !important;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load swahili_translations %}
+
+{% block content %}
+<div class="content-page">
+  <div class="content">
+    <div class="container-xxl">
+
+      <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
+        <div class="flex-grow-1">
+          <h4 class="fs-18 fw-semibold m-0">{{ "Image Analysis Results"|sw_trans }}</h4>
+          <small class="text-muted">{{ "AI-powered analysis of uploaded histopathology image"|sw_trans }}</small>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-11 col-xl-9">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="alert alert-info" role="alert">
+                <strong>Analyzed Image:</strong> {{ image_name }}
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="p-3 rounded-3 border {% if prediction == 1 %}border-danger bg-danger bg-opacity-10{% else %}border-success bg-success bg-opacity-10{% endif %}">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                      <div class="fw-semibold">Prediction</div>
+                      <span class="badge {% if prediction == 1 %}bg-danger{% else %}bg-success{% endif %}">{{ prediction_label }}</span>
+                    </div>
+                    <div class="text-muted small">
+                      {% if prediction == 1 %}
+                        Malignant tumor detected
+                      {% else %}
+                        Benign tissue - no cancer detected
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="p-3 rounded-3 border bg-light">
+                    <div class="fw-semibold mb-1">Confidence Level</div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="me-2 w-100">
+                        <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-primary" role="progressbar" data-progress="{{ confidence_percent }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="fw-semibold text-dark">{{ confidence_percent }}%</div>
+                    </div>
+                    <div class="text-muted small mt-1">Model confidence in this prediction</div>
+                  </div>
+                </div>
+              </div>
+
+              {% if prediction == 1 %}
+              <div class="mt-3">
+                <div class="alert alert-warning" role="alert">
+                  <div class="fw-semibold">Cancer Stage Assessment</div>
+                  <div class="fs-6 fw-bold">{{ stage }}</div>
+                  <div class="mb-0 small">Stage determined based on AI confidence levels. Please consult with a medical professional for detailed staging.</div>
+                </div>
+              </div>
+              {% endif %}
+
+              <div class="card mt-2">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Detailed Probability Breakdown</h5>
+
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="text-muted">Benign</span>
+                      <span class="fw-semibold">{{ benign_percent }}%</span>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                      <div class="progress-bar bg-success" role="progressbar" data-progress="{{ benign_percent }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="text-muted">Malignant</span>
+                      <span class="fw-semibold">{{ malignant_percent }}%</span>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                      <div class="progress-bar bg-danger" role="progressbar" data-progress="{{ malignant_percent }}" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Recommendations Section -->
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">
+                    <i data-feather="info" class="me-2" style="height:20px;width:20px;"></i>
+                    {{ "Medical Recommendations"|sw_trans }}
+                  </h5>
+                  
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="alert alert-info">
+                        <h6 class="alert-heading">
+                          <i data-feather="check-circle" class="me-1" style="height:16px;width:16px;"></i>
+                          Immediate Actions
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for action in processed_recommendations.immediate_actions %}
+                          <li class="mb-1">{{ action }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    
+                    {% if recommendations.follow_up %}
+                    <div class="col-md-6">
+                      <div class="alert alert-warning">
+                        <h6 class="alert-heading">
+                          <i data-feather="calendar" class="me-1" style="height:16px;width:16px;"></i>
+                          Follow-up Care
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for followup in processed_recommendations.follow_up %}
+                          <li class="mb-1">{{ followup }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if recommendations.treatment_planning %}
+                    <div class="col-md-6">
+                      <div class="alert alert-danger">
+                        <h6 class="alert-heading">
+                          <i data-feather="target" class="me-1" style="height:16px;width:16px;"></i>
+                          Treatment Planning
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for treatment in processed_recommendations.treatment_planning %}
+                          <li class="mb-1">{{ treatment }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if recommendations.lifestyle %}
+                    <div class="col-md-6">
+                      <div class="alert alert-success">
+                        <h6 class="alert-heading">
+                          <i data-feather="heart" class="me-1" style="height:16px;width:16px;"></i>
+                          Lifestyle Recommendations
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for lifestyle in processed_recommendations.lifestyle %}
+                          <li class="mb-1">{{ lifestyle }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if recommendations.monitoring %}
+                    <div class="col-md-6">
+                      <div class="alert alert-secondary">
+                        <h6 class="alert-heading">
+                          <i data-feather="eye" class="me-1" style="height:16px;width:16px;"></i>
+                          Monitoring
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for monitoring in processed_recommendations.monitoring %}
+                          <li class="mb-1">{{ monitoring }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if recommendations.support_services %}
+                    <div class="col-md-6">
+                      <div class="alert alert-primary">
+                        <h6 class="alert-heading">
+                          <i data-feather="users" class="me-1" style="height:16px;width:16px;"></i>
+                          Support Services
+                        </h6>
+                        <ul class="small mb-0" style="padding-left: 20px;">
+                        {% for support in processed_recommendations.support_services %}
+                          <li class="mb-1">{{ support }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                  
+                  <div class="mt-3">
+                    <div class="alert alert-light border">
+                      <small class="text-muted">
+                        <strong>Important:</strong> These recommendations are generated by AI and should not replace professional medical advice. 
+                        Please consult with qualified healthcare providers for personalized medical care.
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 justify-content-center mt-3">
+                <a href="{% url 'image_predict_form' %}" class="btn btn-primary">
+                  <i data-feather="image" class="me-1" style="height:16px;width:16px;"></i>
+                  Analyze Another Image
+                </a>
+                <a href="{% url 'doctor_dashboard' %}" class="btn btn-secondary">
+                  <i data-feather="arrow-left" class="me-1" style="height:16px;width:16px;"></i>
+                  Back to Dashboard
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  // Animate and set progress bars from data-progress to satisfy linters
+  document.addEventListener('DOMContentLoaded', function() {
+    const bars = document.querySelectorAll('.progress-bar[data-progress]');
+    bars.forEach(bar => {
+      const value = parseFloat(bar.getAttribute('data-progress')) || 0;
+      const width = Math.max(0, Math.min(100, value));
+      bar.setAttribute('aria-valuenow', String(width));
+      setTimeout(() => { bar.style.width = width + '%'; }, 100);
+    });
+    feather.replace();
+  });
+</script>
+{% endblock %}

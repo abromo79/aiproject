@@ -1,0 +1,195 @@
+# Swahili translation for Breast Cancer AI System
+# This file contains Swahili translations for the breast cancer detection system
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Breast Cancer AI System\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-22 10:30+0000\n"
+"PO-Revision-Date: 2026-04-22 10:30+0000\n"
+"Last-Translator: Breast Cancer AI Team\n"
+"Language-Team: Swahili\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Dashboard and Navigation
+msgid "Breast Cancer AI Dashboard"
+msgstr "Dashibodi ya AI ya Saratani ya Matiti"
+
+msgid "Dashboard"
+msgstr "Dashibodi"
+
+msgid "Home"
+msgstr "Nyumbani"
+
+msgid "Reports"
+msgstr "Ripoti"
+
+msgid "Analytics"
+msgstr "Uchambuzi"
+
+msgid "Settings"
+msgstr "Mipangilio"
+
+# Medical Terms
+msgid "Risk Assessment"
+msgstr "Tathmini ya Hatari"
+
+msgid "Image Analysis"
+msgstr "Uchambuzi wa Picha"
+
+msgid "Patients Analyzed"
+msgstr "Wagonjwa Waliotathminiwa"
+
+msgid "Model Accuracy"
+msgstr "Usahihi wa Mfumo"
+
+msgid "Benign"
+msgstr "Si ya Kansa"
+
+msgid "Malignant"
+msgstr "Ya Kansa"
+
+msgid "Low Risk"
+msgstr "Hatari ya Chini"
+
+msgid "High Risk"
+msgstr "Hatari ya Juu"
+
+msgid "Prediction"
+msgstr "Ubashiri"
+
+msgid "Confidence"
+msgstr "Uhakika"
+
+msgid "Stage"
+msgstr "Hatua"
+
+# Actions
+msgid "Analyze Image"
+msgstr "Chambua Picha"
+
+msgid "Assess Risk"
+msgstr "Tathmini Hatari"
+
+msgid "Upload Image"
+msgstr "Pakia Picha"
+
+msgid "View Report"
+msgstr "Ona Ripoti"
+
+msgid "Export Report"
+msgstr "Toa Ripoti"
+
+msgid "Back to Dashboard"
+msgstr "Rudi kwenye Dashibodi"
+
+# User Interface
+msgid "Login"
+msgstr "Ingia"
+
+msgid "Logout"
+msgstr "Toka"
+
+msgid "Username"
+msgstr "Jina la Mtumiaji"
+
+msgid "Password"
+msgstr "Nywila"
+
+msgid "Profile"
+msgstr "Wasifu"
+
+msgid "Language"
+msgstr "Lugha"
+
+# Common Messages
+msgid "Welcome"
+msgstr "Karibu"
+
+msgid "Success"
+msgstr "Mafanikio"
+
+msgid "Error"
+msgstr "Kosa"
+
+msgid "Loading"
+msgstr "Inapakia"
+
+msgid "Search"
+msgstr "Tafuta"
+
+msgid "Filter"
+msgstr "Chuja"
+
+msgid "Date"
+msgstr "Tarehe"
+
+msgid "Time"
+msgstr "Saa"
+
+# Statistics
+msgid "Total"
+msgstr "Jumla"
+
+msgid "Count"
+msgstr "Hesabu"
+
+msgid "Percentage"
+msgstr "Asilimia"
+
+msgid "Average"
+msgstr "Wastani"
+
+# Medical Labels
+msgid "Age"
+msgstr "Umri"
+
+msgid "Gender"
+msgstr "Jinsia"
+
+msgid "Medical History"
+msgstr "Historia ya Matibabu"
+
+msgid "Family History"
+msgstr "Historia ya Familia"
+
+msgid "Symptoms"
+msgstr "Dalili"
+
+msgid "Diagnosis"
+msgstr "Ugunduzi"
+
+msgid "Treatment"
+msgstr "Matibabu"
+
+msgid "Recommendations"
+msgstr "Mapendekezo"
+
+# Navigation Labels
+msgid "Clinical Decision Support"
+msgstr "Msaada wa Maamuzi ya Kliniki"
+
+msgid "AI-powered breast cancer detection"
+msgstr "Ugunduzi wa saratani ya matiti unaoendeshwa na AI"
+
+msgid "Comprehensive insights and clinical reporting"
+msgstr "Mawazo ya kina na ripoti za kliniki"
+
+msgid "AI-powered histopathology image analysis"
+msgstr "Uchambuzi wa picha za histopathology unaoendeshwa na AI"
+
+# Time Related
+msgid "Today"
+msgstr "Leo"
+
+msgid "This Month"
+msgstr "Mwezi Huu"
+
+msgid "This Year"
+msgstr "Mwaka Huu"
+
+msgid "All Time"
+msgstr "Wakati Wote"

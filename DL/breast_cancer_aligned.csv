@@ -1,0 +1,2001 @@
+history_breast_cancer_or_radiation,brca_mutation_or_genetic_syndrome,age,sub_ethnicity_or_birthplace,biopsy_benign,biopsy_benign_count,biopsy_atypical_hyperplasia,age_first_menstrual,age_first_childbirth,relatives_breast_cancer,Outcome
+No,Unknown,79,Njombe,No,1,No,9,22,Unknown,1
+No,No,62,Geita,Yes,1,Yes,14,32,Unknown,0
+No,Unknown,85,Songwe,Yes,0,Yes,13,39,None,1
+No,Yes,52,Njombe,Unknown,1,No,12,28,More than one,0
+No,No,68,Geita,No,1,No,12,21,More than one,1
+No,Yes,67,Singida,No,0,Unknown,15,38,Unknown,1
+Yes,No,66,Tanga,Unknown,2,Yes,9,33,Unknown,0
+No,Yes,41,Tanga,No,2,No,13,26,None,1
+Yes,No,72,Lindi,Unknown,2,No,10,19,One,0
+No,No,67,Geita,Unknown,2,Yes,9,44,None,1
+Yes,Unknown,37,Tabora,No,2,Unknown,12,15,Unknown,0
+No,Unknown,80,Rukwa,Yes,1,No,15,41,More than one,1
+Yes,No,78,Shinyanga,Yes,2,Yes,14,31,Unknown,1
+No,No,49,Singida,Yes,0,Yes,14,33,More than one,0
+No,No,69,Kagera,No,2,Unknown,14,20,Unknown,0
+Yes,Unknown,42,Singida,Yes,0,No,14,25,More than one,0
+Yes,Yes,38,Morogoro,No,0,No,12,32,One,0
+Yes,Unknown,57,Singida,Unknown,2,No,9,29,One,0
+Yes,Unknown,75,Shinyanga,Unknown,0,No,14,31,More than one,1
+No,Unknown,43,Dar es Salaam,No,2,Unknown,12,17,None,1
+Yes,Unknown,54,Arusha,Unknown,1,No,12,43,More than one,0
+No,Unknown,44,Mara,Unknown,0,No,11,21,None,1
+Yes,Unknown,43,Ruvuma,Unknown,2,Yes,10,44,Unknown,1
+Yes,No,75,Pwani,Unknown,2,Yes,15,16,None,1
+Yes,Unknown,73,Songwe,Unknown,2,No,14,17,One,1
+No,No,67,Manyara,No,0,Yes,13,40,Unknown,0
+Yes,Yes,67,Arusha,No,2,Unknown,11,18,Unknown,1
+No,No,64,Tabora,Unknown,0,Yes,14,17,None,0
+Yes,Yes,45,Dar es Salaam,Unknown,1,Yes,12,16,Unknown,0
+No,No,41,Iringa,No,2,Unknown,12,25,One,0
+Yes,Yes,81,Singida,Yes,1,Yes,12,29,Unknown,0
+Yes,No,73,Tanga,Unknown,2,Yes,10,36,More than one,0
+No,No,45,Kilimanjaro,Yes,0,Unknown,9,43,None,0
+No,Yes,46,Rukwa,No,2,No,12,35,Unknown,0
+Yes,Unknown,38,Manyara,Yes,2,Unknown,15,23,Unknown,1
+Yes,Unknown,64,Songwe,Yes,1,Unknown,9,37,More than one,0
+No,No,52,Mtwara,Yes,0,Yes,15,43,None,1
+Yes,Unknown,78,Mbeya,Unknown,0,No,14,29,More than one,1
+No,Yes,37,Kilimanjaro,No,1,Yes,10,20,None,1
+No,No,52,Njombe,Yes,2,Yes,13,31,None,0
+No,No,37,Rukwa,No,0,Yes,10,44,None,0
+No,Yes,46,Iringa,Unknown,0,No,14,41,More than one,1
+Yes,Unknown,82,Arusha,No,0,No,13,42,One,0
+No,Unknown,74,Dar es Salaam,Yes,1,Yes,11,40,None,0
+Yes,Yes,57,Pwani,Unknown,0,Yes,9,29,One,1
+Yes,No,79,Pwani,Unknown,2,No,15,15,None,0
+No,Yes,73,Katavi,No,0,No,12,25,Unknown,0
+No,No,60,Ruvuma,Yes,1,Unknown,15,41,Unknown,0
+Yes,Unknown,70,Pwani,Yes,2,No,13,38,None,0
+Yes,Unknown,61,Kagera,No,1,Yes,14,23,One,1
+No,Unknown,50,Singida,Unknown,0,Yes,14,39,One,1
+Yes,Unknown,62,Kigoma,Unknown,2,Unknown,10,40,One,0
+No,Unknown,78,Singida,Yes,1,No,11,24,Unknown,1
+Yes,Unknown,73,Songwe,Unknown,2,No,12,17,One,0
+No,Unknown,38,Tabora,Unknown,2,Unknown,12,43,Unknown,0
+No,No,60,Songwe,Yes,1,Yes,9,37,One,1
+Yes,No,66,Morogoro,Unknown,0,No,12,26,Unknown,1
+No,Yes,46,Rukwa,No,2,No,10,35,Unknown,1
+No,Yes,58,Rukwa,No,1,No,14,38,More than one,1
+Yes,Yes,57,Dar es Salaam,Yes,2,No,13,22,More than one,0
+No,No,64,Katavi,Unknown,1,Yes,15,42,None,1
+Yes,Unknown,75,Mtwara,Yes,1,Unknown,14,18,One,0
+No,Yes,45,Kilimanjaro,Yes,0,No,11,15,More than one,1
+Yes,No,69,Katavi,No,2,Unknown,15,31,One,1
+No,No,83,Kigoma,Yes,0,Yes,11,44,Unknown,1
+No,Unknown,70,Arusha,No,0,Unknown,11,31,One,1
+No,No,84,Pwani,Yes,2,No,15,19,More than one,0
+Yes,Yes,83,Pwani,Yes,1,Yes,11,41,One,1
+Yes,Yes,70,Manyara,Unknown,2,No,9,26,More than one,0
+Yes,No,56,Kilimanjaro,Yes,0,No,12,40,One,1
+No,Unknown,39,Mara,Unknown,1,Unknown,14,41,More than one,1
+Yes,Unknown,50,Dar es Salaam,No,2,Unknown,10,33,Unknown,0
+Yes,No,52,Geita,Unknown,1,No,12,43,More than one,1
+Yes,No,47,Kagera,No,0,Unknown,9,25,More than one,1
+No,No,66,Dar es Salaam,Unknown,0,Yes,13,31,None,0
+Yes,Unknown,84,Mwanza,Yes,1,No,12,23,None,0
+Yes,Yes,77,Kilimanjaro,No,2,Yes,11,17,Unknown,1
+Yes,Yes,62,Simiyu,No,2,No,10,42,One,0
+No,Unknown,77,Arusha,Unknown,0,No,12,34,One,0
+No,Unknown,82,Geita,No,0,Unknown,13,37,None,1
+No,Yes,61,Kigoma,Yes,1,Yes,15,19,One,0
+Yes,Yes,61,Mara,Unknown,1,Yes,12,39,None,0
+Yes,Unknown,75,Dar es Salaam,Unknown,1,No,10,42,None,1
+No,Unknown,59,Singida,Unknown,2,Yes,14,30,More than one,1
+Yes,Unknown,50,Mara,Unknown,2,Unknown,13,42,None,1
+No,No,64,Simiyu,Unknown,1,Yes,13,24,Unknown,1
+No,Unknown,37,Lindi,Yes,1,Yes,9,34,One,1
+No,Yes,51,Lindi,No,2,No,11,24,One,0
+Yes,Yes,46,Arusha,No,2,No,14,34,None,0
+Yes,Yes,36,Dar es Salaam,No,1,Yes,14,30,Unknown,1
+No,No,45,Lindi,Unknown,1,Unknown,12,33,One,1
+Yes,Unknown,78,Dar es Salaam,Unknown,2,Unknown,14,19,None,1
+Yes,Unknown,81,Kigoma,Unknown,1,Yes,14,43,One,0
+No,Yes,59,Katavi,No,1,Unknown,11,23,One,0
+Yes,Unknown,56,Singida,Unknown,1,Yes,15,43,One,1
+Yes,Unknown,70,Katavi,No,2,Unknown,11,25,One,1
+No,Yes,41,Mbeya,Yes,0,Unknown,10,26,One,0
+No,No,35,Arusha,No,0,No,13,33,Unknown,1
+No,Unknown,72,Katavi,Yes,2,Yes,13,19,One,1
+Yes,No,80,Tabora,No,1,No,9,19,Unknown,1
+No,Unknown,67,Mtwara,Yes,0,Yes,14,18,One,0
+No,Yes,68,Katavi,Unknown,0,No,10,44,None,0
+No,No,83,Morogoro,No,2,No,14,18,More than one,0
+No,Unknown,44,Mara,Unknown,0,No,9,21,None,1
+Yes,Unknown,49,Kilimanjaro,No,0,Yes,14,35,One,0
+No,No,74,Ruvuma,No,1,Yes,14,44,More than one,0
+Yes,No,57,Pwani,No,1,No,14,19,None,0
+Yes,Yes,66,Ruvuma,No,2,Yes,13,36,More than one,0
+No,Unknown,39,Katavi,Yes,2,Unknown,12,38,None,0
+Yes,No,74,Katavi,Unknown,1,Unknown,13,24,One,0
+No,Unknown,37,Mara,Yes,2,Yes,10,23,More than one,0
+Yes,Unknown,37,Shinyanga,No,2,No,14,22,One,1
+No,Unknown,62,Singida,No,2,Unknown,12,37,One,1
+No,Yes,79,Kilimanjaro,No,1,No,12,36,Unknown,1
+No,No,64,Njombe,Unknown,0,Unknown,12,17,One,0
+No,Unknown,38,Katavi,Unknown,1,Yes,12,17,Unknown,0
+Yes,No,40,Kigoma,Yes,0,No,9,18,One,1
+Yes,Yes,36,Dar es Salaam,No,1,Yes,9,30,Unknown,0
+Yes,Unknown,57,Geita,No,0,Unknown,10,42,More than one,0
+Yes,No,51,Simiyu,Unknown,0,Yes,9,43,One,1
+No,Yes,35,Tanga,Unknown,0,Unknown,12,23,None,1
+No,No,62,Katavi,Unknown,2,Unknown,13,36,Unknown,1
+No,Unknown,42,Shinyanga,No,2,Yes,13,42,None,1
+Yes,Yes,79,Mbeya,Unknown,1,No,12,21,One,0
+Yes,No,58,Lindi,Yes,0,Unknown,14,37,Unknown,0
+No,No,66,Morogoro,Yes,2,Unknown,12,25,More than one,1
+Yes,Yes,63,Njombe,Yes,0,Unknown,9,42,One,0
+Yes,No,57,Katavi,Unknown,0,Yes,14,36,None,0
+Yes,No,42,Lindi,Unknown,2,Yes,13,28,None,1
+No,No,64,Tanga,Unknown,0,Unknown,13,24,More than one,0
+Yes,No,79,Singida,Yes,0,No,12,16,More than one,1
+Yes,No,59,Njombe,Unknown,1,Unknown,12,31,One,1
+No,No,64,Simiyu,Unknown,1,Yes,9,24,Unknown,0
+No,No,50,Kigoma,Unknown,0,Unknown,12,35,None,0
+Yes,Unknown,75,Mara,No,0,Unknown,14,32,None,0
+Yes,Yes,83,Iringa,Yes,0,No,11,33,None,1
+No,Yes,69,Shinyanga,No,0,Yes,13,42,None,1
+No,Unknown,77,Arusha,Unknown,0,No,9,34,One,1
+Yes,No,71,Simiyu,Yes,1,Unknown,11,42,Unknown,1
+Yes,Yes,73,Singida,Unknown,1,Yes,12,26,One,1
+No,Unknown,49,Mara,Yes,1,Unknown,15,35,One,1
+No,Unknown,64,Tabora,Yes,2,Yes,10,40,More than one,0
+No,No,67,Songwe,No,1,No,10,34,Unknown,1
+Yes,Yes,82,Geita,No,0,Unknown,11,30,None,0
+Yes,Unknown,48,Ruvuma,Yes,1,Yes,15,30,One,1
+No,Yes,52,Songwe,Unknown,0,No,14,15,More than one,0
+Yes,No,66,Tabora,Unknown,1,No,9,34,More than one,0
+Yes,Yes,76,Katavi,Unknown,2,Unknown,10,23,Unknown,1
+No,Unknown,35,Mbeya,Yes,2,No,14,33,None,0
+No,Unknown,79,Katavi,Yes,1,Unknown,9,20,Unknown,0
+No,Unknown,77,Katavi,No,1,Unknown,14,42,None,1
+No,Yes,62,Njombe,Yes,0,No,10,34,Unknown,0
+Yes,Unknown,85,Morogoro,No,1,No,15,43,More than one,0
+Yes,No,59,Njombe,Unknown,2,Yes,11,34,None,1
+No,Yes,37,Tabora,Yes,1,Unknown,12,32,None,0
+Yes,No,81,Mara,Yes,0,Unknown,13,34,Unknown,0
+No,Unknown,47,Tanga,Unknown,1,Unknown,9,27,Unknown,0
+Yes,No,35,Kilimanjaro,Yes,1,No,12,21,None,1
+Yes,Unknown,60,Mara,Yes,1,No,12,37,More than one,0
+Yes,Unknown,74,Kilimanjaro,Yes,2,Yes,14,25,Unknown,1
+No,No,55,Tabora,Unknown,2,No,15,19,More than one,0
+No,Unknown,68,Geita,Unknown,0,Yes,13,20,More than one,0
+Yes,Unknown,48,Simiyu,Unknown,1,Unknown,11,36,Unknown,0
+No,Unknown,82,Rukwa,No,1,No,11,37,One,1
+No,No,35,Arusha,No,0,No,11,33,Unknown,1
+No,Unknown,52,Kigoma,Unknown,0,No,14,19,None,1
+Yes,Yes,67,Songwe,No,1,Yes,11,33,One,1
+No,Yes,47,Rukwa,No,1,No,10,28,More than one,1
+No,No,42,Kigoma,Yes,1,No,11,24,One,0
+No,Unknown,77,Arusha,Unknown,0,No,9,34,One,1
+No,Unknown,82,Kilimanjaro,Unknown,0,Yes,9,23,More than one,1
+No,Unknown,60,Simiyu,Yes,0,Yes,9,38,One,0
+Yes,Yes,74,Tabora,Yes,2,Unknown,14,37,More than one,1
+Yes,No,50,Arusha,No,0,No,14,21,None,1
+No,No,56,Kagera,Unknown,0,Unknown,13,39,One,0
+Yes,Unknown,59,Simiyu,Yes,2,Unknown,12,40,None,1
+Yes,Yes,35,Pwani,Yes,1,Unknown,14,43,None,0
+Yes,Unknown,56,Pwani,No,0,Yes,10,36,More than one,1
+No,Yes,41,Mara,Unknown,1,Yes,15,43,Unknown,0
+Yes,No,75,Arusha,Unknown,1,No,12,35,Unknown,1
+Yes,Yes,40,Tabora,Yes,2,Yes,15,16,One,1
+No,Unknown,54,Dar es Salaam,No,2,No,10,32,None,0
+Yes,Yes,66,Mtwara,Unknown,2,Unknown,12,38,None,1
+No,Unknown,37,Lindi,Yes,1,Yes,13,34,One,1
+No,Unknown,71,Njombe,No,1,No,12,16,More than one,0
+No,No,80,Songwe,Unknown,1,Yes,12,33,One,0
+No,Unknown,52,Morogoro,Unknown,1,Yes,10,43,More than one,1
+No,Yes,75,Mara,Yes,1,Yes,11,23,One,1
+No,Yes,66,Rukwa,Unknown,0,Unknown,10,34,One,1
+Yes,Yes,64,Singida,Yes,0,Unknown,11,33,One,1
+Yes,Yes,41,Mwanza,No,1,No,13,26,More than one,0
+No,Yes,40,Mara,Unknown,0,Yes,13,26,More than one,0
+Yes,No,84,Songwe,Unknown,2,No,13,20,More than one,1
+No,Yes,68,Ruvuma,No,1,No,11,23,One,0
+Yes,No,79,Kilimanjaro,No,1,Unknown,15,27,One,0
+Yes,Unknown,82,Pwani,Yes,2,Yes,9,38,One,0
+Yes,No,78,Shinyanga,Yes,2,Unknown,11,37,More than one,1
+No,Yes,61,Songwe,Unknown,1,Unknown,9,28,One,0
+Yes,Unknown,65,Morogoro,Unknown,1,No,11,25,None,0
+Yes,No,41,Shinyanga,Yes,1,Unknown,15,41,One,1
+No,Yes,84,Iringa,Unknown,2,Yes,11,17,More than one,1
+Yes,Unknown,61,Simiyu,Unknown,1,Unknown,15,28,None,0
+Yes,Yes,41,Manyara,No,0,Yes,12,29,One,0
+Yes,No,70,Ruvuma,Unknown,2,Unknown,13,24,One,0
+Yes,Yes,85,Mwanza,Unknown,1,Yes,12,31,Unknown,0
+Yes,No,40,Kilimanjaro,No,0,Unknown,10,19,None,0
+Yes,Yes,42,Singida,Unknown,2,No,14,42,Unknown,1
+No,Unknown,69,Kigoma,Unknown,2,No,15,30,None,1
+No,Unknown,36,Iringa,No,1,Unknown,10,33,Unknown,1
+No,Yes,78,Mwanza,Yes,0,Unknown,14,29,More than one,0
+No,Yes,35,Kilimanjaro,Yes,1,Unknown,10,19,More than one,1
+No,No,55,Lindi,Yes,2,No,14,21,One,0
+No,Yes,79,Tabora,No,0,Unknown,14,27,One,0
+No,Unknown,74,Mtwara,No,1,Yes,12,37,More than one,0
+No,Unknown,43,Manyara,Yes,2,Unknown,14,25,More than one,0
+Yes,No,84,Dar es Salaam,Yes,2,No,10,29,One,1
+Yes,Unknown,57,Singida,Unknown,2,No,9,29,One,1
+Yes,Yes,79,Iringa,Unknown,2,No,9,33,One,0
+Yes,Yes,73,Dar es Salaam,Unknown,1,Yes,12,43,None,0
+No,No,64,Simiyu,Unknown,1,Yes,15,24,Unknown,1
+Yes,Unknown,72,Katavi,Unknown,0,Unknown,9,31,Unknown,0
+No,No,70,Singida,Unknown,2,No,12,19,More than one,0
+No,Unknown,77,Manyara,Unknown,0,No,13,30,One,0
+No,Unknown,63,Dodoma,No,1,Unknown,10,25,None,1
+Yes,No,57,Njombe,Unknown,0,Unknown,14,44,Unknown,1
+No,Unknown,77,Dodoma,Unknown,2,No,11,31,Unknown,1
+No,Unknown,53,Mtwara,Unknown,1,Unknown,14,34,Unknown,0
+No,Unknown,61,Kagera,Yes,1,No,13,38,More than one,0
+No,No,36,Mwanza,Yes,2,Yes,12,41,One,1
+No,No,43,Tabora,Yes,1,No,10,19,One,0
+No,Yes,54,Lindi,Yes,1,No,12,24,None,1
+Yes,Yes,47,Manyara,Unknown,2,Yes,14,19,Unknown,0
+No,Unknown,55,Mwanza,No,1,Yes,9,44,None,1
+No,Yes,72,Rukwa,Unknown,2,No,14,31,Unknown,1
+No,Unknown,58,Pwani,Yes,1,Yes,12,24,One,1
+No,Yes,42,Songwe,Unknown,2,Unknown,14,29,None,0
+No,No,55,Kagera,Yes,0,Yes,13,17,One,1
+No,Yes,64,Tanga,Yes,2,Unknown,12,42,More than one,0
+No,No,55,Ruvuma,Yes,1,Yes,11,28,More than one,1
+Yes,No,67,Mwanza,Yes,2,Unknown,13,15,More than one,0
+No,No,83,Lindi,Yes,1,Unknown,9,25,None,0
+No,Unknown,48,Mtwara,Unknown,0,No,13,34,More than one,1
+Yes,Yes,72,Shinyanga,No,1,Unknown,9,15,One,0
+No,No,59,Arusha,Unknown,2,Unknown,13,25,Unknown,0
+Yes,Yes,60,Simiyu,Unknown,2,Yes,13,25,More than one,1
+No,Unknown,71,Tabora,Yes,2,No,9,35,One,0
+No,No,52,Mtwara,Yes,0,Yes,14,43,None,0
+Yes,Yes,85,Mwanza,Unknown,1,Yes,11,31,Unknown,1
+Yes,Yes,56,Arusha,No,1,No,14,35,More than one,0
+No,Unknown,69,Kigoma,Yes,2,No,9,42,More than one,1
+No,Yes,59,Shinyanga,Unknown,2,No,10,38,None,1
+Yes,No,61,Geita,No,0,Yes,12,16,Unknown,0
+Yes,No,76,Dodoma,Yes,1,Yes,10,19,None,1
+Yes,No,84,Ruvuma,No,2,Unknown,11,25,More than one,0
+Yes,Unknown,50,Mara,Unknown,2,Unknown,13,42,None,1
+No,No,46,Tabora,Yes,0,Yes,10,27,One,1
+Yes,No,53,Mwanza,Yes,1,No,13,38,One,0
+Yes,Yes,61,Mtwara,No,0,Unknown,9,30,Unknown,0
+No,Unknown,71,Mwanza,No,2,No,10,25,More than one,1
+No,Yes,79,Kilimanjaro,No,1,No,13,36,Unknown,1
+No,Unknown,76,Shinyanga,Unknown,1,Unknown,14,34,One,0
+No,Unknown,52,Shinyanga,No,0,Yes,10,32,None,1
+No,Unknown,85,Ruvuma,Yes,2,Unknown,11,20,More than one,0
+No,Unknown,81,Iringa,Unknown,2,No,15,39,More than one,1
+Yes,No,66,Mara,Yes,1,Yes,15,31,None,1
+Yes,No,66,Mara,Yes,1,Yes,13,31,None,1
+Yes,No,57,Ruvuma,Unknown,2,Yes,12,27,None,0
+Yes,No,49,Tanga,Yes,1,Yes,11,42,Unknown,0
+Yes,No,79,Morogoro,Yes,0,No,13,41,Unknown,0
+No,Yes,35,Kilimanjaro,Yes,1,Unknown,13,16,More than one,1
+Yes,Yes,62,Mbeya,Yes,1,No,11,18,None,1
+No,Yes,80,Lindi,Unknown,0,Yes,9,19,None,1
+No,Yes,56,Songwe,Unknown,0,Yes,10,25,One,0
+Yes,Unknown,48,Mbeya,Unknown,2,Unknown,15,41,Unknown,1
+No,No,77,Mara,No,0,No,11,22,Unknown,1
+No,Unknown,42,Pwani,Yes,2,No,12,26,None,1
+Yes,No,75,Katavi,No,0,Unknown,12,20,One,0
+Yes,Unknown,53,Njombe,Unknown,2,Yes,14,20,One,0
+Yes,Unknown,59,Tanga,No,2,Unknown,9,25,More than one,1
+No,Unknown,69,Mara,No,0,Unknown,9,41,One,0
+Yes,Unknown,54,Kagera,No,0,No,10,32,None,1
+Yes,Unknown,56,Tabora,Unknown,0,No,12,16,One,1
+Yes,No,47,Katavi,Yes,2,Unknown,13,21,More than one,0
+Yes,No,65,Pwani,No,0,No,12,25,One,1
+Yes,Unknown,69,Ruvuma,Unknown,0,Yes,12,35,Unknown,1
+Yes,Yes,41,Katavi,Yes,1,Yes,15,21,More than one,0
+Yes,Unknown,77,Simiyu,No,2,Unknown,10,22,None,0
+No,Unknown,85,Katavi,Unknown,0,Yes,13,33,None,1
+No,Unknown,46,Mara,Yes,1,Yes,12,16,More than one,0
+No,Yes,57,Morogoro,Unknown,0,Yes,12,21,None,0
+Yes,Yes,47,Ruvuma,Unknown,1,Unknown,14,23,One,1
+No,No,78,Geita,Unknown,2,Unknown,10,41,Unknown,1
+No,No,61,Mbeya,No,2,Yes,15,35,More than one,1
+Yes,No,37,Katavi,Unknown,2,Unknown,11,40,More than one,1
+Yes,Unknown,59,Katavi,Yes,1,Yes,12,23,One,0
+Yes,No,39,Dodoma,No,0,Yes,12,19,One,0
+No,Yes,49,Kilimanjaro,Yes,1,Unknown,14,17,Unknown,0
+No,Unknown,37,Kigoma,Unknown,0,Yes,12,42,One,1
+No,No,49,Geita,Yes,0,Yes,10,41,More than one,1
+No,Yes,42,Tabora,Unknown,1,No,9,43,None,0
+Yes,No,53,Simiyu,No,1,Yes,11,22,None,0
+Yes,Unknown,58,Njombe,Unknown,2,Yes,14,33,One,0
+Yes,Unknown,56,Singida,Unknown,1,Yes,9,43,One,1
+No,No,49,Dodoma,Unknown,2,Unknown,15,34,One,1
+No,Yes,71,Mbeya,No,2,Unknown,12,41,Unknown,0
+No,Unknown,60,Songwe,No,1,Yes,9,37,More than one,1
+No,No,39,Kagera,No,0,Unknown,11,18,More than one,1
+Yes,Unknown,43,Ruvuma,Unknown,2,Yes,12,44,Unknown,1
+Yes,No,63,Pwani,Yes,2,Unknown,11,16,One,0
+Yes,Unknown,43,Tabora,Yes,0,No,9,31,Unknown,0
+No,No,83,Kigoma,Yes,0,Yes,13,44,Unknown,1
+Yes,No,48,Pwani,No,1,No,13,22,None,1
+Yes,No,40,Kigoma,Yes,0,No,9,18,One,1
+Yes,Yes,76,Katavi,Unknown,2,Unknown,10,23,Unknown,0
+Yes,Unknown,68,Katavi,Unknown,0,No,10,28,Unknown,1
+Yes,Unknown,62,Manyara,Yes,2,Yes,13,24,One,0
+Yes,Yes,65,Njombe,Unknown,0,No,14,35,Unknown,1
+No,Unknown,76,Pwani,Yes,2,Yes,14,26,Unknown,1
+Yes,Yes,65,Singida,No,0,Unknown,15,17,One,1
+Yes,Unknown,59,Tanga,Yes,2,Unknown,14,15,More than one,1
+Yes,Unknown,47,Tabora,Yes,0,Yes,11,28,One,0
+No,No,80,Katavi,Unknown,0,No,9,22,More than one,1
+No,No,59,Mbeya,Yes,0,Unknown,13,19,None,0
+Yes,Unknown,61,Songwe,Yes,1,Unknown,15,28,More than one,0
+No,Yes,46,Mbeya,No,0,Unknown,15,33,None,0
+Yes,No,76,Dodoma,Yes,1,Yes,10,19,None,0
+No,Yes,82,Simiyu,No,1,Yes,10,20,One,1
+No,No,81,Kagera,No,0,No,9,24,Unknown,0
+Yes,Unknown,70,Ruvuma,Yes,0,No,9,31,One,1
+Yes,Unknown,74,Pwani,Unknown,0,No,12,36,Unknown,0
+No,No,81,Pwani,No,2,Yes,12,25,Unknown,0
+Yes,Yes,44,Tabora,Yes,2,No,11,30,None,0
+Yes,No,37,Katavi,Unknown,2,Unknown,11,40,More than one,1
+Yes,Unknown,77,Tabora,No,1,Unknown,14,36,One,0
+No,Unknown,44,Ruvuma,Unknown,2,Yes,12,44,More than one,0
+No,Unknown,40,Ruvuma,Yes,1,Yes,14,27,Unknown,1
+Yes,Unknown,83,Iringa,Yes,0,Unknown,15,34,None,0
+Yes,No,69,Mara,Unknown,2,No,11,28,More than one,0
+No,No,51,Simiyu,Yes,0,No,10,17,None,1
+No,No,39,Kagera,No,0,Unknown,15,18,More than one,1
+No,No,49,Tabora,Unknown,0,No,13,32,None,1
+Yes,Unknown,38,Katavi,Yes,2,No,11,42,None,0
+Yes,Yes,62,Kagera,No,2,Yes,13,31,None,1
+No,No,76,Tabora,Unknown,1,Unknown,12,25,One,0
+No,No,84,Lindi,No,2,Unknown,15,15,More than one,0
+Yes,Unknown,47,Kilimanjaro,Yes,0,Yes,10,17,More than one,1
+Yes,Yes,62,Morogoro,Unknown,2,Yes,15,42,More than one,0
+Yes,Unknown,38,Simiyu,Yes,1,No,15,37,None,1
+Yes,No,60,Rukwa,Yes,1,Unknown,10,41,Unknown,1
+Yes,No,77,Tanga,Unknown,0,No,10,39,None,0
+Yes,No,65,Njombe,Yes,0,Unknown,12,15,One,0
+No,No,66,Manyara,No,0,No,9,27,Unknown,0
+Yes,Yes,73,Geita,No,2,No,11,17,One,1
+Yes,Unknown,81,Ruvuma,Yes,2,Unknown,12,37,More than one,1
+No,No,67,Geita,Unknown,2,Yes,15,44,None,0
+Yes,Unknown,44,Kigoma,Yes,0,No,15,29,None,0
+Yes,Yes,83,Iringa,Yes,0,No,10,33,None,1
+Yes,No,36,Dar es Salaam,No,2,Unknown,15,18,One,1
+Yes,No,79,Mtwara,No,2,No,9,29,More than one,1
+Yes,Yes,36,Iringa,Yes,2,Yes,14,39,None,1
+No,No,38,Songwe,Unknown,1,Yes,14,34,None,0
+No,Unknown,78,Kagera,Yes,0,No,15,34,Unknown,0
+No,Yes,64,Iringa,Unknown,2,No,10,15,More than one,0
+Yes,Yes,81,Rukwa,No,0,Yes,15,21,None,0
+No,Yes,45,Kilimanjaro,Yes,0,No,9,15,More than one,0
+Yes,Unknown,51,Morogoro,Yes,1,Yes,12,17,More than one,0
+Yes,No,76,Dodoma,Yes,1,Yes,12,19,None,1
+Yes,No,44,Arusha,No,2,No,11,20,More than one,0
+No,Unknown,38,Kigoma,Yes,0,Unknown,9,36,More than one,1
+Yes,Unknown,51,Tabora,Unknown,1,Unknown,14,25,More than one,0
+No,Unknown,63,Rukwa,No,1,Unknown,11,18,One,1
+No,No,47,Morogoro,Unknown,1,No,13,25,More than one,1
+Yes,Unknown,42,Dodoma,Yes,0,Yes,11,15,Unknown,0
+No,No,83,Kilimanjaro,No,1,No,11,16,Unknown,1
+No,No,38,Rukwa,Unknown,1,Yes,15,35,One,1
+Yes,No,36,Shinyanga,Yes,1,No,9,33,One,1
+No,Yes,63,Songwe,No,1,Yes,14,42,Unknown,0
+Yes,Yes,42,Singida,Unknown,2,No,14,42,Unknown,1
+Yes,No,48,Pwani,No,1,No,11,22,None,1
+No,Unknown,75,Pwani,Unknown,2,Unknown,10,29,More than one,1
+No,Yes,63,Singida,No,0,Unknown,9,43,More than one,1
+No,Unknown,84,Ruvuma,Yes,0,Yes,15,18,Unknown,0
+Yes,Unknown,80,Dar es Salaam,Yes,2,Unknown,15,36,One,0
+Yes,Yes,37,Dar es Salaam,Yes,2,Yes,10,16,None,1
+No,Unknown,66,Katavi,Yes,0,No,9,28,Unknown,1
+Yes,Unknown,59,Katavi,Unknown,0,Yes,9,41,Unknown,0
+No,Unknown,51,Morogoro,No,2,Yes,9,30,More than one,0
+Yes,Yes,48,Simiyu,No,2,Yes,14,27,None,1
+No,No,79,Songwe,No,2,Yes,15,31,More than one,0
+Yes,Yes,63,Mara,Yes,2,No,10,26,Unknown,1
+Yes,Yes,82,Njombe,No,1,Yes,14,42,None,1
+Yes,Unknown,70,Singida,No,0,No,10,25,One,1
+No,No,64,Mbeya,Yes,2,Unknown,11,36,More than one,0
+Yes,No,41,Tanga,No,2,Yes,13,31,None,0
+No,No,73,Katavi,No,1,No,14,18,None,0
+Yes,Yes,66,Rukwa,Unknown,0,No,15,25,None,0
+Yes,No,40,Iringa,Unknown,1,No,9,31,More than one,1
+No,Unknown,66,Dodoma,Yes,0,Yes,10,38,None,1
+Yes,No,47,Simiyu,No,1,Yes,10,19,One,0
+No,No,52,Rukwa,Unknown,2,Yes,11,32,Unknown,0
+No,Yes,54,Mbeya,No,2,Yes,15,31,More than one,0
+Yes,Unknown,83,Mwanza,Unknown,0,No,14,27,Unknown,0
+Yes,No,76,Ruvuma,Yes,2,Unknown,11,39,Unknown,0
+Yes,Yes,66,Mtwara,Unknown,2,Unknown,15,38,None,0
+No,Unknown,75,Shinyanga,Yes,2,No,12,34,None,0
+Yes,Unknown,78,Kilimanjaro,Yes,0,Yes,12,24,More than one,1
+Yes,Unknown,58,Mwanza,Yes,2,No,12,37,More than one,1
+No,Unknown,40,Geita,Yes,1,Yes,10,30,One,0
+Yes,No,51,Mtwara,Yes,2,Yes,15,41,Unknown,1
+Yes,No,78,Mara,Yes,2,Yes,9,29,None,1
+Yes,Unknown,55,Kagera,Unknown,0,No,10,24,One,0
+No,No,62,Manyara,Unknown,2,Unknown,10,44,One,0
+No,Yes,60,Njombe,Unknown,2,Unknown,10,16,More than one,1
+No,Unknown,46,Njombe,No,1,Unknown,9,35,One,0
+No,No,56,Simiyu,Unknown,2,Unknown,9,30,None,0
+Yes,No,78,Shinyanga,Yes,2,Yes,13,31,Unknown,1
+No,No,38,Manyara,Unknown,0,Unknown,15,17,Unknown,0
+Yes,No,80,Mtwara,No,1,No,9,15,One,0
+No,Unknown,62,Morogoro,No,2,No,11,20,Unknown,0
+Yes,No,59,Njombe,Unknown,1,Unknown,12,31,One,1
+No,No,43,Katavi,Yes,0,Yes,15,15,One,0
+No,Yes,55,Tanga,No,0,Yes,13,37,Unknown,0
+Yes,No,75,Katavi,No,0,Unknown,14,20,One,1
+Yes,Yes,78,Arusha,No,1,Unknown,13,27,More than one,0
+No,Yes,60,Tabora,Yes,1,Yes,11,34,One,1
+Yes,Unknown,71,Dodoma,Unknown,0,Unknown,10,16,More than one,1
+No,No,73,Morogoro,Yes,1,Yes,15,42,Unknown,1
+No,No,80,Tabora,Yes,1,Unknown,14,28,One,1
+Yes,Yes,66,Kilimanjaro,Yes,0,Yes,9,35,None,1
+No,Unknown,75,Ruvuma,No,1,Unknown,14,43,None,1
+No,Unknown,63,Katavi,No,1,No,9,21,One,0
+Yes,No,75,Arusha,No,1,Yes,14,27,None,1
+No,Unknown,85,Songwe,Yes,0,Yes,14,39,None,1
+No,Unknown,81,Mwanza,Yes,1,Yes,9,25,Unknown,0
+Yes,Yes,46,Tabora,Yes,0,Unknown,12,37,One,1
+Yes,Yes,47,Katavi,Yes,2,Unknown,9,19,One,1
+Yes,Yes,46,Iringa,Yes,0,No,12,27,More than one,1
+Yes,No,44,Geita,No,0,No,15,21,Unknown,0
+Yes,No,73,Ruvuma,Unknown,1,Unknown,9,16,None,0
+No,No,43,Iringa,No,2,No,11,26,One,1
+No,Unknown,42,Kagera,Yes,0,Unknown,15,24,More than one,0
+No,No,58,Shinyanga,Unknown,0,Unknown,11,34,Unknown,0
+No,No,69,Kagera,No,2,Unknown,9,20,Unknown,1
+No,Yes,67,Simiyu,Unknown,1,Unknown,12,38,More than one,0
+Yes,No,44,Arusha,No,2,No,12,20,More than one,1
+Yes,Yes,52,Kigoma,Yes,2,Yes,13,42,More than one,0
+Yes,No,60,Mtwara,Unknown,0,Yes,11,27,None,0
+No,Yes,69,Mwanza,No,1,Yes,15,31,One,1
+Yes,Yes,36,Arusha,Unknown,1,No,12,44,None,0
+No,Yes,60,Njombe,Unknown,2,Unknown,11,16,More than one,1
+No,Unknown,73,Mwanza,Unknown,1,Unknown,15,26,One,0
+No,No,40,Tabora,Yes,2,Unknown,15,29,One,1
+Yes,Yes,73,Geita,No,0,Unknown,12,35,None,0
+Yes,Yes,80,Dar es Salaam,Unknown,1,Yes,9,19,More than one,1
+No,Yes,61,Kigoma,Yes,1,Yes,13,19,One,1
+No,Yes,55,Mara,No,2,Yes,12,16,One,1
+Yes,Unknown,79,Songwe,Unknown,1,No,10,25,One,0
+No,No,65,Kigoma,No,1,No,13,37,Unknown,1
+No,Unknown,84,Morogoro,Unknown,2,Yes,14,19,None,1
+No,No,65,Dodoma,No,2,Unknown,9,39,None,0
+No,Unknown,62,Simiyu,No,1,Yes,14,29,Unknown,0
+No,Unknown,59,Mwanza,Unknown,1,Yes,9,42,One,0
+No,No,40,Kagera,Unknown,1,Yes,14,30,None,0
+No,Yes,74,Manyara,Yes,2,No,11,30,More than one,1
+No,No,42,Njombe,Unknown,1,Yes,9,29,More than one,0
+Yes,Unknown,50,Geita,No,0,Unknown,15,41,One,0
+No,No,53,Tabora,Yes,0,No,10,24,Unknown,0
+No,Yes,42,Katavi,Unknown,2,Yes,13,40,Unknown,0
+No,Unknown,73,Iringa,Unknown,2,Yes,10,35,None,0
+Yes,Yes,39,Kigoma,Yes,2,Unknown,15,35,None,0
+No,No,63,Singida,No,0,Unknown,14,21,More than one,0
+No,Unknown,82,Arusha,Yes,0,Unknown,14,21,Unknown,0
+Yes,Unknown,66,Shinyanga,Unknown,2,Unknown,12,43,More than one,0
+Yes,No,83,Lindi,Yes,1,No,12,30,More than one,1
+No,Yes,52,Njombe,Unknown,1,No,13,28,More than one,1
+No,Yes,38,Shinyanga,No,0,No,14,25,Unknown,0
+No,Unknown,79,Ruvuma,Yes,1,Yes,14,18,More than one,0
+Yes,Unknown,69,Ruvuma,Unknown,0,Yes,9,35,Unknown,0
+No,Unknown,49,Mara,Yes,1,Yes,13,24,More than one,0
+No,No,80,Katavi,Yes,0,Yes,9,19,One,1
+No,No,57,Shinyanga,Unknown,2,Unknown,11,37,More than one,1
+No,Yes,63,Songwe,No,1,Yes,14,42,Unknown,1
+Yes,Unknown,66,Simiyu,Unknown,0,No,10,29,None,0
+Yes,No,82,Singida,No,2,Yes,14,30,Unknown,0
+No,Yes,48,Pwani,Yes,2,Unknown,12,28,Unknown,1
+Yes,No,39,Kigoma,No,1,No,10,22,None,1
+Yes,Unknown,48,Iringa,Unknown,0,Yes,11,28,Unknown,0
+Yes,No,58,Tanga,Unknown,0,Unknown,12,17,Unknown,0
+Yes,No,68,Kagera,No,1,Yes,14,23,More than one,0
+No,Yes,57,Kilimanjaro,Unknown,2,No,13,16,None,0
+No,Unknown,77,Dodoma,Unknown,2,No,15,31,Unknown,1
+Yes,Unknown,77,Songwe,No,0,No,15,27,More than one,0
+No,Yes,79,Geita,Unknown,2,Yes,14,27,Unknown,1
+Yes,Yes,84,Simiyu,Yes,0,Unknown,13,41,More than one,0
+Yes,Yes,55,Singida,Unknown,2,Unknown,11,24,One,0
+Yes,Yes,47,Kagera,Unknown,2,No,11,34,None,0
+Yes,Yes,85,Mwanza,Unknown,1,Yes,9,31,Unknown,1
+Yes,No,35,Singida,No,0,Unknown,11,24,One,0
+No,No,68,Kilimanjaro,Unknown,1,No,15,28,None,1
+No,Unknown,40,Dar es Salaam,Unknown,1,Unknown,11,25,None,0
+No,Unknown,63,Katavi,Unknown,2,Unknown,9,40,None,1
+Yes,No,40,Singida,Yes,1,No,13,24,More than one,0
+Yes,Unknown,40,Tanga,Unknown,2,Yes,15,38,None,0
+Yes,Unknown,57,Tabora,No,1,Unknown,15,31,Unknown,1
+Yes,Unknown,70,Singida,No,0,No,10,25,One,1
+No,Yes,59,Arusha,Yes,1,No,12,32,Unknown,1
+No,No,76,Mbeya,Yes,1,No,12,44,One,1
+No,Yes,36,Tabora,Unknown,0,Unknown,10,40,Unknown,0
+No,Yes,60,Iringa,No,2,No,10,44,One,1
+Yes,No,67,Singida,Yes,1,No,10,16,More than one,1
+No,No,54,Dar es Salaam,Unknown,1,Unknown,15,43,None,0
+Yes,No,53,Dodoma,Yes,2,Unknown,14,20,One,0
+Yes,No,62,Mara,Unknown,1,No,14,39,Unknown,0
+Yes,No,79,Singida,Yes,0,No,14,16,More than one,1
+No,Unknown,36,Iringa,No,1,Unknown,15,33,Unknown,1
+No,No,62,Katavi,Unknown,2,No,9,28,One,1
+Yes,Yes,44,Songwe,No,1,Unknown,15,42,One,0
+Yes,Yes,60,Tabora,Unknown,1,Yes,9,25,More than one,0
+No,No,62,Geita,Yes,1,Yes,12,32,Unknown,1
+No,Yes,85,Arusha,Unknown,0,Unknown,13,17,None,1
+Yes,Unknown,65,Mwanza,Yes,2,No,11,29,One,1
+No,No,35,Shinyanga,No,1,Yes,10,18,None,0
+Yes,Unknown,76,Dar es Salaam,Yes,2,No,10,19,Unknown,1
+Yes,Unknown,81,Kigoma,No,1,Yes,14,42,More than one,0
+Yes,No,45,Singida,Unknown,0,No,11,25,One,0
+No,Yes,46,Rukwa,Unknown,2,Yes,11,18,None,0
+No,No,83,Lindi,No,1,Unknown,15,25,None,0
+No,No,78,Mwanza,No,0,Unknown,10,30,None,0
+No,Unknown,58,Ruvuma,Unknown,1,Yes,15,17,More than one,0
+Yes,Yes,71,Mwanza,Unknown,2,Yes,15,18,More than one,1
+No,Yes,79,Geita,Unknown,2,Yes,13,27,Unknown,1
+No,Yes,41,Rukwa,No,1,Yes,10,20,One,1
+No,Unknown,41,Kilimanjaro,Unknown,2,Unknown,10,38,None,0
+Yes,Yes,54,Singida,Unknown,1,Yes,10,36,More than one,0
+No,No,69,Dodoma,Yes,2,No,13,25,Unknown,0
+Yes,No,41,Dodoma,No,2,Yes,10,31,Unknown,1
+Yes,Yes,40,Tabora,Yes,2,Yes,12,16,One,1
+No,Yes,77,Njombe,No,1,Yes,9,42,None,0
+Yes,Unknown,46,Geita,Unknown,1,No,12,43,Unknown,0
+No,Yes,45,Tabora,No,1,No,9,40,None,1
+Yes,Unknown,51,Njombe,Yes,2,No,13,18,One,0
+Yes,No,66,Tabora,Unknown,1,No,9,34,More than one,1
+No,No,41,Lindi,Unknown,0,Unknown,10,28,One,1
+Yes,Unknown,49,Ruvuma,Unknown,0,Yes,10,44,More than one,1
+No,Unknown,42,Shinyanga,No,2,Yes,14,42,None,1
+Yes,Yes,73,Ruvuma,No,1,No,9,21,None,0
+No,Unknown,82,Rukwa,No,1,No,12,37,One,0
+Yes,No,41,Tanga,No,1,Yes,13,42,One,1
+No,No,59,Kigoma,No,0,Yes,12,23,More than one,1
+No,No,84,Tabora,No,2,No,13,27,Unknown,1
+No,Unknown,67,Songwe,No,0,No,14,18,More than one,0
+Yes,No,78,Geita,No,0,Yes,11,42,More than one,0
+Yes,Yes,39,Geita,Unknown,0,Unknown,14,42,Unknown,0
+No,Yes,63,Lindi,Yes,2,No,11,32,None,1
+No,Unknown,35,Lindi,No,0,Unknown,15,26,None,0
+Yes,Unknown,56,Pwani,No,0,Yes,12,36,More than one,1
+Yes,Yes,84,Tabora,Unknown,2,No,14,43,Unknown,1
+Yes,Unknown,70,Ruvuma,Yes,0,No,15,31,One,1
+Yes,Unknown,44,Kilimanjaro,No,1,Yes,14,16,More than one,0
+No,Yes,54,Lindi,Yes,1,No,14,24,None,1
+No,No,67,Njombe,Yes,2,No,12,43,None,0
+No,No,35,Kagera,Unknown,1,No,9,32,One,1
+No,No,35,Pwani,Unknown,0,Yes,12,36,One,0
+No,Yes,60,Mbeya,Unknown,1,Unknown,10,28,Unknown,0
+Yes,Yes,64,Singida,Yes,0,Unknown,15,33,One,0
+Yes,Yes,82,Geita,No,0,Unknown,10,30,None,1
+No,Yes,73,Simiyu,Yes,0,No,10,19,One,1
+Yes,Unknown,63,Arusha,No,0,Unknown,10,23,None,0
+No,Yes,43,Songwe,Yes,0,No,13,31,More than one,1
+Yes,Unknown,40,Pwani,No,0,Yes,12,25,More than one,0
+Yes,Unknown,54,Songwe,Yes,1,Yes,15,30,More than one,1
+No,Unknown,37,Lindi,Yes,1,Yes,11,34,One,1
+Yes,No,51,Simiyu,Unknown,0,Yes,10,43,One,1
+Yes,No,79,Mtwara,No,2,No,9,29,More than one,1
+Yes,Unknown,83,Arusha,Unknown,0,Yes,9,17,More than one,0
+Yes,Yes,44,Mara,No,0,Unknown,11,37,Unknown,1
+No,No,47,Tabora,Unknown,1,No,15,21,Unknown,0
+No,No,52,Mtwara,Unknown,1,No,12,23,One,1
+No,Unknown,69,Arusha,No,2,No,15,24,One,1
+No,No,61,Mbeya,No,2,Yes,9,35,More than one,1
+Yes,Unknown,72,Dar es Salaam,Unknown,0,Unknown,9,35,Unknown,1
+Yes,Unknown,38,Katavi,Yes,2,No,14,42,None,1
+No,No,36,Mwanza,Yes,2,Yes,9,41,One,1
+No,Yes,43,Simiyu,Yes,1,No,9,42,One,0
+No,Unknown,69,Kigoma,Unknown,2,No,11,30,None,0
+Yes,No,63,Rukwa,No,0,Unknown,15,30,More than one,0
+No,Yes,82,Simiyu,No,1,Yes,13,20,One,1
+Yes,No,85,Pwani,No,0,Unknown,9,37,Unknown,1
+Yes,No,81,Manyara,No,1,Yes,14,29,One,0
+No,Yes,46,Iringa,Unknown,0,No,14,41,More than one,0
+No,Yes,56,Songwe,Unknown,0,Yes,14,25,One,1
+No,No,44,Mwanza,Unknown,0,No,15,15,More than one,0
+No,Yes,82,Dodoma,Yes,1,Yes,10,28,None,1
+Yes,Unknown,59,Kilimanjaro,No,2,Unknown,15,19,Unknown,1
+No,Yes,39,Tabora,Yes,2,Unknown,11,25,None,1
+No,Unknown,60,Songwe,No,1,Yes,14,37,More than one,0
+No,Yes,77,Mtwara,No,1,Unknown,13,39,None,1
+No,Yes,59,Arusha,Yes,1,No,14,32,Unknown,1
+No,Unknown,45,Geita,No,1,Unknown,13,44,Unknown,0
+Yes,Unknown,60,Morogoro,No,2,Unknown,13,41,Unknown,0
+No,No,84,Mwanza,No,0,Yes,13,36,None,0
+No,Yes,38,Mbeya,Unknown,2,No,14,27,None,0
+Yes,No,49,Simiyu,Unknown,0,Yes,14,34,One,0
+No,Unknown,56,Tabora,Unknown,1,Unknown,9,28,One,1
+Yes,No,40,Morogoro,Yes,1,No,14,25,One,1
+Yes,No,78,Shinyanga,Yes,2,Yes,12,31,Unknown,1
+No,Yes,44,Njombe,No,1,No,11,23,Unknown,1
+Yes,Yes,84,Arusha,Unknown,2,Unknown,12,25,None,1
+Yes,Yes,81,Mara,Yes,1,Unknown,15,25,None,0
+No,No,47,Tabora,Yes,1,No,15,37,One,1
+Yes,No,65,Pwani,No,0,No,14,25,One,1
+Yes,Yes,54,Mtwara,Yes,0,Yes,12,29,Unknown,0
+No,Unknown,77,Tanga,No,1,Unknown,14,18,More than one,0
+Yes,No,47,Mara,Unknown,2,No,11,37,More than one,1
+Yes,Yes,49,Mara,No,2,No,13,20,Unknown,1
+No,No,71,Simiyu,No,0,No,13,20,One,1
+No,No,49,Mwanza,No,1,Unknown,10,30,Unknown,1
+No,No,38,Mwanza,Unknown,1,No,10,41,Unknown,1
+Yes,Yes,47,Ruvuma,Unknown,1,Unknown,9,23,One,0
+No,Yes,62,Manyara,Yes,0,Unknown,9,37,More than one,0
+No,Yes,82,Mwanza,Unknown,2,Yes,12,39,One,1
+No,Unknown,56,Tabora,Unknown,1,Unknown,12,28,One,1
+No,Yes,64,Iringa,Yes,0,Unknown,10,39,More than one,0
+No,No,73,Morogoro,Yes,1,Yes,11,42,Unknown,0
+No,No,49,Mtwara,Yes,0,Yes,13,42,One,1
+No,Unknown,79,Njombe,No,1,No,10,22,Unknown,1
+No,No,47,Katavi,Yes,1,No,11,22,None,1
+No,Yes,64,Morogoro,No,0,No,11,23,One,1
+No,Unknown,72,Tanga,Unknown,2,No,12,19,Unknown,0
+Yes,No,84,Dar es Salaam,Yes,2,No,11,29,One,1
+Yes,Unknown,65,Morogoro,Unknown,1,Unknown,14,39,One,0
+Yes,No,37,Katavi,Unknown,2,Unknown,11,40,More than one,1
+No,Yes,43,Dar es Salaam,Yes,1,Yes,12,25,Unknown,0
+No,No,69,Rukwa,Yes,2,Unknown,11,34,Unknown,1
+No,No,67,Njombe,Unknown,0,Yes,10,25,None,0
+Yes,Yes,40,Tabora,No,2,Unknown,13,27,More than one,0
+Yes,Unknown,81,Morogoro,Yes,2,Unknown,10,44,Unknown,1
+Yes,No,82,Mara,Unknown,1,No,11,26,None,1
+No,Yes,52,Geita,Yes,1,Unknown,14,44,More than one,0
+Yes,Unknown,76,Katavi,Yes,0,Unknown,15,41,Unknown,1
+No,No,37,Rukwa,No,0,Yes,13,44,None,1
+No,No,49,Mwanza,No,1,Unknown,15,30,Unknown,0
+No,Yes,43,Rukwa,No,1,Unknown,14,40,One,0
+Yes,No,76,Lindi,Yes,0,Yes,12,16,None,1
+No,No,76,Tabora,Unknown,1,Unknown,14,25,One,1
+No,No,67,Dodoma,Unknown,2,Unknown,11,25,Unknown,1
+No,Unknown,83,Iringa,Yes,0,Yes,12,29,None,0
+Yes,Unknown,71,Dodoma,Unknown,0,Unknown,12,16,More than one,0
+Yes,Yes,70,Songwe,No,0,Yes,15,36,More than one,1
+No,No,67,Tanga,Unknown,0,Unknown,14,40,Unknown,1
+Yes,Unknown,50,Geita,No,0,Unknown,12,41,One,1
+Yes,Yes,83,Iringa,Yes,0,No,13,33,None,1
+No,Unknown,56,Tabora,Unknown,1,Unknown,10,28,One,1
+No,Yes,82,Simiyu,No,1,Yes,14,20,One,1
+No,Yes,50,Tanga,Yes,2,Unknown,12,44,Unknown,1
+No,Unknown,62,Mtwara,Yes,0,No,12,17,One,0
+Yes,Yes,69,Dar es Salaam,Unknown,2,No,14,16,Unknown,1
+Yes,Unknown,84,Manyara,Unknown,2,Yes,13,43,None,1
+No,No,82,Rukwa,No,1,No,9,31,Unknown,0
+Yes,Yes,65,Pwani,Yes,1,No,11,19,Unknown,0
+No,Yes,43,Ruvuma,No,2,Yes,10,43,More than one,0
+No,Unknown,37,Arusha,Yes,0,Unknown,14,19,One,0
+No,Yes,60,Njombe,Unknown,2,Unknown,9,16,More than one,1
+Yes,No,55,Mtwara,Unknown,2,No,10,32,More than one,0
+Yes,Unknown,61,Shinyanga,Unknown,0,Unknown,13,31,One,1
+No,No,38,Morogoro,Yes,0,No,13,39,None,1
+No,Yes,80,Simiyu,No,1,Unknown,12,30,None,0
+No,No,40,Mtwara,Yes,2,No,15,21,Unknown,1
+No,No,47,Ruvuma,Yes,1,Yes,15,19,None,0
+Yes,Unknown,66,Arusha,No,2,Unknown,9,15,Unknown,0
+No,Yes,55,Njombe,No,0,No,15,33,Unknown,0
+No,Yes,67,Mwanza,No,1,Unknown,13,32,None,1
+Yes,Unknown,39,Arusha,Unknown,0,No,13,21,None,0
+Yes,Yes,48,Tabora,No,0,Unknown,9,25,More than one,0
+Yes,Unknown,40,Kagera,No,0,Unknown,13,43,Unknown,0
+No,No,46,Morogoro,Yes,2,Unknown,14,29,More than one,0
+Yes,Yes,52,Katavi,Unknown,2,Yes,13,39,More than one,1
+No,No,58,Katavi,Unknown,0,Yes,9,23,None,0
+Yes,No,66,Kilimanjaro,Unknown,2,Unknown,12,33,One,0
+No,Yes,63,Singida,No,0,Unknown,15,43,More than one,1
+No,Yes,68,Mbeya,Yes,1,No,14,42,More than one,1
+Yes,Unknown,78,Manyara,Yes,2,No,9,36,One,1
+No,Unknown,52,Dar es Salaam,No,1,Yes,15,28,None,0
+Yes,No,76,Lindi,Yes,0,Yes,15,16,None,1
+No,Yes,45,Tabora,No,1,No,10,40,None,1
+No,Yes,68,Mbeya,Yes,1,No,14,42,More than one,1
+No,Yes,48,Pwani,Yes,2,Unknown,11,28,Unknown,1
+Yes,Unknown,38,Pwani,Yes,2,No,13,39,Unknown,1
+Yes,Unknown,50,Mara,Unknown,2,Unknown,12,42,None,1
+Yes,Unknown,38,Simiyu,Yes,1,No,14,37,None,1
+No,Yes,60,Kilimanjaro,Yes,1,No,15,31,Unknown,0
+No,Yes,79,Dodoma,Unknown,0,No,14,44,Unknown,0
+Yes,Unknown,66,Dar es Salaam,Yes,2,No,15,24,None,0
+Yes,No,62,Mara,Unknown,1,No,15,39,Unknown,1
+No,No,38,Ruvuma,No,2,Unknown,9,35,Unknown,1
+No,No,82,Iringa,Yes,1,Yes,10,39,Unknown,1
+No,No,77,Mara,No,0,No,14,22,Unknown,0
+Yes,Yes,47,Katavi,Yes,2,Unknown,13,19,One,1
+No,Unknown,45,Iringa,Yes,1,Yes,9,34,More than one,0
+Yes,Unknown,65,Simiyu,Unknown,2,Yes,9,39,One,0
+Yes,Unknown,64,Songwe,Yes,1,Unknown,12,37,More than one,1
+Yes,No,80,Manyara,Unknown,0,Yes,13,42,One,1
+Yes,Unknown,78,Kigoma,No,1,Yes,10,43,Unknown,0
+No,Unknown,50,Simiyu,Unknown,0,Yes,10,44,One,1
+Yes,Yes,61,Mbeya,Unknown,2,No,9,26,One,0
+Yes,Unknown,35,Shinyanga,No,2,Yes,12,26,One,1
+No,Unknown,62,Mara,Yes,1,Yes,9,38,More than one,0
+No,Unknown,75,Kilimanjaro,Yes,0,No,13,25,None,0
+No,Unknown,62,Mara,No,2,Unknown,12,20,More than one,0
+No,Unknown,48,Simiyu,Unknown,2,Unknown,12,37,None,0
+No,No,52,Mtwara,Yes,2,Yes,13,26,One,0
+No,Unknown,66,Katavi,Yes,0,No,12,28,Unknown,1
+Yes,Yes,70,Dar es Salaam,No,2,Unknown,14,44,One,0
+Yes,Yes,55,Mwanza,No,2,Yes,14,25,Unknown,0
+No,No,69,Simiyu,Yes,0,Yes,15,25,Unknown,0
+No,No,85,Iringa,Yes,0,Unknown,14,25,None,0
+Yes,No,76,Arusha,Unknown,1,Unknown,12,22,More than one,1
+No,Unknown,58,Pwani,Yes,1,Yes,12,24,One,0
+No,Unknown,83,Dar es Salaam,No,0,Unknown,10,25,Unknown,0
+No,Yes,45,Tabora,No,1,No,13,40,None,1
+Yes,Yes,78,Singida,Yes,1,Unknown,9,36,One,0
+Yes,No,49,Dodoma,Unknown,2,No,15,35,None,1
+Yes,Yes,77,Kigoma,Yes,0,Unknown,14,44,None,0
+No,Unknown,53,Mbeya,No,2,Yes,9,44,None,1
+No,Unknown,62,Singida,No,2,Unknown,14,37,One,1
+Yes,Yes,62,Kigoma,Unknown,2,Yes,9,27,Unknown,0
+Yes,No,76,Arusha,Yes,2,Unknown,14,22,More than one,0
+No,Unknown,71,Shinyanga,Yes,0,No,9,28,More than one,0
+No,No,39,Manyara,Unknown,2,Yes,12,38,Unknown,0
+No,No,74,Tanga,Yes,1,Yes,13,21,More than one,0
+Yes,Yes,80,Lindi,Unknown,0,No,14,24,None,0
+Yes,No,81,Mwanza,No,2,Yes,11,19,One,0
+No,No,84,Mtwara,Yes,2,No,15,29,One,0
+No,Unknown,76,Lindi,Yes,2,No,14,25,One,0
+Yes,Unknown,82,Arusha,No,0,No,10,42,One,1
+Yes,Yes,66,Kilimanjaro,Yes,0,Yes,13,35,None,0
+Yes,Yes,67,Arusha,No,2,Unknown,14,18,Unknown,1
+Yes,Yes,61,Mara,Unknown,1,Yes,11,39,None,1
+No,Unknown,79,Njombe,No,1,No,14,22,Unknown,0
+Yes,Yes,65,Mbeya,Yes,0,Yes,15,39,None,0
+No,No,68,Rukwa,No,1,Unknown,14,18,None,0
+No,Yes,58,Rukwa,No,1,No,14,38,More than one,1
+No,No,52,Mwanza,Yes,2,Unknown,13,36,None,0
+Yes,Yes,39,Lindi,No,0,No,10,18,One,0
+No,Unknown,60,Mtwara,Unknown,1,Yes,14,39,None,0
+Yes,Yes,65,Singida,No,0,Unknown,11,17,One,0
+No,Unknown,83,Dodoma,Yes,2,Unknown,12,28,More than one,0
+Yes,Yes,78,Katavi,Unknown,2,Unknown,11,26,One,0
+No,Unknown,59,Mwanza,Unknown,1,Yes,11,42,One,1
+No,Yes,78,Katavi,No,0,Yes,10,41,Unknown,1
+No,Yes,72,Kagera,Unknown,0,No,15,30,More than one,1
+No,No,37,Dar es Salaam,Unknown,2,No,10,42,One,1
+No,Unknown,74,Mtwara,No,1,Yes,9,37,More than one,1
+No,Unknown,63,Katavi,Unknown,2,Unknown,15,40,None,0
+Yes,Unknown,78,Mbeya,Unknown,0,No,12,29,More than one,1
+Yes,Yes,37,Dar es Salaam,Yes,2,Yes,12,16,None,0
+Yes,No,76,Arusha,Unknown,1,Unknown,14,22,More than one,1
+No,Yes,81,Arusha,Yes,0,Yes,11,40,None,1
+No,No,47,Tabora,Yes,1,No,9,37,One,0
+Yes,No,48,Lindi,Unknown,2,Yes,14,26,Unknown,1
+Yes,No,35,Kilimanjaro,Yes,1,No,10,21,None,1
+No,No,81,Ruvuma,Yes,1,Yes,12,44,Unknown,0
+No,Unknown,62,Simiyu,Unknown,2,Unknown,15,28,More than one,0
+Yes,Yes,78,Rukwa,Unknown,2,Yes,15,15,None,1
+Yes,No,70,Mara,Yes,2,Unknown,11,25,None,1
+Yes,No,40,Kigoma,Yes,0,No,14,18,One,1
+Yes,Unknown,42,Kagera,No,0,No,13,32,None,1
+No,Yes,49,Njombe,Unknown,0,Yes,12,34,None,1
+No,Yes,41,Tanga,No,2,No,9,26,None,0
+Yes,Unknown,78,Kilimanjaro,Yes,0,Yes,11,24,More than one,1
+Yes,No,47,Kagera,No,0,Unknown,13,25,More than one,0
+No,Unknown,62,Singida,No,2,Unknown,15,37,One,1
+No,Yes,48,Ruvuma,Unknown,1,Yes,9,18,Unknown,1
+Yes,Unknown,79,Kagera,Unknown,2,Yes,14,18,More than one,1
+No,Yes,35,Dodoma,Unknown,0,No,14,25,None,0
+Yes,No,72,Songwe,Yes,1,Yes,15,29,More than one,0
+Yes,Unknown,75,Kilimanjaro,No,2,Unknown,11,26,More than one,1
+No,No,66,Mbeya,Unknown,2,Unknown,9,27,More than one,1
+Yes,Yes,54,Shinyanga,Unknown,0,Unknown,10,43,Unknown,0
+Yes,Yes,43,Katavi,Unknown,0,No,14,32,Unknown,0
+Yes,No,40,Kagera,Yes,2,Yes,15,27,Unknown,0
+Yes,No,40,Kigoma,Unknown,1,No,13,16,More than one,0
+No,Yes,35,Kilimanjaro,Yes,1,Unknown,9,16,More than one,0
+No,No,45,Mara,Yes,1,Yes,9,39,None,0
+No,Unknown,70,Arusha,Yes,2,No,12,37,Unknown,0
+Yes,No,84,Dar es Salaam,Yes,2,No,13,29,One,1
+No,Yes,64,Tabora,Yes,0,Unknown,9,37,Unknown,0
+No,No,77,Njombe,Unknown,2,Unknown,13,33,None,0
+Yes,No,41,Dodoma,No,2,Yes,12,31,Unknown,1
+Yes,Yes,80,Dar es Salaam,Unknown,1,Yes,9,19,More than one,0
+No,Unknown,37,Arusha,Yes,0,Unknown,9,19,One,1
+No,Unknown,75,Pwani,Unknown,2,Unknown,12,29,More than one,1
+Yes,Unknown,42,Kagera,No,0,No,14,32,None,0
+No,Unknown,37,Kigoma,Unknown,0,Yes,14,42,One,1
+No,Yes,52,Singida,Yes,0,Unknown,12,43,One,0
+No,Yes,61,Rukwa,Unknown,2,Yes,11,37,More than one,0
+No,No,69,Rukwa,Yes,2,Unknown,15,34,Unknown,0
+Yes,Yes,49,Mara,No,2,No,12,20,Unknown,1
+No,No,69,Rukwa,Yes,2,Unknown,11,34,Unknown,1
+No,Unknown,43,Kagera,Yes,2,No,12,37,More than one,0
+Yes,No,41,Dodoma,No,1,Yes,9,41,None,0
+No,Unknown,39,Dodoma,Yes,2,Yes,11,30,One,1
+Yes,No,73,Dodoma,Unknown,0,Yes,12,27,None,0
+No,Yes,47,Mtwara,Unknown,1,Unknown,15,38,Unknown,0
+No,Yes,78,Katavi,No,0,Unknown,14,34,More than one,1
+No,Unknown,63,Dodoma,No,1,Unknown,14,25,None,0
+Yes,Unknown,40,Kigoma,Yes,2,Unknown,12,39,One,0
+No,No,41,Kigoma,No,1,No,9,40,Unknown,1
+No,Yes,77,Katavi,No,1,Yes,11,30,More than one,0
+Yes,Unknown,49,Ruvuma,Unknown,0,Yes,15,44,More than one,0
+No,No,81,Kagera,No,0,No,9,24,Unknown,1
+No,No,42,Geita,Unknown,0,No,15,34,None,0
+No,Unknown,52,Morogoro,Unknown,1,Yes,13,43,More than one,1
+Yes,Yes,50,Manyara,Yes,0,Unknown,10,31,None,0
+No,Yes,67,Mwanza,No,1,Unknown,14,32,None,1
+No,Unknown,80,Mwanza,No,2,Unknown,14,27,One,1
+Yes,Unknown,50,Dar es Salaam,No,2,Unknown,9,33,Unknown,1
+No,Yes,39,Mbeya,Yes,0,Yes,9,25,None,1
+No,Yes,44,Njombe,No,1,No,13,23,Unknown,1
+No,Yes,57,Ruvuma,Unknown,2,Yes,15,41,One,1
+Yes,No,61,Njombe,Unknown,2,Unknown,9,41,Unknown,1
+No,No,77,Dodoma,No,1,No,13,23,Unknown,0
+No,Yes,37,Kilimanjaro,No,1,Yes,9,20,None,1
+Yes,No,69,Morogoro,Unknown,1,Yes,13,42,None,0
+Yes,No,50,Mtwara,Unknown,1,No,13,40,None,0
+Yes,Unknown,65,Kigoma,No,2,Unknown,9,23,None,0
+Yes,No,52,Geita,Unknown,1,No,13,43,More than one,1
+Yes,Unknown,49,Morogoro,Unknown,1,Yes,15,26,Unknown,1
+Yes,No,78,Mara,Yes,2,Yes,15,29,None,0
+No,Unknown,67,Kigoma,Yes,0,Yes,9,22,More than one,0
+Yes,No,76,Ruvuma,Yes,2,Unknown,10,39,Unknown,1
+No,Yes,52,Lindi,Yes,2,Unknown,10,38,None,0
+No,Yes,43,Dodoma,Yes,1,Yes,12,26,None,0
+Yes,No,66,Songwe,No,2,Yes,10,22,More than one,0
+Yes,Yes,46,Dodoma,Unknown,2,Unknown,14,24,More than one,0
+No,No,70,Manyara,Yes,2,Yes,14,33,Unknown,0
+No,Unknown,60,Mwanza,No,2,No,14,40,Unknown,0
+Yes,Unknown,60,Morogoro,No,2,Unknown,10,41,Unknown,1
+No,Yes,39,Mbeya,Unknown,2,Unknown,9,15,One,0
+Yes,No,40,Iringa,Unknown,1,No,15,31,More than one,1
+No,No,39,Manyara,No,2,Yes,11,36,None,0
+Yes,Unknown,68,Geita,No,1,Yes,13,34,None,0
+No,No,84,Mtwara,Yes,2,No,15,29,One,1
+Yes,No,51,Mara,Yes,2,Yes,9,32,Unknown,0
+Yes,Unknown,78,Dar es Salaam,Unknown,2,Unknown,9,19,None,0
+Yes,No,39,Kigoma,Yes,2,No,9,31,One,0
+No,Yes,76,Shinyanga,No,2,Unknown,10,38,None,0
+Yes,No,36,Dar es Salaam,No,2,Unknown,9,18,One,1
+No,No,42,Mbeya,Yes,1,Unknown,14,17,Unknown,1
+Yes,Yes,73,Morogoro,Yes,0,No,13,25,None,0
+No,No,37,Dar es Salaam,Unknown,2,No,15,42,One,1
+No,Unknown,74,Kilimanjaro,Yes,0,Yes,14,15,Unknown,0
+Yes,Unknown,78,Pwani,Yes,1,No,15,34,More than one,0
+No,Unknown,57,Kagera,Yes,2,No,10,28,None,0
+Yes,Yes,38,Morogoro,No,2,No,11,37,One,0
+Yes,Unknown,56,Pwani,No,0,Yes,14,36,More than one,1
+Yes,Yes,74,Kagera,Yes,2,Unknown,10,40,One,1
+No,Unknown,74,Mara,No,0,Unknown,9,37,None,0
+No,Unknown,40,Ruvuma,Yes,1,Yes,13,27,Unknown,0
+No,No,81,Dar es Salaam,Unknown,2,No,14,26,Unknown,1
+No,Yes,70,Morogoro,Yes,1,Unknown,15,26,Unknown,0
+Yes,Yes,69,Kilimanjaro,No,2,Yes,15,21,More than one,0
+Yes,Unknown,75,Lindi,Unknown,2,Unknown,9,17,More than one,0
+Yes,No,62,Shinyanga,Unknown,0,Yes,14,35,More than one,1
+No,No,58,Katavi,Unknown,0,Yes,14,23,None,1
+Yes,Unknown,42,Manyara,Unknown,1,Yes,13,35,Unknown,0
+No,No,72,Ruvuma,Unknown,0,No,14,29,Unknown,0
+Yes,No,84,Dar es Salaam,Yes,2,No,14,29,One,1
+No,No,45,Kigoma,No,0,Unknown,12,30,None,0
+No,Unknown,51,Mtwara,Yes,1,No,9,22,More than one,1
+No,No,63,Pwani,Unknown,2,Yes,12,24,More than one,0
+No,Unknown,42,Njombe,Yes,1,No,10,34,One,1
+Yes,Yes,85,Mwanza,Unknown,1,Yes,9,31,Unknown,1
+No,Unknown,62,Kigoma,Unknown,1,Unknown,9,34,Unknown,1
+Yes,Unknown,66,Mbeya,No,0,Yes,13,20,One,0
+No,Yes,66,Rukwa,Unknown,0,Unknown,12,34,One,0
+Yes,Yes,41,Lindi,Yes,1,Yes,12,25,Unknown,0
+No,No,78,Simiyu,Yes,1,Yes,14,44,None,0
+No,Unknown,85,Tanga,Unknown,1,No,12,43,None,0
+Yes,No,46,Mara,No,1,Yes,13,39,Unknown,1
+Yes,No,83,Lindi,Yes,1,No,9,30,More than one,1
+No,Yes,60,Iringa,No,2,No,14,44,One,1
+Yes,Yes,59,Mbeya,No,2,No,12,31,Unknown,1
+No,Unknown,38,Mbeya,No,0,No,10,29,Unknown,1
+No,No,44,Simiyu,Unknown,0,Unknown,14,22,None,0
+No,No,41,Kigoma,No,1,No,14,40,Unknown,1
+Yes,No,81,Tanga,Yes,1,Unknown,9,16,One,0
+No,No,68,Rukwa,No,1,Unknown,10,18,None,1
+No,No,45,Lindi,Unknown,1,Unknown,9,33,One,0
+No,Yes,48,Kagera,Yes,0,Unknown,10,36,More than one,0
+Yes,Yes,60,Simiyu,Unknown,2,Yes,9,25,More than one,1
+No,Unknown,85,Ruvuma,Yes,2,Unknown,13,20,More than one,1
+No,Unknown,52,Dar es Salaam,Unknown,2,Unknown,12,24,None,0
+No,Yes,57,Ruvuma,Unknown,2,Yes,15,41,One,0
+Yes,No,44,Ruvuma,No,1,Yes,14,44,More than one,0
+Yes,Yes,65,Mbeya,No,1,Unknown,13,43,More than one,1
+Yes,No,41,Shinyanga,Yes,1,Unknown,12,41,One,0
+No,Unknown,45,Shinyanga,Yes,0,Unknown,9,36,None,1
+No,Unknown,37,Tabora,Yes,0,Unknown,9,44,None,0
+No,Unknown,38,Katavi,Yes,1,Unknown,13,22,None,0
+Yes,Yes,76,Dodoma,Yes,2,No,9,27,More than one,0
+No,No,52,Mtwara,Yes,0,Yes,9,43,None,1
+No,Unknown,48,Manyara,No,1,Yes,10,19,More than one,1
+No,Yes,82,Mwanza,Unknown,0,No,15,35,One,0
+No,Unknown,82,Geita,No,0,Unknown,12,37,None,0
+No,No,64,Tanga,Unknown,0,Unknown,13,24,More than one,1
+No,Yes,79,Kilimanjaro,No,1,No,11,36,Unknown,1
+Yes,Unknown,81,Morogoro,Yes,2,Unknown,10,44,Unknown,0
+Yes,No,72,Songwe,Yes,1,Yes,11,29,More than one,1
+No,Yes,35,Kilimanjaro,Yes,1,Unknown,9,19,More than one,1
+No,Unknown,37,Mara,Yes,2,Yes,14,23,More than one,1
+No,Yes,57,Ruvuma,Unknown,2,Yes,10,41,One,1
+Yes,Yes,78,Njombe,Yes,1,No,11,26,Unknown,1
+No,Yes,60,Iringa,No,2,No,15,44,One,1
+No,No,52,Simiyu,Yes,1,No,13,39,None,0
+No,No,51,Dodoma,No,1,Yes,12,17,Unknown,0
+Yes,Yes,45,Manyara,Unknown,2,No,12,18,None,0
+Yes,Unknown,55,Mtwara,No,0,Unknown,14,24,One,1
+Yes,Yes,43,Tabora,Unknown,1,Unknown,10,19,More than one,1
+No,No,84,Tabora,No,2,No,13,27,Unknown,1
+No,Yes,82,Dodoma,Yes,1,Yes,15,28,None,1
+No,Yes,82,Simiyu,No,1,Yes,13,20,One,1
+No,No,55,Ruvuma,Yes,1,Yes,12,28,More than one,0
+No,Yes,70,Rukwa,Unknown,2,No,10,16,Unknown,0
+Yes,No,46,Mara,No,1,Yes,10,39,Unknown,0
+No,No,66,Morogoro,Yes,2,Unknown,15,25,More than one,1
+No,Yes,53,Singida,No,2,No,12,22,More than one,0
+No,Yes,49,Mtwara,No,2,Yes,11,33,One,0
+Yes,Unknown,44,Mwanza,Unknown,2,Yes,11,33,Unknown,0
+Yes,No,76,Dodoma,Yes,1,Yes,13,19,None,1
+No,Yes,63,Lindi,Yes,2,No,12,32,None,1
+No,Yes,82,Dodoma,Yes,1,Yes,13,28,None,1
+No,No,59,Arusha,Unknown,2,Unknown,10,25,Unknown,1
+No,Unknown,85,Katavi,Unknown,0,Yes,13,33,None,1
+Yes,Unknown,50,Singida,No,0,No,12,31,None,0
+No,Yes,74,Manyara,Yes,2,No,15,30,More than one,0
+Yes,Unknown,65,Mwanza,Yes,2,No,10,29,One,0
+Yes,No,63,Arusha,Unknown,0,No,10,38,More than one,1
+No,Yes,85,Njombe,Unknown,2,Yes,12,28,More than one,0
+No,Unknown,85,Ruvuma,Yes,2,Unknown,12,20,More than one,1
+Yes,Unknown,48,Lindi,Unknown,0,No,13,33,None,1
+No,Unknown,42,Shinyanga,No,2,Yes,11,42,None,1
+No,Yes,55,Dar es Salaam,Yes,0,Unknown,15,32,Unknown,0
+No,Yes,62,Mbeya,Unknown,0,Unknown,12,16,Unknown,1
+No,No,56,Simiyu,Unknown,2,Unknown,9,30,None,1
+No,Unknown,42,Pwani,Yes,2,No,9,26,None,1
+Yes,Yes,63,Mara,Yes,2,No,15,26,Unknown,1
+Yes,Yes,49,Dar es Salaam,No,2,Yes,9,37,Unknown,1
+No,Yes,82,Simiyu,Unknown,0,Unknown,15,33,Unknown,0
+No,No,72,Ruvuma,Unknown,2,No,10,23,Unknown,1
+No,Unknown,61,Njombe,No,0,Yes,9,25,Unknown,1
+Yes,No,74,Tabora,Unknown,2,No,11,41,None,0
+No,Yes,43,Dar es Salaam,Yes,1,Yes,13,25,Unknown,1
+Yes,Yes,71,Dodoma,Unknown,1,Unknown,11,26,More than one,0
+No,No,46,Mtwara,No,2,No,14,28,More than one,1
+No,Yes,59,Katavi,No,1,Unknown,13,23,One,1
+Yes,No,84,Katavi,Unknown,2,Yes,11,18,One,1
+No,Unknown,85,Katavi,Unknown,0,Yes,13,33,None,0
+Yes,Unknown,38,Mbeya,Yes,1,Yes,15,29,One,0
+Yes,No,70,Mara,Yes,2,Unknown,11,25,None,1
+Yes,Unknown,56,Tabora,Unknown,0,No,10,16,One,0
+Yes,No,55,Mtwara,Unknown,2,No,11,17,None,0
+Yes,Unknown,68,Pwani,Unknown,1,No,14,39,More than one,1
+Yes,Yes,76,Katavi,Unknown,0,Unknown,10,39,Unknown,0
+Yes,Yes,56,Mbeya,Unknown,2,Yes,15,20,One,1
+No,No,46,Tabora,Yes,0,Yes,13,27,One,1
+Yes,Yes,59,Rukwa,Unknown,2,Yes,13,31,More than one,0
+Yes,Unknown,76,Katavi,Yes,0,Unknown,11,41,Unknown,0
+No,Unknown,50,Iringa,Yes,0,Yes,15,17,Unknown,0
+Yes,Yes,54,Singida,Unknown,2,Yes,9,40,More than one,0
+No,No,68,Kilimanjaro,Yes,1,Unknown,11,17,Unknown,0
+Yes,No,58,Mtwara,Unknown,2,Yes,11,44,One,1
+No,No,55,Singida,No,0,Yes,12,26,One,0
+Yes,Unknown,76,Kilimanjaro,Unknown,2,No,12,26,None,0
+Yes,Unknown,41,Rukwa,Yes,0,No,10,33,One,1
+No,Yes,74,Ruvuma,Unknown,2,Unknown,10,36,One,0
+Yes,No,47,Kagera,Unknown,1,No,9,40,More than one,0
+No,Unknown,46,Arusha,Yes,0,No,13,22,None,1
+Yes,Yes,42,Singida,Unknown,2,No,11,42,Unknown,1
+No,Unknown,38,Mwanza,Unknown,2,No,12,20,More than one,1
+Yes,No,82,Mwanza,No,1,No,13,19,None,0
+Yes,No,80,Dar es Salaam,No,2,Unknown,13,37,One,0
+No,Yes,40,Songwe,Unknown,2,Yes,12,23,Unknown,1
+No,No,72,Ruvuma,Unknown,2,No,13,23,Unknown,0
+No,No,52,Mtwara,Unknown,1,No,13,23,One,0
+No,Yes,69,Shinyanga,No,0,Yes,13,42,None,0
+No,Yes,84,Iringa,Unknown,2,Yes,13,17,More than one,0
+No,No,76,Mbeya,Yes,1,No,11,44,One,1
+Yes,Unknown,68,Pwani,Unknown,1,No,10,39,More than one,1
+Yes,No,62,Kigoma,No,2,No,14,38,One,0
+No,No,72,Morogoro,Unknown,2,Unknown,11,34,More than one,0
+Yes,Unknown,79,Kagera,Unknown,2,Yes,12,18,More than one,1
+No,No,44,Kagera,Unknown,1,Yes,10,33,One,0
+No,Unknown,62,Kigoma,Unknown,1,Unknown,12,34,Unknown,1
+Yes,Yes,80,Dar es Salaam,Unknown,1,Yes,12,19,More than one,1
+No,Yes,80,Kigoma,Unknown,0,Unknown,13,26,One,0
+No,Yes,49,Njombe,Unknown,0,Yes,12,34,None,1
+Yes,No,45,Simiyu,Yes,1,Unknown,11,27,None,0
+No,No,75,Katavi,Yes,0,No,15,17,More than one,1
+Yes,Yes,49,Dar es Salaam,No,2,Yes,12,37,Unknown,0
+Yes,Unknown,54,Kagera,No,0,No,14,32,None,0
+No,No,38,Ruvuma,No,2,Unknown,14,35,Unknown,0
+Yes,Yes,38,Simiyu,Yes,0,Yes,12,24,One,0
+No,Unknown,54,Mtwara,No,0,No,15,16,More than one,0
+No,No,47,Katavi,Yes,1,No,9,22,None,0
+Yes,No,74,Lindi,Yes,0,Unknown,15,21,One,0
+Yes,No,80,Manyara,Unknown,0,Yes,14,42,One,1
+No,No,38,Ruvuma,No,2,Unknown,12,35,Unknown,1
+No,Unknown,39,Katavi,Yes,2,Unknown,14,38,None,1
+Yes,No,42,Mtwara,Yes,1,Unknown,12,22,None,0
+No,Unknown,64,Kagera,Yes,1,No,10,31,One,0
+No,Unknown,77,Tanga,No,2,Unknown,14,25,Unknown,1
+Yes,Yes,64,Shinyanga,No,0,Unknown,10,16,One,1
+No,Yes,49,Mwanza,Yes,2,No,11,34,More than one,0
+No,Yes,47,Songwe,Yes,2,Unknown,12,24,Unknown,0
+No,Yes,57,Shinyanga,No,0,Unknown,14,39,Unknown,0
+No,Unknown,55,Mwanza,No,1,Yes,11,44,None,0
+Yes,No,69,Tabora,Yes,1,No,12,33,More than one,1
+Yes,Yes,74,Mbeya,Unknown,0,Unknown,9,23,None,0
+Yes,Yes,62,Rukwa,Unknown,1,Yes,9,37,Unknown,0
+No,Unknown,54,Kagera,Unknown,0,Yes,9,40,None,0
+No,Yes,58,Rukwa,Yes,2,Unknown,9,32,Unknown,0
+Yes,Yes,69,Dar es Salaam,Yes,1,No,15,39,Unknown,0
+Yes,Unknown,75,Singida,No,2,No,14,43,Unknown,0
+No,Yes,43,Songwe,Yes,0,No,14,31,More than one,1
+Yes,Unknown,37,Shinyanga,No,2,No,9,22,One,1
+Yes,Unknown,62,Morogoro,Yes,0,No,9,20,More than one,1
+No,Unknown,42,Tanga,No,2,Unknown,10,36,One,0
+Yes,Unknown,85,Dodoma,Yes,0,Yes,12,42,Unknown,1
+Yes,No,40,Kigoma,Yes,0,No,11,18,One,1
+Yes,Unknown,63,Arusha,Unknown,1,No,12,41,More than one,1
+No,Unknown,65,Kigoma,Yes,1,No,10,18,More than one,0
+No,No,65,Kigoma,No,1,No,14,37,Unknown,1
+No,No,72,Rukwa,Yes,0,No,11,39,None,0
+Yes,Unknown,48,Ruvuma,Yes,1,Yes,9,30,One,0
+No,No,67,Tanga,Unknown,0,Unknown,14,40,Unknown,1
+Yes,Unknown,42,Ruvuma,Unknown,1,Yes,15,43,Unknown,0
+No,Unknown,48,Katavi,Yes,0,Unknown,9,22,Unknown,0
+Yes,Unknown,55,Kigoma,Yes,0,Yes,12,27,Unknown,1
+No,No,39,Geita,No,1,No,14,23,Unknown,0
+Yes,No,60,Mtwara,Unknown,0,Yes,13,27,None,1
+No,Unknown,51,Dar es Salaam,Unknown,1,No,14,25,Unknown,1
+No,Yes,66,Shinyanga,Unknown,1,No,11,20,More than one,0
+No,No,56,Lindi,No,0,Yes,11,44,None,1
+No,Yes,69,Mwanza,No,1,Yes,13,31,One,1
+Yes,Yes,79,Singida,Unknown,0,Unknown,10,28,More than one,1
+Yes,No,74,Mbeya,No,1,No,10,41,Unknown,0
+Yes,No,70,Shinyanga,Unknown,2,Unknown,13,25,More than one,0
+No,Unknown,61,Simiyu,No,0,Unknown,13,25,None,0
+Yes,Yes,53,Morogoro,Yes,0,Yes,9,16,Unknown,0
+Yes,No,73,Katavi,No,2,No,12,35,Unknown,0
+No,Unknown,77,Tanga,No,2,Unknown,11,25,Unknown,1
+Yes,Yes,59,Mbeya,No,2,No,12,31,Unknown,0
+No,Yes,66,Tabora,No,0,No,15,31,More than one,1
+Yes,Yes,62,Mwanza,Unknown,0,Yes,9,39,One,1
+Yes,No,85,Pwani,No,0,Unknown,15,37,Unknown,1
+No,No,80,Songwe,No,2,Yes,12,20,None,1
+No,Yes,53,Singida,No,2,No,14,22,More than one,1
+Yes,No,52,Singida,Yes,2,Yes,11,16,None,1
+No,Unknown,61,Geita,Unknown,1,Unknown,11,15,Unknown,0
+No,Yes,47,Mtwara,Unknown,1,Unknown,14,38,Unknown,1
+Yes,No,41,Tanga,No,1,Yes,13,42,One,1
+No,Unknown,42,Iringa,No,2,No,10,16,None,1
+Yes,Unknown,37,Shinyanga,No,2,No,13,22,One,1
+Yes,No,53,Ruvuma,Yes,2,Yes,14,34,Unknown,1
+Yes,No,57,Njombe,Unknown,0,Unknown,11,44,Unknown,1
+Yes,Yes,57,Shinyanga,No,0,Unknown,15,42,Unknown,1
+No,No,70,Simiyu,Yes,1,No,13,15,Unknown,0
+No,Yes,49,Njombe,Unknown,0,Yes,11,34,None,0
+Yes,Yes,60,Morogoro,Yes,0,No,9,32,More than one,0
+Yes,No,67,Arusha,Unknown,1,Unknown,13,29,One,0
+No,Yes,85,Arusha,Unknown,0,Unknown,10,17,None,1
+No,Yes,73,Simiyu,Yes,0,No,14,19,One,0
+Yes,No,81,Tabora,Unknown,0,Yes,12,25,None,1
+Yes,No,80,Shinyanga,Yes,1,Unknown,12,25,One,0
+Yes,No,60,Rukwa,Yes,1,Unknown,10,41,Unknown,0
+No,No,63,Pwani,Unknown,0,Yes,13,33,Unknown,0
+No,No,82,Katavi,Unknown,0,Yes,10,37,None,0
+No,No,69,Mbeya,Unknown,2,Unknown,11,26,One,0
+Yes,Yes,46,Tabora,Yes,0,Unknown,14,37,One,0
+Yes,Unknown,62,Morogoro,Yes,0,No,15,20,More than one,0
+Yes,No,42,Dar es Salaam,No,2,Yes,15,29,One,1
+Yes,Unknown,81,Lindi,No,1,No,15,24,More than one,0
+Yes,No,67,Singida,Yes,1,No,12,16,More than one,0
+Yes,No,76,Arusha,Unknown,1,Unknown,10,22,More than one,1
+No,Yes,59,Shinyanga,Unknown,2,No,14,38,None,0
+No,No,64,Lindi,Unknown,2,Yes,14,43,One,0
+No,Yes,42,Tabora,Unknown,1,No,15,43,None,1
+No,No,60,Lindi,Yes,1,Unknown,13,28,Unknown,0
+Yes,No,42,Rukwa,Yes,2,No,9,24,More than one,0
+Yes,Yes,60,Tabora,Unknown,1,Yes,12,25,More than one,1
+No,Unknown,42,Pwani,Yes,2,No,12,26,None,1
+No,No,75,Manyara,No,2,Yes,14,36,None,0
+Yes,Unknown,38,Simiyu,Yes,1,No,11,37,None,1
+Yes,No,44,Mara,Unknown,1,No,11,29,More than one,1
+No,No,84,Mwanza,No,0,Yes,9,36,None,1
+No,No,63,Mbeya,Yes,1,No,14,32,One,0
+No,Yes,79,Kilimanjaro,No,1,No,14,36,Unknown,0
+No,No,50,Dar es Salaam,Yes,1,No,9,18,Unknown,0
+No,Yes,77,Mtwara,No,1,Unknown,12,39,None,1
+Yes,No,58,Arusha,Yes,1,Yes,12,18,Unknown,0
+No,No,49,Dodoma,Yes,0,Yes,12,26,One,1
+Yes,No,62,Tabora,No,2,Yes,15,40,Unknown,0
+Yes,Unknown,35,Dodoma,No,0,Yes,10,44,Unknown,1
+Yes,Unknown,79,Songwe,Unknown,1,No,11,25,One,1
+No,No,81,Pwani,No,2,Yes,10,25,Unknown,1
+No,No,58,Njombe,Yes,0,Yes,10,17,One,0
+No,No,81,Kagera,No,0,No,15,24,Unknown,1
+No,No,80,Rukwa,Unknown,2,Yes,15,33,One,0
+Yes,Unknown,76,Rukwa,Yes,2,No,9,34,More than one,0
+Yes,Unknown,70,Shinyanga,No,1,No,13,17,Unknown,0
+No,Unknown,43,Manyara,Yes,2,Unknown,10,25,More than one,1
+Yes,No,35,Singida,Yes,1,Unknown,10,27,More than one,0
+Yes,Unknown,63,Arusha,Unknown,1,No,11,41,More than one,1
+Yes,Yes,60,Rukwa,Yes,0,No,10,29,Unknown,1
+Yes,No,53,Njombe,Yes,2,Yes,12,25,None,0
+Yes,No,65,Njombe,Yes,0,Unknown,15,15,One,1
+No,Yes,52,Mara,Unknown,0,Yes,13,25,One,0
+No,Yes,62,Dar es Salaam,Yes,1,Unknown,14,24,None,0
+No,No,54,Katavi,Yes,0,No,12,44,None,0
+Yes,Unknown,84,Mwanza,No,2,Unknown,9,33,More than one,0
+No,Unknown,82,Kilimanjaro,Unknown,0,Yes,9,23,More than one,0
+Yes,Yes,49,Mtwara,Unknown,1,No,10,17,More than one,0
+Yes,No,85,Pwani,No,0,Unknown,10,37,Unknown,0
+No,Yes,43,Kilimanjaro,Unknown,0,Unknown,14,26,None,1
+No,Yes,48,Kagera,Yes,0,Unknown,14,36,More than one,1
+Yes,No,50,Mara,Unknown,1,No,14,28,One,0
+No,No,71,Dodoma,Yes,1,No,13,36,One,0
+No,Yes,78,Katavi,No,0,Yes,12,41,Unknown,0
+No,No,79,Tanga,No,1,Unknown,13,29,Unknown,0
+No,Yes,35,Tanga,Unknown,0,Unknown,11,23,None,0
+Yes,Unknown,78,Kilimanjaro,Yes,0,Yes,13,24,More than one,0
+Yes,No,56,Kilimanjaro,Yes,0,No,14,40,One,1
+No,Yes,61,Arusha,Yes,1,Unknown,14,35,Unknown,1
+No,No,64,Arusha,Unknown,0,Unknown,13,26,None,0
+No,No,40,Mtwara,Yes,2,No,9,21,Unknown,1
+No,Unknown,71,Morogoro,Yes,0,Unknown,14,42,One,0
+Yes,Unknown,53,Katavi,Unknown,2,Unknown,11,18,More than one,0
+Yes,Yes,71,Singida,No,1,Unknown,14,16,More than one,0
+No,No,71,Rukwa,Yes,2,No,12,22,More than one,0
+Yes,No,44,Geita,No,0,No,15,21,Unknown,1
+No,Yes,55,Tabora,No,0,Unknown,11,20,More than one,0
+Yes,No,69,Tabora,Yes,1,No,15,33,More than one,1
+Yes,No,38,Kilimanjaro,Unknown,1,Unknown,14,22,Unknown,0
+Yes,No,43,Njombe,No,2,Unknown,11,16,More than one,1
+No,Yes,68,Manyara,No,2,Yes,12,41,Unknown,0
+No,No,77,Njombe,Unknown,2,Unknown,12,33,None,1
+Yes,No,62,Shinyanga,Unknown,0,Yes,14,35,More than one,0
+Yes,Unknown,79,Katavi,Yes,1,Yes,13,34,More than one,0
+No,No,60,Songwe,Yes,1,Yes,14,37,One,0
+Yes,No,75,Tabora,Yes,2,Yes,11,35,None,1
+Yes,No,40,Tabora,No,2,No,12,25,Unknown,1
+No,Yes,43,Iringa,No,0,No,12,36,More than one,0
+Yes,Unknown,78,Pwani,Yes,1,No,15,34,More than one,1
+Yes,Unknown,74,Pwani,Unknown,0,No,11,36,Unknown,1
+Yes,Unknown,48,Lindi,Unknown,0,No,13,33,None,1
+Yes,No,64,Geita,Yes,2,No,9,28,More than one,0
+No,No,40,Tabora,Yes,2,Unknown,14,29,One,0
+Yes,Yes,82,Mtwara,Unknown,0,Yes,11,39,None,0
+Yes,Yes,41,Singida,No,2,Unknown,11,33,None,0
+Yes,Unknown,60,Morogoro,No,2,Unknown,13,41,Unknown,1
+Yes,No,83,Lindi,Yes,1,No,12,30,More than one,0
+No,Unknown,40,Dodoma,Unknown,1,No,14,19,One,1
+No,Yes,55,Mara,No,2,Yes,12,16,One,0
+Yes,Unknown,53,Shinyanga,No,0,Unknown,12,20,Unknown,1
+No,Unknown,70,Kagera,No,2,Unknown,9,28,Unknown,0
+No,Yes,56,Shinyanga,Unknown,0,No,9,29,None,0
+No,Yes,45,Kigoma,Yes,0,Unknown,11,44,None,1
+Yes,No,51,Mbeya,No,2,Unknown,15,42,Unknown,1
+No,Unknown,44,Ruvuma,Unknown,2,Unknown,15,21,None,0
+No,Unknown,40,Mara,Unknown,0,Yes,13,18,None,0
+No,Unknown,48,Mtwara,Unknown,0,No,13,34,More than one,1
+Yes,Yes,35,Kilimanjaro,Unknown,1,Yes,11,18,None,1
+Yes,Unknown,38,Songwe,No,1,No,10,26,Unknown,0
+No,Yes,81,Iringa,No,1,No,9,16,More than one,0
+No,Unknown,69,Ruvuma,No,2,No,11,36,More than one,1
+No,Yes,45,Tabora,No,1,No,11,40,None,1
+No,Unknown,71,Mwanza,No,2,No,10,25,More than one,0
+Yes,No,81,Tabora,Unknown,0,Yes,10,25,None,1
+No,No,63,Mara,Yes,0,No,9,38,Unknown,1
+No,Yes,40,Mara,Unknown,0,Yes,13,26,More than one,1
+Yes,No,76,Dodoma,Yes,1,Yes,15,19,None,1
+No,Unknown,56,Tabora,No,0,No,13,16,More than one,0
+No,No,69,Mara,Yes,2,No,12,30,None,1
+No,Yes,66,Tanga,Yes,1,No,11,15,None,0
+Yes,No,76,Songwe,Unknown,1,Yes,11,33,None,1
+Yes,Yes,35,Pwani,Yes,1,Unknown,9,43,None,1
+No,No,66,Mbeya,Unknown,2,Unknown,13,27,More than one,0
+Yes,No,51,Morogoro,Yes,0,Unknown,12,34,One,1
+Yes,Unknown,38,Arusha,Unknown,2,Unknown,9,40,More than one,1
+No,Unknown,40,Ruvuma,Yes,1,Yes,11,27,Unknown,1
+Yes,Unknown,38,Kagera,Yes,0,Unknown,10,25,More than one,1
+Yes,Unknown,48,Njombe,Yes,1,Yes,10,43,One,0
+No,Yes,61,Arusha,Yes,1,Unknown,13,35,Unknown,1
+No,Yes,53,Mara,Unknown,1,Yes,12,37,None,1
+No,No,44,Mwanza,Unknown,0,No,13,15,More than one,1
+No,No,79,Dodoma,Yes,0,Unknown,13,24,More than one,0
+No,Yes,81,Arusha,Yes,0,Yes,15,40,None,0
+No,Yes,41,Rukwa,No,1,Yes,14,20,One,1
+No,Unknown,47,Mtwara,Unknown,0,Unknown,13,38,More than one,0
+No,No,49,Simiyu,Yes,2,No,15,21,None,0
+No,No,53,Kigoma,Unknown,2,Yes,12,31,More than one,0
+Yes,No,40,Tabora,No,2,No,15,25,Unknown,1
+Yes,No,42,Songwe,Unknown,2,No,14,34,Unknown,0
+No,Unknown,35,Kilimanjaro,No,0,Unknown,13,16,Unknown,0
+Yes,Unknown,35,Shinyanga,No,2,Yes,15,26,One,1
+No,No,42,Mbeya,Yes,1,Unknown,12,17,Unknown,0
+No,Unknown,42,Shinyanga,No,2,Yes,14,42,None,1
+Yes,Yes,84,Tabora,Unknown,2,No,10,43,Unknown,1
+No,Yes,57,Morogoro,Unknown,0,Yes,15,21,None,1
+Yes,Unknown,81,Mbeya,Unknown,2,No,13,44,None,1
+No,Yes,84,Iringa,Unknown,2,Yes,14,17,More than one,1
+No,Yes,82,Mwanza,Unknown,2,Yes,12,39,One,1
+No,Yes,78,Katavi,No,0,Unknown,15,34,More than one,0
+Yes,No,51,Mbeya,No,2,Unknown,9,42,Unknown,0
+No,Unknown,46,Singida,Unknown,1,Unknown,9,17,None,0
+No,Unknown,52,Morogoro,Unknown,1,Yes,12,43,More than one,0
+No,No,61,Mbeya,No,2,Yes,14,35,More than one,0
+No,No,83,Kigoma,Yes,0,Yes,14,44,Unknown,0
+No,Yes,36,Pwani,No,0,No,12,38,One,0
+No,Yes,71,Kigoma,No,1,No,13,24,More than one,0
+Yes,No,42,Lindi,Unknown,2,Yes,12,28,None,1
+Yes,Unknown,71,Dodoma,Unknown,0,Unknown,15,16,More than one,1
+Yes,No,41,Dodoma,No,2,Yes,13,31,Unknown,0
+No,No,46,Mtwara,No,2,No,11,28,More than one,1
+Yes,Yes,73,Ruvuma,No,1,No,15,21,None,1
+Yes,Unknown,35,Shinyanga,No,2,Yes,9,26,One,1
+No,Yes,67,Mwanza,No,1,Unknown,15,32,None,0
+Yes,No,43,Njombe,No,2,Unknown,10,16,More than one,0
+Yes,Unknown,79,Katavi,Unknown,1,Unknown,11,23,One,0
+No,No,41,Kigoma,No,1,No,14,40,Unknown,1
+Yes,No,41,Singida,Unknown,1,Unknown,14,31,One,0
+No,No,35,Kagera,Unknown,1,No,15,32,One,0
+No,Yes,80,Lindi,Unknown,0,Yes,14,19,None,0
+Yes,No,45,Singida,Unknown,0,No,13,25,One,1
+Yes,Unknown,55,Kigoma,Yes,0,Yes,11,27,Unknown,0
+No,No,72,Ruvuma,Unknown,0,No,9,29,Unknown,1
+No,Yes,79,Kilimanjaro,No,1,No,9,36,Unknown,1
+Yes,Unknown,54,Arusha,Unknown,1,No,11,43,More than one,1
+Yes,Unknown,59,Tanga,No,2,Unknown,9,25,More than one,1
+No,Yes,59,Arusha,Yes,1,No,12,32,Unknown,0
+Yes,Unknown,50,Kigoma,Unknown,2,Yes,14,35,None,0
+No,Yes,57,Singida,No,1,Unknown,15,44,None,1
+No,No,52,Iringa,No,2,Yes,12,18,Unknown,0
+No,Yes,60,Tabora,Yes,1,Yes,15,34,One,0
+Yes,Yes,74,Tabora,Yes,2,Unknown,15,37,More than one,0
+Yes,Unknown,78,Mbeya,Unknown,0,No,15,29,More than one,0
+Yes,No,56,Kilimanjaro,Yes,0,No,12,40,One,1
+Yes,No,51,Morogoro,Yes,0,Unknown,11,34,One,0
+No,Unknown,76,Pwani,Yes,2,Yes,15,26,Unknown,1
+Yes,Yes,62,Kagera,No,2,Yes,10,31,None,1
+No,Yes,63,Lindi,Yes,2,No,11,32,None,1
+No,No,52,Mtwara,Yes,2,Yes,9,26,One,1
+Yes,Unknown,79,Katavi,Yes,1,Yes,14,34,More than one,1
+Yes,No,63,Morogoro,No,2,Unknown,13,25,None,1
+Yes,Unknown,74,Kilimanjaro,Unknown,0,Unknown,9,18,Unknown,1
+Yes,No,58,Lindi,Yes,0,Unknown,10,37,Unknown,1
+Yes,No,76,Arusha,Unknown,1,Unknown,12,22,More than one,1
+No,No,49,Dodoma,Yes,0,Yes,12,26,One,0
+Yes,No,76,Songwe,Unknown,1,Yes,14,33,None,0
+No,Unknown,40,Mara,Unknown,2,No,10,22,None,1
+No,No,49,Mtwara,Yes,0,Yes,15,42,One,0
+Yes,No,43,Pwani,Unknown,0,Yes,12,28,More than one,1
+No,Unknown,62,Kigoma,Unknown,1,Unknown,14,34,Unknown,0
+No,No,65,Kigoma,No,1,No,10,37,Unknown,1
+Yes,No,48,Pwani,No,1,No,9,22,None,0
+No,Unknown,52,Shinyanga,No,0,Yes,9,32,None,0
+No,No,49,Simiyu,Yes,2,No,11,21,None,1
+No,No,59,Kigoma,No,0,Yes,15,23,More than one,0
+No,Unknown,41,Kilimanjaro,Unknown,2,Unknown,9,38,None,1
+Yes,Yes,37,Mwanza,No,2,Yes,11,31,One,0
+Yes,Yes,69,Dar es Salaam,Yes,1,No,9,39,Unknown,1
+No,Unknown,48,Manyara,No,1,Yes,15,19,More than one,0
+No,Unknown,66,Katavi,Yes,0,No,13,28,Unknown,1
+No,No,35,Arusha,No,0,No,14,33,Unknown,0
+Yes,Unknown,75,Kilimanjaro,No,2,Unknown,13,26,More than one,0
+Yes,Unknown,41,Rukwa,Yes,0,No,13,33,One,1
+No,No,59,Geita,Yes,2,Yes,14,29,One,0
+Yes,No,79,Singida,Yes,0,No,9,16,More than one,0
+Yes,Yes,69,Dar es Salaam,Unknown,2,No,15,16,Unknown,1
+No,Unknown,51,Dar es Salaam,Unknown,1,No,14,25,Unknown,0
+No,Yes,59,Arusha,Yes,1,No,14,32,Unknown,1
+No,No,40,Mbeya,Unknown,0,Unknown,11,36,None,1
+No,No,49,Kilimanjaro,Yes,0,Unknown,14,37,One,1
+Yes,Unknown,35,Njombe,Yes,0,Yes,11,40,More than one,0
+Yes,Unknown,56,Singida,Unknown,1,Yes,9,43,One,0
+Yes,Yes,78,Katavi,Unknown,2,Unknown,15,26,One,1
+No,No,67,Dodoma,Unknown,2,Unknown,10,25,Unknown,0
+Yes,No,42,Katavi,Yes,1,Unknown,9,25,None,0
+Yes,Yes,75,Kilimanjaro,No,2,Yes,13,25,More than one,0
+No,Yes,48,Kagera,Yes,0,Unknown,10,36,More than one,1
+No,No,56,Lindi,No,0,Yes,15,44,None,1
+No,Yes,79,Geita,Unknown,2,Yes,12,27,Unknown,0
+No,No,84,Pwani,Yes,2,No,9,19,More than one,1
+Yes,No,48,Pwani,No,1,No,15,22,None,1
+Yes,No,73,Dodoma,Unknown,0,Yes,12,27,None,1
+Yes,Yes,47,Katavi,Yes,2,Unknown,10,19,One,1
+No,Unknown,79,Njombe,No,1,No,13,22,Unknown,1
+No,No,75,Katavi,Yes,0,No,12,17,More than one,1
+No,Unknown,69,Arusha,No,2,No,9,24,One,0
+No,Unknown,51,Mtwara,Yes,1,No,14,22,More than one,0
+No,Unknown,49,Mtwara,Unknown,2,Yes,11,32,Unknown,1
+No,Unknown,43,Dar es Salaam,No,2,Unknown,13,17,None,0
+Yes,Yes,47,Kigoma,Unknown,0,No,15,25,None,1
+No,Yes,67,Singida,No,0,Unknown,13,38,Unknown,1
+Yes,No,69,Mara,Unknown,2,No,13,28,More than one,1
+No,Unknown,70,Arusha,No,0,Unknown,10,31,One,0
+No,No,79,Ruvuma,Unknown,0,Unknown,10,44,None,0
+Yes,Unknown,82,Geita,Unknown,2,Yes,11,42,More than one,1
+Yes,Unknown,83,Mwanza,Unknown,0,No,14,27,Unknown,1
+No,Yes,66,Tanga,Yes,1,No,12,15,None,1
+No,Yes,46,Rukwa,No,2,No,11,35,Unknown,1
+Yes,No,50,Arusha,No,0,No,14,21,None,0
+Yes,Unknown,41,Rukwa,Yes,0,No,14,33,One,0
+No,No,70,Kagera,No,1,Unknown,15,32,One,0
+Yes,Yes,65,Dar es Salaam,Yes,0,Unknown,11,19,Unknown,1
+Yes,Yes,48,Simiyu,No,2,Yes,13,27,None,1
+Yes,Unknown,70,Katavi,No,2,Unknown,13,25,One,0
+Yes,Unknown,70,Ruvuma,Yes,0,No,12,31,One,0
+No,No,49,Geita,Yes,0,Yes,11,41,More than one,0
+No,No,57,Shinyanga,Unknown,2,Unknown,9,37,More than one,0
+No,Unknown,50,Simiyu,Unknown,0,Yes,10,44,One,0
+Yes,Yes,78,Arusha,No,1,Unknown,12,27,More than one,1
+No,Yes,44,Njombe,Yes,1,Unknown,15,33,More than one,1
+No,Yes,70,Rukwa,Unknown,2,No,15,16,Unknown,1
+No,Yes,49,Kilimanjaro,Yes,1,Unknown,10,17,Unknown,1
+Yes,No,52,Singida,Yes,2,Yes,13,16,None,1
+No,No,47,Morogoro,Unknown,1,No,9,25,More than one,1
+No,No,84,Tabora,No,2,No,13,27,Unknown,0
+No,Unknown,84,Morogoro,Unknown,2,Yes,11,19,None,1
+Yes,No,69,Katavi,No,2,Unknown,12,31,One,1
+No,No,80,Songwe,No,2,Yes,14,20,None,0
+Yes,No,43,Dodoma,Unknown,2,Yes,11,36,Unknown,1
+Yes,No,61,Njombe,Unknown,2,Unknown,14,41,Unknown,0
+Yes,Unknown,40,Mbeya,No,1,Unknown,12,18,Unknown,1
+Yes,Yes,40,Tabora,Yes,2,Yes,15,16,One,1
+No,Unknown,69,Ruvuma,No,2,No,13,36,More than one,0
+No,Yes,71,Ruvuma,No,1,No,11,15,More than one,0
+Yes,No,40,Kigoma,Yes,0,No,14,18,One,1
+Yes,Yes,80,Dar es Salaam,Unknown,1,Yes,11,19,More than one,1
+No,Unknown,36,Dar es Salaam,Unknown,1,Unknown,12,24,One,1
+No,Unknown,63,Tanga,No,2,Unknown,9,34,Unknown,1
+No,No,47,Morogoro,Unknown,1,No,9,25,More than one,0
+No,No,67,Manyara,No,0,Yes,13,40,Unknown,1
+Yes,No,58,Mtwara,Unknown,2,Yes,10,44,One,0
+No,Yes,72,Rukwa,Unknown,2,No,15,31,Unknown,0
+Yes,Yes,81,Simiyu,No,1,Unknown,14,40,None,0
+No,Yes,37,Kilimanjaro,No,1,Yes,13,20,None,0
+Yes,No,35,Ruvuma,Unknown,2,Yes,14,16,One,0
+Yes,No,75,Tabora,Yes,2,Yes,13,35,None,0
+No,Unknown,41,Mwanza,No,2,Unknown,9,27,None,1
+Yes,No,59,Njombe,Unknown,1,Unknown,11,31,One,0
+Yes,No,42,Tabora,No,0,Unknown,12,35,Unknown,0
+No,Yes,39,Tabora,Yes,2,Unknown,15,25,None,0
+No,Unknown,76,Pwani,Yes,2,Yes,10,26,Unknown,1
+Yes,Unknown,35,Rukwa,Yes,2,No,12,23,One,1
+Yes,Yes,42,Singida,Unknown,2,No,11,42,Unknown,1
+Yes,No,77,Dar es Salaam,No,2,No,9,34,More than one,1
+No,No,47,Simiyu,No,0,No,9,25,Unknown,0
+No,Unknown,36,Dar es Salaam,Unknown,1,Unknown,11,24,One,0
+No,Unknown,82,Kilimanjaro,Unknown,0,Yes,9,23,More than one,1
+No,Unknown,57,Mara,Yes,0,No,9,19,More than one,0
+Yes,No,57,Mbeya,Yes,0,Unknown,11,25,None,1
+Yes,No,42,Katavi,Yes,1,Unknown,10,25,None,1
+Yes,Yes,63,Katavi,Yes,2,Unknown,12,25,None,0
+Yes,Unknown,79,Kagera,Unknown,2,Yes,9,18,More than one,0
+No,Unknown,61,Simiyu,No,0,Unknown,11,25,None,1
+No,Yes,44,Arusha,Yes,1,Yes,12,19,More than one,0
+Yes,Yes,73,Singida,Unknown,1,Yes,15,26,One,1
+No,Yes,61,Arusha,Yes,1,Unknown,13,35,Unknown,1
+Yes,Unknown,54,Tanga,Yes,1,Yes,15,25,One,0
+Yes,Yes,36,Dodoma,No,2,Unknown,11,16,More than one,1
+No,No,39,Kagera,No,0,Unknown,12,18,More than one,0
+Yes,No,47,Mara,Unknown,2,No,11,37,More than one,0
+Yes,Yes,78,Rukwa,Unknown,2,Yes,15,15,None,0
+No,Unknown,52,Mara,Unknown,1,Yes,15,39,None,0
+Yes,No,70,Mara,Yes,2,Unknown,15,25,None,0
+Yes,Yes,74,Kagera,Yes,2,Unknown,14,40,One,0
+Yes,No,70,Shinyanga,Unknown,2,Unknown,12,25,More than one,1
+Yes,No,62,Tabora,No,2,Yes,12,40,Unknown,1
+Yes,No,36,Dar es Salaam,No,2,Unknown,15,18,One,0
+No,No,76,Tanga,Unknown,1,No,10,23,One,0
+Yes,No,80,Tabora,No,1,No,11,19,Unknown,1
+No,No,83,Kilimanjaro,No,1,No,15,16,Unknown,0
+Yes,No,75,Tabora,Yes,2,Yes,11,35,None,1
+No,Yes,40,Songwe,Unknown,2,Yes,10,23,Unknown,0
+No,Yes,55,Singida,No,0,Unknown,12,43,One,0
+Yes,No,84,Katavi,Unknown,2,Yes,11,18,One,0
+Yes,Unknown,61,Kagera,No,1,Yes,15,23,One,1
+Yes,Yes,57,Shinyanga,No,0,Unknown,15,42,Unknown,0
+Yes,Yes,67,Songwe,No,1,Yes,11,33,One,0
+No,No,49,Mtwara,Yes,0,Yes,12,42,One,1
+Yes,No,76,Lindi,Yes,0,Yes,15,16,None,0
+No,No,53,Mbeya,Unknown,0,Unknown,14,33,More than one,0
+No,Unknown,67,Kigoma,Yes,0,Yes,10,22,More than one,1
+Yes,No,79,Singida,Yes,0,No,13,16,More than one,1
+Yes,No,61,Dodoma,Yes,2,Yes,13,30,More than one,0
+Yes,Yes,84,Tabora,Unknown,2,No,13,43,Unknown,0
+Yes,Unknown,75,Kilimanjaro,No,2,Unknown,9,26,More than one,1
+No,No,72,Morogoro,Unknown,2,Unknown,11,34,More than one,1
+Yes,No,80,Manyara,Unknown,0,Yes,14,42,One,0
+Yes,Yes,82,Njombe,No,1,Yes,10,42,None,0
+Yes,Unknown,75,Shinyanga,Unknown,0,No,11,31,More than one,0
+Yes,Unknown,48,Mbeya,Unknown,2,Unknown,11,41,Unknown,1
+No,No,64,Katavi,Unknown,1,Yes,10,42,None,1
+No,No,72,Ruvuma,Unknown,0,No,10,29,Unknown,1
+Yes,No,42,Lindi,Unknown,2,Yes,11,28,None,0
+Yes,Yes,78,Rukwa,Unknown,2,Yes,15,15,None,1
+No,Unknown,70,Arusha,Yes,2,No,9,37,Unknown,1
+No,Unknown,77,Katavi,No,1,Unknown,10,42,None,0
+Yes,No,52,Geita,Unknown,1,No,9,43,More than one,0
+Yes,No,69,Tabora,Yes,1,No,12,33,More than one,0
+Yes,Unknown,50,Mara,Unknown,2,Unknown,10,42,None,0
+No,Unknown,82,Kilimanjaro,Unknown,0,Yes,14,23,More than one,1
+No,No,38,Morogoro,Yes,0,No,13,39,None,0
+No,No,80,Katavi,Unknown,0,No,14,22,More than one,0
+Yes,Yes,61,Mara,Unknown,1,Yes,13,39,None,1
+Yes,Unknown,74,Kilimanjaro,Unknown,0,Unknown,12,18,Unknown,1
+Yes,Yes,62,Kilimanjaro,No,1,Yes,15,31,One,0
+Yes,Unknown,35,Shinyanga,No,2,Yes,12,26,One,1
+No,Yes,59,Arusha,Yes,1,No,15,32,Unknown,1
+Yes,No,59,Njombe,Unknown,2,Yes,15,34,None,0
+Yes,Unknown,37,Shinyanga,No,2,No,13,22,One,1
+No,No,40,Mtwara,Yes,2,No,13,21,Unknown,0
+No,Unknown,50,Iringa,Yes,0,Yes,10,17,Unknown,1
+Yes,Yes,54,Geita,No,0,Unknown,14,24,One,1
+Yes,Yes,62,Njombe,Yes,2,Yes,13,22,None,1
+No,Yes,36,Pwani,No,0,No,15,38,One,1
+Yes,Unknown,76,Dar es Salaam,Yes,2,No,10,19,Unknown,0
+Yes,Yes,35,Kilimanjaro,Unknown,1,Yes,14,18,None,0
+No,No,67,Songwe,No,1,No,12,34,Unknown,0
+Yes,Unknown,54,Songwe,Yes,1,Yes,10,30,More than one,1
+No,No,84,Mwanza,No,0,Yes,10,36,None,1
+Yes,Unknown,84,Mwanza,Yes,1,No,12,23,None,1
+No,Yes,66,Tabora,No,0,No,11,31,More than one,0
+No,Yes,75,Mara,Yes,1,Yes,9,23,One,0
+Yes,Unknown,70,Singida,No,0,No,11,25,One,0
+No,Unknown,41,Mwanza,No,2,Unknown,13,27,None,0
+Yes,No,43,Shinyanga,Yes,2,Unknown,11,17,More than one,0
+Yes,Unknown,79,Songwe,Unknown,1,No,15,25,One,1
+Yes,Yes,62,Kigoma,Unknown,2,Yes,14,27,Unknown,1
+Yes,Yes,80,Lindi,Unknown,0,No,12,24,None,1
+Yes,Unknown,78,Mbeya,Unknown,0,No,15,29,More than one,1
+No,No,62,Katavi,Unknown,2,No,12,28,One,0
+No,Yes,67,Simiyu,Unknown,1,Unknown,9,38,More than one,1
+No,Yes,47,Kigoma,Unknown,1,Yes,9,18,More than one,1
+No,Yes,60,Iringa,No,2,No,15,44,One,1
+No,Unknown,81,Iringa,Unknown,2,No,15,39,More than one,1
+Yes,Unknown,49,Morogoro,Unknown,1,Yes,14,26,Unknown,1
+Yes,Yes,62,Mwanza,Unknown,0,Yes,9,39,One,0
+Yes,Yes,80,Lindi,Unknown,0,No,11,24,None,1
+No,No,68,Geita,No,1,No,9,21,More than one,0
+Yes,Unknown,74,Kilimanjaro,Yes,2,Yes,9,25,Unknown,0
+No,Yes,53,Mara,Unknown,1,Yes,10,37,None,1
+Yes,Yes,77,Rukwa,Yes,0,Yes,13,25,None,1
+No,Unknown,66,Katavi,Yes,0,No,9,28,Unknown,1
+No,No,82,Iringa,Yes,1,Yes,15,39,Unknown,0
+Yes,Unknown,53,Kilimanjaro,Unknown,0,Yes,12,30,One,0
+No,Yes,44,Njombe,Yes,1,Unknown,10,33,More than one,0
+No,Unknown,63,Dodoma,No,1,Unknown,12,25,None,1
+No,Unknown,60,Mwanza,No,2,No,14,40,Unknown,1
+Yes,No,45,Singida,Unknown,0,No,11,25,One,1
+No,Unknown,47,Mtwara,Unknown,0,Unknown,9,38,More than one,1
+No,Unknown,49,Dar es Salaam,No,1,Yes,9,29,More than one,0
+Yes,Yes,77,Kilimanjaro,No,2,Yes,14,17,Unknown,0
+No,No,55,Singida,No,0,Yes,9,26,One,1
+No,Yes,45,Kigoma,Yes,0,Unknown,13,44,None,1
+Yes,No,35,Kilimanjaro,Yes,1,No,11,21,None,0
+No,Yes,54,Lindi,Yes,1,No,14,24,None,0
+No,No,41,Kigoma,No,1,No,9,40,Unknown,0
+No,No,49,Dodoma,Yes,0,Yes,15,26,One,1
+Yes,No,42,Tabora,No,0,Unknown,13,35,Unknown,1
+No,No,61,Mbeya,No,2,Yes,12,35,More than one,1
+Yes,Yes,83,Pwani,Yes,1,Yes,10,41,One,1
+Yes,Unknown,81,Ruvuma,Yes,2,Unknown,15,37,More than one,0
+Yes,Unknown,61,Kagera,No,1,Yes,11,23,One,0
+Yes,Unknown,53,Shinyanga,No,0,Unknown,12,20,Unknown,0
+No,No,84,Pwani,Yes,2,No,11,19,More than one,1
+No,Yes,61,Arusha,Yes,1,Unknown,10,35,Unknown,1
+Yes,Unknown,47,Kilimanjaro,Yes,0,Yes,11,17,More than one,0
+No,Yes,48,Pwani,Yes,2,Unknown,10,28,Unknown,0
+No,No,71,Tabora,Yes,2,No,9,31,One,0
+Yes,Yes,37,Mwanza,No,2,Yes,11,31,One,1
+No,Yes,50,Tanga,Yes,2,Unknown,9,44,Unknown,0
+No,No,78,Geita,Unknown,2,Unknown,11,41,Unknown,0
+No,No,38,Rukwa,Unknown,1,Yes,15,35,One,0
+No,Yes,82,Dodoma,Yes,1,Yes,10,28,None,0
+Yes,Yes,78,Njombe,Yes,1,No,9,26,Unknown,0
+Yes,Yes,43,Tabora,Unknown,1,Unknown,9,19,More than one,0
+No,No,71,Simiyu,No,0,No,12,20,One,0
+Yes,Unknown,38,Simiyu,Yes,1,No,10,37,None,0
+Yes,Unknown,79,Kagera,Unknown,2,Yes,12,18,More than one,1
+Yes,Yes,52,Kigoma,Yes,2,Yes,9,42,More than one,1
+Yes,No,49,Dodoma,Unknown,2,No,11,35,None,0
+Yes,No,44,Mara,Unknown,1,No,11,29,More than one,0
+No,No,49,Kilimanjaro,Yes,0,Unknown,12,37,One,0
+No,Unknown,50,Singida,Unknown,2,No,12,36,More than one,1
+Yes,Unknown,66,Simiyu,Unknown,0,No,14,29,None,1
+Yes,Yes,67,Arusha,No,2,Unknown,12,18,Unknown,0
+No,Yes,40,Mara,Unknown,0,Yes,14,26,More than one,1
+Yes,No,75,Pwani,Unknown,2,Yes,12,16,None,1
+No,Yes,39,Mbeya,Yes,0,Yes,10,25,None,0
+Yes,Yes,35,Pwani,Yes,1,Unknown,10,43,None,1
+No,Unknown,42,Tanga,No,2,Unknown,11,36,One,1
+Yes,Yes,36,Dodoma,No,2,Unknown,13,16,More than one,0
+No,Unknown,45,Shinyanga,Yes,0,Unknown,10,36,None,1
+Yes,Unknown,61,Shinyanga,Unknown,0,Unknown,15,31,One,1
+Yes,Yes,57,Pwani,Unknown,0,Yes,12,29,One,0
+Yes,Unknown,39,Arusha,Unknown,0,No,15,21,None,1
+No,Unknown,77,Dodoma,Unknown,2,No,13,31,Unknown,0
+No,Yes,53,Singida,No,2,No,11,22,More than one,1
+Yes,Unknown,55,Kigoma,Yes,0,Yes,10,27,Unknown,1
+Yes,No,66,Mara,Yes,1,Yes,14,31,None,0
+Yes,Yes,82,Shinyanga,Unknown,0,Yes,11,18,Unknown,0
+Yes,Yes,71,Mbeya,No,0,No,10,30,Unknown,1
+No,No,81,Dar es Salaam,Unknown,2,No,15,26,Unknown,1
+Yes,No,75,Arusha,No,1,Yes,12,27,None,0
+No,Unknown,59,Singida,Unknown,2,Yes,9,30,More than one,0
+No,No,80,Tabora,Yes,1,Unknown,12,28,One,1
+No,No,80,Tabora,Yes,1,Unknown,12,28,One,0
+Yes,Yes,65,Njombe,Unknown,0,No,15,35,Unknown,0
+Yes,Yes,42,Singida,Unknown,2,No,13,42,Unknown,1
+No,No,51,Dodoma,No,1,Yes,10,17,Unknown,1
+Yes,Yes,42,Singida,Unknown,2,No,10,42,Unknown,1
+No,No,66,Morogoro,Yes,2,Unknown,13,25,More than one,0
+Yes,Yes,73,Singida,Unknown,1,Yes,9,26,One,0
+No,Unknown,63,Rukwa,No,1,Unknown,11,18,One,0
+Yes,No,43,Dodoma,Unknown,2,Yes,9,36,Unknown,0
+No,Unknown,48,Mtwara,Unknown,0,No,9,34,More than one,0
+Yes,No,80,Katavi,Yes,1,Yes,15,19,Unknown,0
+Yes,Unknown,38,Pwani,Yes,2,No,9,39,Unknown,0
+No,Unknown,81,Iringa,Unknown,2,No,9,39,More than one,0
+No,Unknown,84,Morogoro,Unknown,2,Yes,15,19,None,0
+Yes,Unknown,35,Rukwa,Yes,2,No,10,23,One,0
+No,No,47,Simiyu,No,0,No,14,25,Unknown,1
+No,Unknown,50,Singida,Unknown,0,Yes,9,39,One,0
+No,No,52,Simiyu,Yes,1,No,10,39,None,1
+Yes,Yes,63,Mara,Yes,2,No,9,26,Unknown,0
+Yes,Unknown,84,Manyara,Unknown,2,Yes,13,43,None,0
+No,Unknown,46,Arusha,Yes,0,No,13,22,None,0
+No,Yes,57,Singida,No,1,Unknown,12,44,None,0
+No,Yes,73,Katavi,No,0,No,10,25,Unknown,1
+No,Yes,72,Tanga,Yes,1,Unknown,9,39,Unknown,1
+Yes,Unknown,48,Lindi,Unknown,0,No,12,33,None,1
+Yes,Yes,54,Mara,Yes,2,Yes,10,36,Unknown,0
+No,Unknown,77,Manyara,Unknown,0,No,13,30,One,1
+No,Yes,43,Kilimanjaro,Unknown,0,Unknown,13,26,None,1
+No,No,66,Geita,Yes,2,No,14,32,None,0
+No,No,76,Tanga,Unknown,1,No,12,23,One,1
+Yes,Yes,83,Pwani,Yes,1,Yes,9,41,One,0
+No,No,43,Iringa,No,2,No,10,26,One,0
+No,Unknown,53,Mbeya,No,2,Yes,14,44,None,0
+No,Yes,77,Mtwara,No,1,Unknown,12,39,None,0
+Yes,Unknown,72,Dar es Salaam,Unknown,0,Unknown,13,35,Unknown,1
+No,Unknown,66,Dodoma,Yes,0,Yes,12,38,None,0
+No,Unknown,72,Katavi,Yes,2,Yes,10,19,One,0
+Yes,Yes,82,Shinyanga,Unknown,0,Yes,15,18,Unknown,1
+Yes,No,36,Shinyanga,Yes,1,No,14,33,One,0
+No,Yes,45,Tabora,No,1,No,15,40,None,1
+No,Yes,49,Singida,Unknown,2,No,14,42,Unknown,0
+Yes,Unknown,81,Mbeya,Unknown,2,No,11,44,None,0
+No,Unknown,59,Kagera,Unknown,1,Unknown,10,27,None,1
+No,No,69,Mbeya,Unknown,2,Unknown,10,26,One,1
+Yes,No,41,Singida,Unknown,1,Unknown,15,31,One,1
+Yes,No,57,Mbeya,Yes,0,Unknown,12,25,None,0
+Yes,Unknown,38,Kagera,Yes,0,Unknown,12,25,More than one,0
+No,Yes,48,Ruvuma,Unknown,1,Yes,15,18,Unknown,1
+Yes,Yes,62,Kagera,No,2,Yes,13,31,None,0
+Yes,Unknown,51,Morogoro,Yes,1,Yes,15,17,More than one,1
+Yes,Unknown,59,Tanga,Yes,2,Unknown,15,15,More than one,0
+Yes,Unknown,50,Kigoma,Unknown,2,Yes,9,35,None,1
+Yes,No,43,Shinyanga,Yes,2,Unknown,11,17,More than one,1
+No,No,76,Mbeya,Yes,1,No,14,44,One,0
+Yes,Yes,52,Katavi,Unknown,2,Yes,14,39,More than one,0
+Yes,Yes,77,Rukwa,Yes,0,Yes,10,25,None,0
+No,No,46,Mtwara,No,2,No,11,28,More than one,0
+Yes,No,56,Kilimanjaro,Yes,0,No,12,40,One,1
+Yes,Yes,73,Dar es Salaam,Unknown,1,Yes,14,43,None,1
+No,Unknown,77,Tanga,No,2,Unknown,9,25,Unknown,1
+No,Unknown,46,Singida,Unknown,1,Unknown,13,17,None,1
+No,No,80,Katavi,Yes,0,Yes,11,19,One,0
+Yes,No,49,Simiyu,Unknown,0,Yes,10,34,One,1
+Yes,Unknown,58,Mwanza,Yes,2,No,12,37,More than one,1
+No,Yes,63,Lindi,Yes,2,No,11,32,None,0
+Yes,Yes,62,Njombe,Yes,2,Yes,13,22,None,0
+No,No,43,Ruvuma,Yes,2,No,11,28,Unknown,1
+No,Unknown,80,Mwanza,No,2,Unknown,14,27,One,1
+No,Unknown,52,Kigoma,Unknown,0,No,9,19,None,0
+Yes,No,79,Pwani,Unknown,2,No,15,15,None,1
+Yes,No,82,Mara,Unknown,1,No,9,26,None,1
+No,Yes,44,Njombe,Yes,1,Unknown,14,33,More than one,1
+No,Yes,63,Singida,No,0,Unknown,11,43,More than one,0
+Yes,No,80,Katavi,Yes,1,Yes,11,19,Unknown,1
+Yes,No,79,Mtwara,No,2,No,9,29,More than one,0
+No,Unknown,49,Dar es Salaam,No,1,Yes,13,29,More than one,1
+Yes,No,65,Pwani,No,0,No,10,25,One,1
+No,Unknown,39,Katavi,Yes,2,Unknown,13,38,None,1
+No,Unknown,66,Dodoma,Yes,0,Yes,14,38,None,1
+No,Unknown,39,Mara,Unknown,1,Unknown,14,41,More than one,0
+No,No,67,Dodoma,Unknown,2,Unknown,13,25,Unknown,1
+No,No,68,Tanga,Yes,2,Unknown,11,31,One,0
+No,Unknown,66,Katavi,Yes,0,No,14,28,Unknown,0
+No,No,67,Njombe,Unknown,0,Yes,14,25,None,1
+No,No,40,Mbeya,Unknown,0,Unknown,11,36,None,0
+No,Unknown,63,Tanga,No,2,Unknown,9,34,Unknown,0
+Yes,Yes,63,Katavi,Yes,2,Unknown,15,25,None,1
+Yes,No,67,Simiyu,Unknown,1,Unknown,10,26,Unknown,0
+No,No,47,Ruvuma,Yes,1,Yes,13,19,None,1
+No,No,43,Ruvuma,Yes,2,No,10,28,Unknown,1
+No,Unknown,75,Pwani,Unknown,2,Unknown,9,29,More than one,0
+No,Yes,50,Arusha,Yes,2,Unknown,14,41,Unknown,0
+Yes,No,75,Arusha,Unknown,1,No,10,35,Unknown,0
+No,Unknown,52,Tanga,Yes,1,No,13,27,One,1
+Yes,Yes,70,Manyara,Unknown,2,No,13,26,More than one,1
+No,No,36,Songwe,Yes,0,Unknown,9,15,More than one,0
+Yes,No,69,Tabora,Yes,1,No,10,33,More than one,1
+No,No,35,Kagera,Unknown,1,No,14,32,One,1
+No,Unknown,82,Manyara,Yes,2,No,12,32,None,0
+Yes,Unknown,35,Njombe,Yes,0,Yes,9,40,More than one,1
+Yes,Unknown,56,Pwani,No,0,Yes,15,36,More than one,0
+No,Yes,62,Dar es Salaam,Yes,1,Unknown,10,24,None,1
+No,Unknown,76,Pwani,Yes,2,Yes,9,26,Unknown,1
+No,Unknown,68,Singida,No,2,Yes,15,25,More than one,1
+Yes,Unknown,59,Tanga,No,2,Unknown,9,25,More than one,1
+No,No,71,Simiyu,No,0,No,12,20,One,1
+Yes,No,79,Morogoro,Yes,0,No,15,41,Unknown,1
+No,Yes,77,Mtwara,Yes,2,Yes,13,24,None,1
+Yes,Unknown,85,Dodoma,Yes,0,Yes,13,42,Unknown,1
+No,Unknown,42,Njombe,Yes,1,No,11,34,One,0
+Yes,No,48,Pwani,No,1,No,9,22,None,1
+Yes,Unknown,59,Tanga,No,2,Unknown,13,25,More than one,0
+Yes,Yes,73,Geita,No,2,No,15,17,One,0
+Yes,No,37,Katavi,Unknown,2,Unknown,9,40,More than one,1
+Yes,Yes,67,Mbeya,Unknown,1,Yes,15,16,None,0
+Yes,No,59,Njombe,Unknown,2,Yes,11,34,None,1
+Yes,Yes,65,Mbeya,No,1,Unknown,12,43,More than one,0
+Yes,Unknown,82,Geita,Unknown,2,Yes,10,42,More than one,0
+No,Yes,72,Kagera,Unknown,0,No,13,30,More than one,0
+Yes,Unknown,82,Arusha,No,0,No,10,42,One,1
+Yes,Yes,56,Mbeya,Unknown,2,Yes,10,20,One,1
+No,Yes,67,Singida,No,0,Unknown,14,38,Unknown,0
+Yes,Yes,67,Tabora,No,0,Yes,9,41,Unknown,1
+Yes,Yes,69,Kilimanjaro,No,2,Yes,12,21,More than one,1
+Yes,Yes,62,Kilimanjaro,No,1,Yes,13,31,One,1
+Yes,Yes,60,Simiyu,Unknown,2,Yes,9,25,More than one,0
+Yes,No,78,Mara,Yes,2,Yes,11,29,None,1
+Yes,No,67,Simiyu,Unknown,1,Unknown,11,26,Unknown,1
+Yes,Unknown,57,Tabora,No,1,Unknown,13,31,Unknown,0
+No,Unknown,40,Dar es Salaam,Unknown,1,Unknown,15,25,None,1
+Yes,Yes,68,Songwe,No,1,Yes,14,23,More than one,1
+Yes,No,84,Songwe,Unknown,2,No,10,20,More than one,0
+Yes,Unknown,59,Kilimanjaro,No,2,Unknown,9,19,Unknown,0
+Yes,Yes,59,Dodoma,No,1,Unknown,9,18,None,0
+No,Unknown,50,Iringa,Yes,0,Yes,13,17,Unknown,1
+Yes,No,77,Dar es Salaam,No,2,No,10,34,More than one,0
+No,No,59,Geita,Yes,2,Yes,10,29,One,1
+Yes,Unknown,78,Dar es Salaam,Unknown,2,Unknown,14,19,None,1
+Yes,Unknown,35,Dodoma,No,0,Yes,15,44,Unknown,1
+Yes,No,81,Tabora,Unknown,0,Yes,14,25,None,0
+No,No,66,Kagera,No,2,Unknown,10,18,One,1
+Yes,No,35,Singida,No,0,Unknown,13,24,One,1
+No,No,77,Ruvuma,No,2,Yes,13,21,Unknown,1
+No,No,36,Mwanza,Yes,2,Yes,10,41,One,0
+No,Unknown,44,Mara,Unknown,0,No,12,21,None,0
+Yes,No,46,Mara,No,1,Yes,12,39,Unknown,1
+No,Yes,68,Mbeya,Yes,1,No,11,42,More than one,0
+No,Yes,55,Singida,No,0,Unknown,14,43,One,1
+Yes,Yes,56,Mbeya,Unknown,2,Yes,13,20,One,0
+Yes,No,73,Dodoma,Unknown,0,Yes,12,27,None,1
+No,Yes,45,Kilimanjaro,Yes,0,No,14,15,More than one,1
+Yes,Yes,62,Mbeya,Yes,1,No,14,18,None,0
+Yes,No,51,Simiyu,Unknown,0,Yes,12,43,One,0
+Yes,Yes,73,Geita,No,2,No,10,17,One,1
+Yes,No,40,Morogoro,Yes,1,No,14,25,One,0
+Yes,Unknown,53,Kilimanjaro,Unknown,0,Yes,14,30,One,1
+No,Unknown,78,Singida,Yes,1,No,15,24,Unknown,1
+Yes,Yes,62,Kigoma,Unknown,2,Yes,10,27,Unknown,1
+Yes,No,57,Njombe,Unknown,0,Unknown,11,44,Unknown,0
+Yes,No,40,Tabora,No,2,No,15,25,Unknown,0
+No,No,68,Kilimanjaro,Unknown,1,No,12,28,None,0
+No,Yes,71,Kigoma,No,1,No,15,24,More than one,1
+No,No,54,Katavi,Yes,0,No,9,44,None,1
+No,Unknown,59,Kagera,Unknown,1,Unknown,9,27,None,0
+No,No,74,Ruvuma,No,1,Yes,14,44,More than one,1
+No,Yes,45,Tabora,No,1,No,11,40,None,0
+Yes,No,63,Arusha,Unknown,0,No,12,38,More than one,0
+No,No,65,Dodoma,No,2,Unknown,11,39,None,1
+No,Yes,63,Singida,No,0,Unknown,11,43,More than one,1
+Yes,Yes,70,Singida,No,1,Yes,15,36,One,0
+No,Unknown,63,Katavi,No,1,No,9,21,One,1
+Yes,No,79,Mtwara,No,2,No,14,29,More than one,1
+No,Unknown,85,Songwe,Yes,0,Yes,15,39,None,0
+No,Yes,69,Mwanza,No,1,Yes,13,31,One,0
+Yes,Yes,75,Kilimanjaro,No,2,Yes,11,25,More than one,1
+Yes,Unknown,35,Dodoma,No,0,Yes,10,44,Unknown,0
+No,No,36,Mwanza,Yes,2,Yes,13,41,One,1
+No,Unknown,75,Ruvuma,No,1,Unknown,12,43,None,0
+No,No,68,Kilimanjaro,Unknown,1,No,10,28,None,1
+Yes,Unknown,59,Simiyu,Yes,2,Unknown,11,40,None,0
+No,Unknown,48,Njombe,Unknown,2,No,15,37,None,1
+Yes,No,67,Arusha,Unknown,1,Unknown,10,29,One,1
+No,Unknown,78,Singida,Yes,1,No,10,24,Unknown,0
+Yes,No,84,Dar es Salaam,Yes,2,No,13,29,One,0
+Yes,Unknown,43,Ruvuma,Unknown,2,Yes,10,44,Unknown,0
+Yes,Unknown,35,Rukwa,Yes,2,No,15,23,One,1
+Yes,No,48,Lindi,Unknown,2,Yes,15,26,Unknown,0
+Yes,Yes,79,Singida,Unknown,0,Unknown,15,28,More than one,0
+No,No,71,Rukwa,Yes,2,No,15,22,More than one,1
+No,Unknown,49,Mara,Yes,1,Unknown,10,35,One,0
+Yes,Unknown,72,Dar es Salaam,Unknown,0,Unknown,10,35,Unknown,0
+No,Unknown,69,Kigoma,Yes,2,No,11,42,More than one,0
+No,Unknown,55,Mwanza,No,1,Yes,12,44,None,1
+Yes,Unknown,49,Morogoro,Unknown,1,Yes,15,26,Unknown,0
+Yes,No,39,Kigoma,No,1,No,14,22,None,0
+No,No,54,Dar es Salaam,Unknown,1,Unknown,13,43,None,1
+No,Yes,41,Rukwa,No,1,Yes,15,20,One,0
+No,Unknown,60,Mtwara,Unknown,1,Yes,13,39,None,1
+Yes,No,53,Ruvuma,Yes,2,Yes,11,34,Unknown,0
+Yes,Yes,49,Mara,No,2,No,11,20,Unknown,0
+No,Yes,50,Arusha,Yes,2,Unknown,12,41,Unknown,1
+Yes,No,47,Mara,Unknown,2,No,9,37,More than one,1
+Yes,No,76,Arusha,Unknown,1,Unknown,14,22,More than one,1
+No,Unknown,68,Geita,Unknown,0,Yes,13,20,More than one,1
+No,Yes,52,Songwe,Unknown,0,No,14,15,More than one,1
+Yes,No,67,Arusha,Unknown,1,Unknown,12,29,One,1
+No,Unknown,59,Kagera,Unknown,1,Unknown,14,27,None,1
+Yes,Yes,81,Rukwa,No,0,Yes,15,21,None,1
+No,Unknown,80,Rukwa,Yes,1,No,12,41,More than one,0
+Yes,Unknown,54,Tanga,Yes,1,Yes,12,25,One,1
+No,No,69,Mara,Yes,2,No,9,30,None,0
+Yes,Yes,78,Njombe,Yes,1,No,14,26,Unknown,1
+No,Unknown,77,Tanga,No,2,Unknown,15,25,Unknown,0
+Yes,No,43,Pwani,Unknown,0,Yes,13,28,More than one,0
+Yes,No,40,Iringa,Unknown,1,No,15,31,More than one,0
+Yes,Unknown,54,Songwe,Yes,1,Yes,15,30,More than one,0
+No,No,81,Dar es Salaam,Unknown,2,No,14,26,Unknown,0
+No,Unknown,62,Kigoma,Unknown,1,Unknown,12,34,Unknown,1
+Yes,Unknown,38,Arusha,Unknown,2,Unknown,9,40,More than one,0
+No,Unknown,77,Tanga,No,2,Unknown,9,25,Unknown,1
+No,Unknown,45,Shinyanga,Yes,0,Unknown,10,36,None,1
+Yes,Unknown,35,Njombe,Yes,0,Yes,12,40,More than one,1
+No,Yes,57,Morogoro,Unknown,0,Yes,14,21,None,1
+Yes,Yes,67,Mbeya,Unknown,1,Yes,12,16,None,1
+Yes,Unknown,71,Dodoma,Unknown,0,Unknown,9,16,More than one,1
+No,No,52,Mtwara,Unknown,1,No,10,23,One,1
+No,Yes,71,Ruvuma,No,1,No,15,15,More than one,1
+No,Yes,82,Mwanza,Unknown,2,Yes,15,39,One,0
+Yes,Yes,54,Mara,Yes,2,Yes,11,36,Unknown,1
+No,Unknown,38,Mbeya,No,0,No,14,29,Unknown,1
+Yes,Yes,82,Njombe,No,1,Yes,14,42,None,1
+No,Unknown,35,Mbeya,Yes,2,No,15,33,None,1
+No,Unknown,62,Singida,No,2,Unknown,15,37,One,1
+Yes,Yes,73,Ruvuma,No,1,No,13,21,None,1
+No,Yes,60,Njombe,Unknown,2,Unknown,11,16,More than one,1
+No,Yes,46,Iringa,Unknown,0,No,13,41,More than one,1
+No,Yes,60,Njombe,Unknown,2,Unknown,11,16,More than one,0
+No,Unknown,46,Mara,Yes,1,Yes,11,16,More than one,1
+Yes,Unknown,40,Mbeya,No,1,Unknown,13,18,Unknown,1
+No,Unknown,57,Mara,Yes,0,No,12,19,More than one,1
+Yes,No,74,Katavi,Unknown,1,Unknown,13,24,One,1
+Yes,No,63,Morogoro,No,2,Unknown,11,25,None,0
+Yes,Yes,71,Mwanza,Unknown,2,Yes,11,18,More than one,0
+No,No,36,Songwe,Yes,0,Unknown,9,15,More than one,1
+Yes,Yes,77,Rukwa,Yes,0,Yes,13,25,None,1
+No,Yes,77,Mtwara,Yes,2,Yes,13,24,None,0
+Yes,Yes,59,Dodoma,No,1,Unknown,15,18,None,1
+No,No,81,Dar es Salaam,Unknown,2,No,12,26,Unknown,1
+Yes,No,66,Morogoro,Unknown,0,No,12,26,Unknown,0
+No,No,43,Ruvuma,Yes,2,No,9,28,Unknown,0
+No,Yes,47,Rukwa,No,1,No,10,28,More than one,0
+Yes,No,50,Mara,Unknown,1,No,11,28,One,1
+Yes,No,40,Tabora,No,2,No,11,25,Unknown,1
+No,Unknown,52,Dar es Salaam,No,1,Yes,11,28,None,1
+No,Yes,77,Mtwara,Yes,2,Yes,11,24,None,1
+No,No,52,Iringa,No,2,Yes,14,18,Unknown,1
+No,No,52,Mtwara,Unknown,1,No,9,23,One,1
+Yes,Yes,45,Dar es Salaam,Unknown,1,Yes,11,16,Unknown,1
+No,Yes,41,Mbeya,Yes,0,Unknown,10,26,One,1
+Yes,Unknown,84,Manyara,Unknown,2,Yes,11,43,None,1
+No,Unknown,48,Njombe,Unknown,2,No,13,37,None,1
+No,Unknown,70,Arusha,No,0,Unknown,9,31,One,1
+Yes,Yes,62,Rukwa,Unknown,1,Yes,11,37,Unknown,1
+No,No,35,Arusha,No,0,No,9,33,Unknown,1
+No,No,68,Geita,No,1,No,15,21,More than one,1
+Yes,Yes,36,Iringa,Yes,2,Yes,14,39,None,1
+Yes,Yes,83,Iringa,Yes,0,No,10,33,None,0
+Yes,Yes,64,Shinyanga,No,0,Unknown,10,16,One,0
+No,No,38,Mwanza,Unknown,1,No,9,41,Unknown,1
+Yes,No,56,Kilimanjaro,Yes,0,No,12,40,One,1
+No,Unknown,50,Singida,Unknown,2,No,14,36,More than one,0
+No,Unknown,76,Pwani,Yes,2,Yes,13,26,Unknown,0
+Yes,Yes,47,Kigoma,Unknown,0,No,15,25,None,0
+Yes,Yes,69,Dar es Salaam,Unknown,2,No,11,16,Unknown,1
+Yes,Unknown,48,Ruvuma,Yes,1,Yes,10,30,One,1
+Yes,No,61,Dodoma,Yes,2,Yes,12,30,More than one,1
+Yes,Unknown,85,Dodoma,Yes,0,Yes,10,42,Unknown,1
+No,No,65,Kigoma,No,1,No,15,37,Unknown,0
+No,No,77,Njombe,Unknown,2,Unknown,10,33,None,1
+Yes,Unknown,55,Mtwara,No,0,Unknown,12,24,One,0
+Yes,No,75,Arusha,No,1,Yes,12,27,None,1
+Yes,No,79,Mtwara,No,2,No,9,29,More than one,1
+No,No,56,Lindi,No,0,Yes,12,44,None,0
+Yes,Yes,38,Morogoro,No,2,No,12,37,One,1
+No,Unknown,82,Manyara,Yes,2,No,10,32,None,1
+No,No,37,Dar es Salaam,Unknown,2,No,9,42,One,0
+Yes,Yes,74,Mbeya,Unknown,0,Unknown,9,23,None,1
+Yes,Unknown,48,Lindi,Unknown,0,No,9,33,None,0
+No,Unknown,65,Kigoma,Yes,1,No,12,18,More than one,1
+No,Unknown,37,Lindi,Yes,1,Yes,9,34,One,0
+Yes,Unknown,51,Morogoro,Yes,1,Yes,15,17,More than one,1
+No,Unknown,38,Kigoma,Yes,0,Unknown,10,36,More than one,0
+No,Unknown,80,Mwanza,No,2,Unknown,13,27,One,0
+No,No,71,Tabora,Yes,2,No,13,31,One,1
+Yes,Unknown,75,Shinyanga,Unknown,0,No,12,31,More than one,1
+Yes,Unknown,59,Tanga,Yes,2,Unknown,15,15,More than one,1
+No,No,64,Katavi,Unknown,1,Yes,9,42,None,0
+Yes,Yes,64,Singida,Yes,0,Unknown,10,33,One,1
+No,Unknown,76,Lindi,Yes,2,No,10,25,One,1
+No,Unknown,40,Dodoma,Unknown,1,No,9,19,One,0
+Yes,No,37,Katavi,Unknown,2,Unknown,11,40,More than one,0
+Yes,Yes,36,Iringa,Yes,2,Yes,11,39,None,0
+Yes,No,84,Simiyu,Unknown,1,Unknown,14,31,One,0
+Yes,Unknown,85,Dodoma,Yes,0,Yes,11,42,Unknown,0
+No,Yes,58,Rukwa,No,1,No,15,38,More than one,0
+No,No,83,Lindi,No,1,Unknown,14,25,None,1
+Yes,No,40,Kigoma,Yes,0,No,15,18,One,1
+Yes,No,47,Mara,Unknown,2,No,9,37,More than one,1
+Yes,No,35,Ruvuma,Unknown,2,Yes,15,16,One,1
+No,Unknown,38,Mwanza,Unknown,2,No,13,20,More than one,0
+No,Unknown,51,Dar es Salaam,Unknown,1,No,15,25,Unknown,1
+Yes,Yes,40,Tabora,Yes,2,Yes,11,16,One,0
+No,Yes,44,Arusha,Yes,1,Yes,15,19,More than one,1
+No,Unknown,40,Mara,Unknown,2,No,13,22,None,0
+Yes,No,84,Songwe,Unknown,2,No,9,20,More than one,1
+Yes,Yes,60,Rukwa,Yes,0,No,11,29,Unknown,0
+Yes,Unknown,40,Mbeya,No,1,Unknown,9,18,Unknown,0
+Yes,Yes,42,Singida,Unknown,2,No,15,42,Unknown,0
+Yes,Yes,70,Songwe,No,0,Yes,11,36,More than one,0
+No,Unknown,52,Mara,Unknown,1,Yes,10,39,None,1
+Yes,No,79,Mtwara,No,2,No,12,29,More than one,1
+Yes,Yes,54,Geita,No,0,Unknown,11,24,One,0
+No,Yes,44,Njombe,No,1,No,9,23,Unknown,0
+Yes,No,51,Simiyu,Unknown,0,Yes,14,43,One,1
+No,Unknown,48,Manyara,No,1,Yes,14,19,More than one,1
+No,Unknown,68,Singida,No,2,Yes,14,25,More than one,0
+No,Yes,35,Kilimanjaro,Yes,1,Unknown,13,19,More than one,0
+Yes,Yes,47,Katavi,Yes,2,Unknown,11,19,One,0
+No,No,49,Tabora,Unknown,0,No,12,32,None,0
+Yes,Yes,84,Arusha,Unknown,2,Unknown,12,25,None,1
+Yes,Unknown,63,Arusha,Unknown,1,No,10,41,More than one,0
+Yes,Unknown,35,Shinyanga,No,2,Yes,9,26,One,1
+No,Unknown,56,Tabora,Unknown,1,Unknown,10,28,One,0
+No,No,55,Kagera,Yes,0,Yes,12,17,One,1
+No,Yes,72,Rukwa,Unknown,2,No,10,31,Unknown,1
+Yes,Yes,71,Mbeya,No,0,No,9,30,Unknown,0
+No,Unknown,48,Njombe,Unknown,2,No,14,37,None,0
+Yes,Unknown,78,Manyara,Yes,2,No,11,36,One,0
+Yes,Unknown,54,Arusha,Unknown,1,No,13,43,More than one,1
+Yes,No,52,Singida,Yes,2,Yes,12,16,None,0
+Yes,Yes,68,Songwe,No,1,Yes,14,23,More than one,0
+No,No,67,Dodoma,Unknown,2,Unknown,14,25,Unknown,1
+Yes,Yes,54,Geita,No,0,Unknown,11,24,One,1
+Yes,Yes,39,Kigoma,Yes,2,Unknown,14,35,None,1
+No,Yes,49,Singida,Unknown,2,No,11,42,Unknown,1
+No,Unknown,42,Pwani,Yes,2,No,14,26,None,0
+Yes,Unknown,63,Arusha,Unknown,1,No,11,41,More than one,1
+Yes,No,40,Iringa,Unknown,1,No,9,31,More than one,1
+Yes,Yes,67,Tabora,No,0,Yes,14,41,Unknown,0
+No,No,71,Tabora,Yes,2,No,9,31,One,1
+Yes,Yes,46,Iringa,Yes,0,No,14,27,More than one,0
+No,No,70,Kagera,No,1,Unknown,9,32,One,1
+No,Unknown,49,Mtwara,Unknown,2,Yes,10,32,Unknown,0
+No,Unknown,41,Mwanza,No,2,Unknown,13,27,None,1
+No,Unknown,49,Mara,Yes,1,Yes,15,24,More than one,1
+No,Yes,43,Kilimanjaro,Unknown,0,Unknown,11,26,None,0
+Yes,No,71,Simiyu,Yes,1,Unknown,9,42,Unknown,0
+No,Unknown,61,Njombe,No,0,Yes,10,25,Unknown,0
+No,Yes,82,Simiyu,No,1,Yes,15,20,One,0
+Yes,No,41,Tanga,No,1,Yes,14,42,One,0
+No,No,67,Tanga,Unknown,0,Unknown,9,40,Unknown,0
+No,No,64,Tanga,Unknown,0,Unknown,11,24,More than one,1
+No,Yes,45,Kigoma,Yes,0,Unknown,10,44,None,0
+Yes,No,78,Shinyanga,Yes,2,Yes,10,31,Unknown,0
+No,No,71,Simiyu,No,0,No,14,20,One,1
+No,No,51,Simiyu,Yes,0,No,13,17,None,0
+Yes,No,70,Mara,Yes,2,Unknown,10,25,None,1
+No,Yes,62,Mbeya,Unknown,0,Unknown,13,16,Unknown,0
+No,No,53,Mbeya,Unknown,0,Unknown,11,33,More than one,1
+No,No,67,Manyara,No,0,Yes,9,40,Unknown,1
+No,No,55,Kagera,Yes,0,Yes,12,17,One,1
+Yes,No,41,Singida,Unknown,1,Unknown,10,31,One,1
+No,Unknown,71,Tabora,Yes,2,No,10,35,One,1
+Yes,Yes,69,Dar es Salaam,Unknown,2,No,15,16,Unknown,0
+Yes,Yes,37,Mwanza,No,2,Yes,13,31,One,1
+No,Unknown,42,Shinyanga,No,2,Yes,9,42,None,0
+Yes,No,61,Dodoma,Yes,2,Yes,14,30,More than one,1
+Yes,No,78,Shinyanga,Yes,2,Unknown,13,37,More than one,0
+No,No,49,Dodoma,Unknown,2,Unknown,15,34,One,0
+No,Unknown,39,Dodoma,Yes,2,Yes,14,30,One,0
+No,No,63,Mara,Yes,0,No,11,38,Unknown,0
+Yes,No,62,Shinyanga,Unknown,0,Yes,12,35,More than one,1
+No,Yes,53,Mara,Unknown,1,Yes,12,37,None,0
+Yes,No,80,Tabora,No,1,No,14,19,Unknown,0
+Yes,Yes,65,Dar es Salaam,Yes,0,Unknown,10,19,Unknown,0
+Yes,No,44,Arusha,No,2,No,11,20,More than one,1
+No,No,79,Ruvuma,Unknown,0,Unknown,10,44,None,1
+Yes,Yes,81,Simiyu,No,1,Unknown,11,40,None,1
+Yes,Unknown,42,Manyara,Unknown,1,Yes,10,35,Unknown,1
+No,Yes,60,Iringa,No,2,No,9,44,One,0
+No,Unknown,79,Ruvuma,Yes,1,Yes,15,18,More than one,1
+Yes,Yes,54,Shinyanga,Unknown,0,Unknown,9,43,Unknown,1
+Yes,No,82,Singida,No,2,Yes,15,30,Unknown,1
+No,No,51,Simiyu,Yes,0,No,9,17,None,1
+No,No,52,Mwanza,Yes,2,Unknown,14,36,None,1
+No,No,64,Lindi,Unknown,2,Yes,11,43,One,1
+No,No,49,Dodoma,Unknown,2,Unknown,12,34,One,1
+Yes,Unknown,68,Katavi,Unknown,0,No,10,28,Unknown,0
+Yes,No,75,Pwani,Unknown,2,Yes,12,16,None,0
+No,Yes,61,Arusha,Yes,1,Unknown,12,35,Unknown,0
+Yes,Unknown,38,Manyara,Yes,2,Unknown,12,23,Unknown,0
+No,No,68,Tanga,Yes,2,Unknown,11,31,One,1
+No,No,46,Mtwara,No,2,No,12,28,More than one,1
+Yes,Unknown,79,Katavi,Unknown,1,Unknown,14,23,One,1
+No,No,69,Mbeya,Unknown,2,Unknown,12,26,One,1
+No,No,46,Tabora,Yes,0,Yes,11,27,One,0
+Yes,No,51,Simiyu,Unknown,0,Yes,9,43,One,1
+No,Unknown,37,Kigoma,Unknown,0,Yes,11,42,One,0
+Yes,No,82,Mara,Unknown,1,No,9,26,None,0
+Yes,Unknown,61,Songwe,Yes,1,Unknown,10,28,More than one,1
+No,Yes,47,Kigoma,Unknown,1,Yes,15,18,More than one,0
+Yes,Unknown,58,Mwanza,Yes,2,No,9,37,More than one,0
+Yes,Yes,44,Mara,No,0,Unknown,12,37,Unknown,0
+No,Yes,48,Ruvuma,Unknown,1,Yes,14,18,Unknown,0
+Yes,Unknown,48,Mbeya,Unknown,2,Unknown,15,41,Unknown,0
+Yes,No,69,Katavi,No,2,Unknown,10,31,One,0
+Yes,Unknown,40,Mbeya,No,1,Unknown,10,18,Unknown,1
+No,Unknown,36,Iringa,No,1,Unknown,11,33,Unknown,0
+No,Yes,72,Tanga,Yes,1,Unknown,12,39,Unknown,0
+Yes,Unknown,68,Pwani,Unknown,1,No,15,39,More than one,0
+No,No,77,Ruvuma,No,2,Yes,10,21,Unknown,0
+Yes,Yes,41,Manyara,No,0,Yes,10,29,One,1
+No,Yes,44,Arusha,Yes,1,Yes,10,19,More than one,1
+No,No,49,Tabora,Unknown,0,No,15,32,None,1
+Yes,Unknown,66,Shinyanga,Unknown,2,Unknown,9,43,More than one,1
+No,No,41,Lindi,Unknown,0,Unknown,11,28,One,0
+Yes,Unknown,54,Songwe,Yes,1,Yes,9,30,More than one,1
+Yes,No,76,Ruvuma,Yes,2,Unknown,10,39,Unknown,1
+Yes,No,66,Morogoro,Unknown,0,No,15,26,Unknown,1
+Yes,Yes,84,Arusha,Unknown,2,Unknown,9,25,None,0
+No,Yes,60,Tabora,Yes,1,Yes,11,34,One,1
+Yes,No,42,Dar es Salaam,No,2,Yes,15,29,One,0
+Yes,No,40,Kigoma,Yes,0,No,13,18,One,0
+Yes,No,76,Arusha,Unknown,1,Unknown,9,22,More than one,0
+Yes,No,42,Tabora,No,0,Unknown,12,35,Unknown,1
+No,Unknown,52,Tanga,Yes,1,No,15,27,One,0
+Yes,Unknown,75,Dar es Salaam,Unknown,1,No,11,42,None,0
+Yes,No,36,Shinyanga,Yes,1,No,12,33,One,1
+Yes,Yes,40,Tabora,Yes,2,Yes,12,16,One,1
+No,Unknown,62,Singida,No,2,Unknown,13,37,One,0
+Yes,Unknown,60,Morogoro,No,2,Unknown,10,41,Unknown,1
+Yes,Unknown,74,Kilimanjaro,Unknown,0,Unknown,14,18,Unknown,0
+No,Unknown,49,Mara,Yes,1,Unknown,15,35,One,1
+No,Yes,43,Songwe,Yes,0,No,9,31,More than one,0
+No,No,62,Katavi,Unknown,2,Unknown,14,36,Unknown,0
+Yes,No,56,Kilimanjaro,Yes,0,No,14,40,One,0
+No,Yes,85,Arusha,Unknown,0,Unknown,14,17,None,0
+Yes,Yes,70,Singida,No,1,Yes,11,36,One,1
+Yes,Yes,48,Simiyu,No,2,Yes,12,27,None,0
+Yes,No,84,Simiyu,Unknown,1,Unknown,14,31,One,1
+Yes,Unknown,37,Shinyanga,No,2,No,10,22,One,0
+Yes,Unknown,61,Shinyanga,Unknown,0,Unknown,14,31,One,0
+Yes,Yes,59,Mbeya,No,2,No,15,31,Unknown,1
+No,No,55,Kagera,Yes,0,Yes,13,17,One,0
+No,Unknown,42,Iringa,No,2,No,11,16,None,0
+Yes,No,75,Arusha,Unknown,1,No,12,35,Unknown,1
+No,No,66,Geita,Yes,2,No,9,32,None,1
+No,Unknown,38,Mbeya,No,0,No,15,29,Unknown,0
+Yes,No,51,Mtwara,Yes,2,Yes,11,41,Unknown,0
+Yes,Yes,39,Kigoma,Yes,2,Unknown,9,35,None,1
+No,No,67,Tanga,Unknown,0,Unknown,14,40,Unknown,1
+Yes,No,65,Pwani,No,0,No,13,25,One,0
+No,Yes,57,Singida,No,1,Unknown,13,44,None,1
+Yes,Unknown,35,Shinyanga,No,2,Yes,9,26,One,0
+Yes,No,41,Tanga,No,1,Yes,14,42,One,1
+No,Unknown,44,Mara,Unknown,0,No,13,21,None,1
+No,No,66,Kagera,No,2,Unknown,14,18,One,0
+Yes,Yes,42,Singida,Unknown,2,No,14,42,Unknown,1
+No,No,38,Mwanza,Unknown,1,No,10,41,Unknown,0
+No,Unknown,80,Rukwa,Yes,1,No,10,41,More than one,1
+No,Yes,64,Morogoro,No,0,No,15,23,One,0
+No,No,75,Katavi,Yes,0,No,12,17,More than one,0
+No,Unknown,69,Kigoma,Unknown,2,No,12,30,None,1
+Yes,Unknown,75,Dar es Salaam,Unknown,1,No,11,42,None,1
+No,No,80,Tabora,Yes,1,Unknown,13,28,One,1
+Yes,Yes,67,Mbeya,Unknown,1,Yes,14,16,None,1
+No,Unknown,49,Mtwara,Unknown,2,Yes,9,32,Unknown,1
+No,Yes,45,Kilimanjaro,Yes,0,No,12,15,More than one,1
+No,Unknown,45,Shinyanga,Yes,0,Unknown,15,36,None,0
+Yes,Yes,62,Kilimanjaro,No,1,Yes,10,31,One,1
+Yes,No,71,Simiyu,Yes,1,Unknown,10,42,Unknown,1

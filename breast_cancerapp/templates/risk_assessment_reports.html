@@ -1,0 +1,497 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+    <div class="content">
+        <div class="container-xxl">
+
+            <!-- Header Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h1 class="page-title mb-1">
+                                <i data-feather="bar-chart-2" class="text-success me-2" style="height: 32px; width: 32px;"></i>
+                                Risk Assessment Analytics
+                            </h1>
+                            <p class="text-muted mb-0">Comprehensive breast cancer risk assessment reports and insights</p>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="badge bg-success text-white fs-14 px-3 py-2">
+                                <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+                                {{ today|date:"M d, Y" }}
+                            </div>
+                            <a href="{% url 'export_pdf' 'risk_assessment' %}" class="btn btn-success">
+                                <i data-feather="download" class="me-1" style="height: 16px; width: 16px;"></i>
+                                Export Report
+                            </a>
+                            <a href="{% url 'reports_dashboard' %}" class="btn btn-outline-secondary">
+                                <i data-feather="arrow-left" class="me-1" style="height: 16px; width: 16px;"></i>
+                                Back to Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Statistics Cards -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #3B82F6;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); border-radius: 12px;">
+                                        <i data-feather="users" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">{{ benign_count|add:malignant_count }}</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">Total Assessments</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px; background: #e9ecef; border-radius: 3px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%; background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); border-radius: 3px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 12px;">All time assessments</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #10B981;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%); border-radius: 12px;">
+                                        <i data-feather="check-circle" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">{{ benign_count }}</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">Low Risk Cases</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px; background: #e9ecef; border-radius: 3px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%); border-radius: 3px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 12px;">Low risk majority</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg" style="background: white; border-radius: 16px; border-top: 4px solid #EF4444;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="avatar-sm" style="background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%); border-radius: 12px;">
+                                        <i data-feather="alert-triangle" class="avatar-title" style="height: 24px; width: 24px; color: white;"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-1 text-dark fw-semibold">{{ malignant_count }}</h5>
+                                    <p class="mb-0 text-muted" style="font-size: 13px;">High Risk Cases</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress" style="height: 6px; background: #e9ecef; border-radius: 3px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%; background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%); border-radius: 3px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted" style="font-size: 12px;">High risk minority</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Charts Section -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="pie-chart" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Prediction Distribution
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            {% if prediction_chart %}
+                            <div class="text-center">
+                                <img src="data:image/png;base64,{{ prediction_chart }}" class="img-fluid rounded" alt="Prediction Chart">
+                            </div>
+                            {% else %}
+                            <div class="text-center py-5">
+                                <i data-feather="pie-chart" class="text-muted mb-3" style="height: 48px; width: 48px;"></i>
+                                <p class="text-muted">No data available for chart</p>
+                                <small class="text-muted">Complete some assessments to see the distribution</small>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="bar-chart" class="text-success me-2" style="height: 20px; width: 20px;"></i>
+                                Age Distribution
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            {% if age_chart %}
+                            <div class="text-center">
+                                <img src="data:image/png;base64,{{ age_chart }}" class="img-fluid rounded" alt="Age Chart">
+                            </div>
+                            {% else %}
+                            <div class="text-center py-5">
+                                <i data-feather="bar-chart" class="text-muted mb-3" style="height: 48px; width: 48px;"></i>
+                                <p class="text-muted">No data available for chart</p>
+                                <small class="text-muted">Complete some assessments to see age patterns</small>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Detailed Table -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white border-bottom">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="card-title mb-0">
+                            <i data-feather="list" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                            Detailed Assessment History
+                        </h5>
+                        <span class="badge bg-primary">{{ assessments|length }} assessments</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th><i data-feather="calendar" class="me-1" style="height: 14px; width: 14px;"></i>Date</th>
+                                    <th><i data-feather="user" class="me-1" style="height: 14px; width: 14px;"></i>Age</th>
+                                    <th><i data-feather="heart" class="me-1" style="height: 14px; width: 14px;"></i>First Menstrual</th>
+                                    <th><i data-feather="users" class="me-1" style="height: 14px; width: 14px;"></i>Family History</th>
+                                    <th><i data-feather="dna" class="me-1" style="height: 14px; width: 14px;"></i>BRCA Status</th>
+                                    <th><i data-feather="shield" class="me-1" style="height: 14px; width: 14px;"></i>Risk Level</th>
+                                    <th><i data-feather="target" class="me-1" style="height: 14px; width: 14px;"></i>Confidence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for assessment in assessments %}
+                                <tr>
+                                    <td>{{ assessment.created_at|date:"M d, Y H:i" }}</td>
+                                    <td>
+                                        <span class="badge bg-light text-dark">{{ assessment.age }} years</span>
+                                    </td>
+                                    <td>{{ assessment.age_first_menstrual }} years</td>
+                                    <td>
+                                        {% if assessment.relatives_breast_cancer == "Yes" %}
+                                            <span class="badge bg-warning">Yes</span>
+                                        {% elif assessment.relatives_breast_cancer == "No" %}
+                                            <span class="badge bg-success">No</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Unknown</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if assessment.brca_mutation_or_genetic_syndrome == "Yes" %}
+                                            <span class="badge bg-danger">Positive</span>
+                                        {% elif assessment.brca_mutation_or_genetic_syndrome == "No" %}
+                                            <span class="badge bg-success">Negative</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Unknown</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        <span class="badge {% if assessment.prediction == 0 %}bg-success{% else %}bg-danger{% endif %} px-3 py-2">
+                                            <i data-feather="{% if assessment.prediction == 0 %}check-circle{% else %}alert-triangle{% endif %}" class="me-1" style="height: 12px; width: 12px;"></i>
+                                            {% if assessment.prediction == 0 %}Low Risk{% else %}High Risk{% endif %}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="progress me-2 confidence-progress" data-confidence="{{ assessment.confidence_percent }}">
+                                                <div class="progress-bar {% if assessment.confidence_percent > 80 %}bg-success{% elif assessment.confidence_percent > 60 %}bg-warning{% else %}bg-danger{% endif %}"></div>
+                                            </div>
+                                            <small class="fw-semibold">{{ assessment.confidence_percent }}%</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="7" class="text-center py-5">
+                                        <div class="text-muted">
+                                            <i data-feather="inbox" class="mb-3" style="height: 48px; width: 48px;"></i>
+                                            <p class="mb-0">No assessments found</p>
+                                            <small class="mb-0">Start completing risk assessments to see data here</small>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+/* Risk Assessment Reports Theme Styles */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+}
+
+.bg-gradient-danger {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%) !important;
+}
+
+.avatar-sm {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+    font-size: 0.875rem;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+/* Confidence progress bars */
+.confidence-progress {
+    width: 60px;
+    height: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .avatar-sm {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-title {
+        font-size: 16px;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.col-md-4:nth-child(1) .card { animation-delay: 0.1s; }
+.col-md-4:nth-child(2) .card { animation-delay: 0.2s; }
+.col-md-4:nth-child(3) .card { animation-delay: 0.3s; }
+
+/* Table hover effects */
+.table-hover tbody tr:hover {
+    background-color: rgba(40, 167, 69, 0.05);
+}
+
+/* Progress bar animations */
+.progress-bar {
+    transition: width 1.5s ease-out;
+}
+
+/* Badge animations */
+.badge {
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar for tables */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Chart container styling */
+.img-fluid.rounded {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Empty state styling */
+.text-muted i {
+    opacity: 0.5;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Feather icons
+    feather.replace();
+    
+    // Animate progress bars
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const parentProgress = bar.closest('.confidence-progress');
+        if (parentProgress) {
+            const confidence = parentProgress.dataset.confidence;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.5s ease-out';
+                bar.style.width = confidence + '%';
+            }, 100);
+        } else {
+            const width = bar.style.width;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.5s ease-out';
+                bar.style.width = width;
+            }, 100);
+        }
+    });
+    
+    // Add hover effects to cards
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-4px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+    
+    // Add click animation to buttons
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+    
+    // Update date badge
+    const todayBadge = document.querySelector('.badge.bg-success');
+    if (todayBadge) {
+        const today = new Date();
+        const options = { month: 'short', day: 'numeric', year: 'numeric' };
+        todayBadge.innerHTML = `
+            <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+            ${today.toLocaleDateString('en-US', options)}
+        `;
+        feather.replace();
+    }
+});
+
+// Add ripple effect CSS
+const style = document.createElement('style');
+style.textContent = `
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        transform: scale(0);
+        animation: ripple-animation 0.6s ease-out;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+    
+    .btn {
+        position: relative;
+        overflow: hidden;
+    }
+`;
+document.head.appendChild(style);
+</script>
+
+{% endblock %}

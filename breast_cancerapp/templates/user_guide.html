@@ -1,0 +1,806 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-page">
+    <div class="content">
+        <div class="container-xxl">
+
+            <!-- Header Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <h1 class="page-title mb-1">
+                                <i data-feather="book-open" class="text-primary me-2" style="height: 32px; width: 32px;"></i>
+                                User Guide
+                            </h1>
+                            <p class="text-muted mb-0">Complete guide for the Breast Cancer AI Analysis System</p>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="badge bg-primary text-white fs-14 px-3 py-2">
+                                <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+                                {{ today|date:"M d, Y" }}
+                            </div>
+                            <a href="{% url 'doctor_dashboard' %}" class="btn btn-outline-secondary">
+                                <i data-feather="arrow-left" class="me-1" style="height: 16px; width: 16px;"></i>
+                                Back to Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="heart" class="text-danger me-2" style="height: 20px; width: 20px;"></i>
+                                Welcome to the Breast Cancer AI Analysis System
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <p class="mb-3">This comprehensive guide will help you navigate and use all features of our advanced AI-powered breast cancer analysis system effectively. Our platform combines cutting-edge machine learning with medical expertise to provide accurate and reliable diagnostic support.</p>
+                                    <div class="d-flex gap-3 mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-sm bg-primary bg-opacity-10 rounded me-2">
+                                                <i data-feather="shield" class="text-primary avatar-title" style="height: 20px; width: 20px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">83.2% Accuracy</h6>
+                                                <small class="text-muted">Validated AI models</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-sm bg-success bg-opacity-10 rounded me-2">
+                                                <i data-feather="zap" class="text-success avatar-title" style="height: 20px; width: 20px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">Fast Analysis</h6>
+                                                <small class="text-muted">Quick results</small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-sm bg-info bg-opacity-10 rounded me-2">
+                                                <i data-feather="database" class="text-info avatar-title" style="height: 20px; width: 20px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">Comprehensive</h6>
+                                                <small class="text-muted">Full analytics</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <div class="avatar-xl bg-primary bg-opacity-10 rounded-circle mx-auto mb-3">
+                                            <i data-feather="book" class="text-primary avatar-title" style="height: 48px; width: 48px;"></i>
+                                        </div>
+                                        <h4 class="text-primary">AI-Powered</h4>
+                                        <p class="text-muted">Medical Analysis System</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Navigation Guide -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="compass" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                System Navigation Guide
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">
+                                        <i data-feather="menu" class="me-2" style="height: 16px; width: 16px;"></i>
+                                        Main Menu Sections:
+                                    </h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-primary bg-opacity-10 rounded me-3">
+                                                <i data-feather="home" class="text-primary avatar-title" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-1">Dashboard</h6>
+                                                <small class="text-muted">Main overview and quick actions</small>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-success bg-opacity-10 rounded me-3">
+                                                <i data-feather="cpu" class="text-success avatar-title" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-1">AI Analysis Tools</h6>
+                                                <small class="text-muted">Image analysis and risk assessment</small>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-info bg-opacity-10 rounded me-3">
+                                                <i data-feather="bar-chart-2" class="text-info avatar-title" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-1">Reports & Analytics</h6>
+                                                <small class="text-muted">Comprehensive reporting system</small>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-warning bg-opacity-10 rounded me-3">
+                                                <i data-feather="settings" class="text-warning avatar-title" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-1">System</h6>
+                                                <small class="text-muted">User guide and logout</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-success mb-3">
+                                        <i data-feather="zap" class="me-2" style="height: 16px; width: 16px;"></i>
+                                        Quick Access Features:
+                                    </h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item">
+                                            <h6 class="mb-1">
+                                                <i data-feather="image" class="text-info me-2" style="height: 16px; width: 16px;"></i>
+                                                Image Analysis
+                                            </h6>
+                                            <small class="text-muted">Upload histopathology images for AI analysis</small>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h6 class="mb-1">
+                                                <i data-feather="shield" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                                Risk Assessment
+                                            </h6>
+                                            <small class="text-muted">Input patient data for risk evaluation</small>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h6 class="mb-1">
+                                                <i data-feather="file-text" class="text-primary me-2" style="height: 16px; width: 16px;"></i>
+                                                Reports
+                                            </h6>
+                                            <small class="text-muted">View analytics and export PDFs</small>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h6 class="mb-1">
+                                                <i data-feather="clock" class="text-warning me-2" style="height: 16px; width: 16px;"></i>
+                                                History
+                                            </h6>
+                                            <small class="text-muted">Track all checkups and predictions</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Feature Guide -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="image" class="text-info me-2" style="height: 20px; width: 20px;"></i>
+                                Image Analysis
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3">How to Use:</h6>
+                            <ol class="ps-3">
+                                <li class="mb-2">Navigate to "AI Analysis Tools" <i data-feather="arrow-right" class="mx-1" style="height: 14px; width: 14px;"></i> "Image Analysis"</li>
+                                <li class="mb-2">Upload breast cancer histopathology images</li>
+                                <li class="mb-2">Supported formats: JPEG, PNG, BMP, TIFF</li>
+                                <li class="mb-2">Click "Analyze Image" to get AI prediction</li>
+                            </ol>
+                            <h6 class="text-success mb-3">Results Include:</h6>
+                            <ul class="ps-3">
+                                <li class="mb-2">
+                                    <span class="badge bg-primary me-2">Prediction</span>
+                                    Benign (0) or Malignant (1)
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-success me-2">Confidence</span>
+                                    Percentage accuracy score
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-info me-2">Stage</span>
+                                    Cancer stage assessment
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-warning me-2">Probabilities</span>
+                                    Detailed breakdown
+                                </li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <div class="avatar-lg bg-info bg-opacity-10 rounded-circle mx-auto">
+                                    <i data-feather="image" class="text-info avatar-title" style="height: 32px; width: 32px;"></i>
+                                </div>
+                                <p class="text-muted mt-2">AI-Powered Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="shield" class="text-success me-2" style="height: 20px; width: 20px;"></i>
+                                Risk Assessment
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3">How to Use:</h6>
+                            <ol class="ps-3">
+                                <li class="mb-2">Navigate to "AI Analysis Tools" <i data-feather="arrow-right" class="mx-1" style="height: 14px; width: 14px;"></i> "Risk Assessment"</li>
+                                <li class="mb-2">Fill in patient demographic information</li>
+                                <li class="mb-2">Include medical history and genetic factors</li>
+                                <li class="mb-2">Click "Predict" to get risk evaluation</li>
+                            </ol>
+                            <h6 class="text-success mb-3">Required Information:</h6>
+                            <ul class="ps-3">
+                                <li class="mb-2">
+                                    <span class="badge bg-primary me-2">Age</span>
+                                    Patient age and menstrual history
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-danger me-2">Family</span>
+                                    Family cancer history
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-warning me-2">Genetic</span>
+                                    BRCA mutation status
+                                </li>
+                                <li class="mb-2">
+                                    <span class="badge bg-info me-2">Biopsy</span>
+                                    Previous biopsy results
+                                </li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <div class="avatar-lg bg-success bg-opacity-10 rounded-circle mx-auto">
+                                    <i data-feather="shield" class="text-success avatar-title" style="height: 32px; width: 32px;"></i>
+                                </div>
+                                <p class="text-muted mt-2">Clinical Risk Evaluation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Reports Guide -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="bar-chart-2" class="text-info me-2" style="height: 20px; width: 20px;"></i>
+                                Reports & Analytics
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="avatar-sm bg-primary bg-opacity-10 rounded me-2">
+                                                    <i data-feather="pie-chart" class="text-primary avatar-title" style="height: 16px; width: 16px;"></i>
+                                                </div>
+                                                <h6 class="mb-0">Analytics Dashboard</h6>
+                                            </div>
+                                            <p class="text-muted mb-0">Overview of all system statistics including total assessments, predictions, and recent activity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="avatar-sm bg-success bg-opacity-10 rounded me-2">
+                                                    <i data-feather="shield" class="text-success avatar-title" style="height: 16px; width: 16px;"></i>
+                                                </div>
+                                                <h6 class="mb-0">Risk Assessment Reports</h6>
+                                            </div>
+                                            <p class="text-muted mb-0">Detailed reports on risk assessment predictions with age distribution charts and prediction statistics.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="avatar-sm bg-info bg-opacity-10 rounded me-2">
+                                                    <i data-feather="image" class="text-info avatar-title" style="height: 16px; width: 16px;"></i>
+                                                </div>
+                                                <h6 class="mb-0">Image Analysis Reports</h6>
+                                            </div>
+                                            <p class="text-muted mb-0">Comprehensive image analysis reports with cancer stage distribution and prediction accuracy metrics.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="avatar-sm bg-warning bg-opacity-10 rounded me-2">
+                                                    <i data-feather="clock" class="text-warning avatar-title" style="height: 16px; width: 16px;"></i>
+                                                </div>
+                                                <h6 class="mb-0">Checkup History</h6>
+                                            </div>
+                                            <p class="text-muted mb-0">Complete list of all checkups performed in the system with detailed information and confidence levels.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card bg-light border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="avatar-sm bg-primary bg-opacity-10 rounded me-2">
+                                                    <i data-feather="download" class="text-primary avatar-title" style="height: 16px; width: 16px;"></i>
+                                                </div>
+                                                <h6 class="mb-0">PDF Export</h6>
+                                            </div>
+                                            <p class="text-muted mb-0">Export any report as PDF for documentation and sharing with medical professionals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Technical Information -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="cpu" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Technical Information
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">
+                                        <i data-feather="brain" class="me-2" style="height: 16px; width: 16px;"></i>
+                                        AI Models Used:
+                                    </h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="badge bg-primary me-3">Image Analysis</div>
+                                            <span>ResNet50 Deep Learning Model</span>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="badge bg-success me-3">Risk Assessment</div>
+                                            <span>Machine Learning Pipeline</span>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="badge bg-info me-3">Accuracy</div>
+                                            <span>95.2% validated on test datasets</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-success mb-3">
+                                        <i data-feather="monitor" class="me-2" style="height: 16px; width: 16px;"></i>
+                                        System Requirements:
+                                    </h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-light rounded me-3">
+                                                <i data-feather="globe" class="text-muted" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">Browser</h6>
+                                                <small class="text-muted">Chrome, Firefox, Safari (modern versions)</small>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-light rounded me-3">
+                                                <i data-feather="wifi" class="text-muted" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">Internet</h6>
+                                                <small class="text-muted">Connection required for AI processing</small>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item d-flex align-items-center">
+                                            <div class="avatar-sm bg-light rounded me-3">
+                                                <i data-feather="image" class="text-muted" style="height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">Images</h6>
+                                                <small class="text-muted">Max 10MB, JPEG/PNG/BMP/TIFF</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Important Notes -->
+            <div class="row g-3 mb-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm border-warning">
+                        <div class="card-header bg-warning bg-opacity-10 border-bottom border-warning">
+                            <h5 class="card-title mb-0 text-warning">
+                                <i data-feather="alert-triangle" class="me-2" style="height: 20px; width: 20px;"></i>
+                                Important Medical Disclaimer
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-warning d-flex align-items-start">
+                                <div class="avatar-sm bg-warning bg-opacity-10 rounded me-3 flex-shrink-0">
+                                    <i data-feather="alert-circle" class="text-warning avatar-title" style="height: 20px; width: 20px;"></i>
+                                </div>
+                                <div>
+                                    <h6 class="alert-heading">Clinical Decision Support Only</h6>
+                                    <p class="mb-2">This AI system is designed to assist healthcare professionals, not replace their clinical judgment.</p>
+                                    <hr class="my-2">
+                                    <ul class="mb-0 mt-2">
+                                        <li>All predictions should be reviewed and validated by qualified medical professionals</li>
+                                        <li>Do not make clinical decisions based solely on AI predictions</li>
+                                        <li>Always consult with healthcare providers for proper diagnosis and treatment</li>
+                                        <li>This system is intended to assist, not replace, professional medical judgment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Support -->
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-bottom">
+                            <h5 class="card-title mb-0">
+                                <i data-feather="help-circle" class="text-primary me-2" style="height: 20px; width: 20px;"></i>
+                                Support & Contact
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 class="text-primary mb-3">Getting Help:</h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item">
+                                            <i data-feather="book-open" class="text-info me-2" style="height: 16px; width: 16px;"></i>
+                                            Check this user guide for common questions
+                                        </div>
+                                        <div class="list-group-item">
+                                            <i data-feather="user" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                            Contact your system administrator
+                                        </div>
+                                        <div class="list-group-item">
+                                            <i data-feather="mail" class="text-primary me-2" style="height: 16px; width: 16px;"></i>
+                                            Email support for technical issues
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 class="text-success mb-3">Quick Tips:</h6>
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item">
+                                            <i data-feather="check-circle" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                            Use high-quality images for best results
+                                        </div>
+                                        <div class="list-group-item">
+                                            <i data-feather="check-circle" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                            Complete all required fields for accurate predictions
+                                        </div>
+                                        <div class="list-group-item">
+                                            <i data-feather="check-circle" class="text-success me-2" style="height: 16px; width: 16px;"></i>
+                                            Regularly check reports for system insights
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+/* User Guide Theme Styles */
+.avatar-sm {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-lg {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-xl {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 0;
+    background: transparent;
+}
+
+.list-group-item:hover {
+    background-color: rgba(102, 126, 234, 0.05);
+    border-radius: 8px;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .avatar-sm {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-lg {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .avatar-xl {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .avatar-title {
+        font-size: 16px;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.col-md-4:nth-child(1) .card { animation-delay: 0.1s; }
+.col-md-4:nth-child(2) .card { animation-delay: 0.2s; }
+.col-md-4:nth-child(3) .card { animation-delay: 0.3s; }
+
+/* List item animations */
+.list-group-item {
+    transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateX(5px);
+}
+
+/* Badge animations */
+.badge {
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 12px;
+    border: none;
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1));
+    border-left: 4px solid #ffc107;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Feather icons
+    feather.replace();
+    
+    // Add hover effects to cards
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-4px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+    
+    // Add click animation to list items
+    const listItems = document.querySelectorAll('.list-group-item');
+    listItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Add highlight effect
+            this.style.backgroundColor = 'rgba(102, 126, 234, 0.1)';
+            setTimeout(() => {
+                this.style.backgroundColor = '';
+            }, 300);
+        });
+    });
+    
+    // Smooth scroll to sections (if there were anchor links)
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Update date badge
+    const todayBadge = document.querySelector('.badge.bg-primary');
+    if (todayBadge) {
+        const today = new Date();
+        const options = { month: 'short', day: 'numeric', year: 'numeric' };
+        todayBadge.innerHTML = `
+            <i data-feather="calendar" class="me-1" style="height: 16px; width: 16px;"></i>
+            ${today.toLocaleDateString('en-US', options)}
+        `;
+        feather.replace();
+    }
+    
+    // Add progress indicator for reading
+    const sections = document.querySelectorAll('.card');
+    const progressIndicator = document.createElement('div');
+    progressIndicator.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        z-index: 9999;
+        transition: width 0.3s ease;
+    `;
+    document.body.appendChild(progressIndicator);
+    
+    // Update progress indicator on scroll
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollProgress = (scrollTop / scrollHeight) * 100;
+        progressIndicator.style.width = scrollProgress + '%';
+    });
+    
+    // Add table of contents functionality
+    const headers = document.querySelectorAll('h5.card-title');
+    if (headers.length > 0) {
+        const toc = document.createElement('div');
+        toc.className = 'card border-0 shadow-sm mb-4';
+        toc.innerHTML = `
+            <div class="card-header bg-white border-bottom">
+                <h6 class="mb-0">
+                    <i data-feather="list" class="me-2" style="height: 16px; width: 16px;"></i>
+                    Quick Navigation
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    ${Array.from(headers).map((header, index) => `
+                        <a href="#section-${index}" class="list-group-item list-group-item-action">
+                            <i data-feather="chevron-right" class="me-2" style="height: 14px; width: 14px;"></i>
+                            ${header.textContent.trim()}
+                        </a>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        
+        // Insert table of contents after welcome section
+        const welcomeSection = document.querySelector('.card.border-0.shadow-sm');
+        if (welcomeSection) {
+            welcomeSection.parentNode.insertBefore(toc, welcomeSection.nextSibling);
+        }
+        
+        // Add IDs to sections
+        headers.forEach((header, index) => {
+            header.closest('.card').id = `section-${index}`;
+        });
+        
+        feather.replace();
+    }
+});
+</script>
+
+{% endblock %}
